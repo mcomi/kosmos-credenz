@@ -3,10 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="description" content="bx+ using webpack and bootstrap">
+	<meta name="description" content="Credenz using webpack and bootstrap">
 	<meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1, maximum-scale=1">
 
-	<title>Consubanco - Solicita tu Crédito</title>
+	<title>Credenz - Solicita tu Crédito</title>
 
 	<!-- Disable tap highlight on IE -->
 	<meta name="msapplication-tap-highlight" content="no">
@@ -124,8 +124,10 @@
 	</div>
 
 	<div class="row">
-		<img src="img/circle.png" alt="" class="left-oval-desktop">
-		<img src="img/oval-level_2-1.svg" alt="" class="right-oval-desktop">
+		<img src="img/circle-morado.png" alt="" class="left-oval-desktop">
+		<img src="img/circle-pink.png" alt="" class="left-oval-desktop down">
+		<img src="img/circle-verde.png" alt="" class="right-oval-desktop">
+		<img src="img/circle-amarillo.png" alt="" class="right-oval-desktop down">
 		<a href="identificacion.html" id="btn-solicita-credito-fixed" class="btn btn-outline">Solicita tu Crédito</a>
 	</div>
 
@@ -235,9 +237,9 @@
 						<div class="panel panel-border section-panel">
 							<div class="panel-heading">
 								<h6>La oferta más solicitada
-									<div class="pin">
+									<!-- <div class="pin">
 										<img src="img/icons/personal_credit_white.png" alt="">
-									</div>
+									</div> -->
 								</h6>
 							</div>
 							<div class="panel-body">
@@ -359,31 +361,31 @@
 			</div>
 		</section>
 
-		<section class="container" id="cel-credit">
-			<div class="row center">
+		<section class="row" id="cel-credit">
+			<div class="container center">
 				<div class="col-xs-12">
-					<div class="type-wrap col-md-8 col-md-offset-2">
-							<div id="typed-strings" class="lead">
+					<div class="col-md-8 col-md-offset-2">
+							<div class="lead">
 								<span>Si ya solicitaste el crédito, puedes <br>consultar el estatus ingresando tu celular</span>
 							</div>
-							<span id="typed" style="white-space:pre;"></span>
 					</div>
 
 
 					<!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> -->
 				</div>
-				<div class="col-xs-12 col-md-4 col-md-offset-4">
-					<input id="celular-check" type="text" class="check-status" placeholder="55 1234 5678">
-
+				<div class="col-xs-12 col-md-6 col-md-offset-3">
+					<form class="form-inline">
+					  <div class="form-group">
+					    <input type="text" class="form-control" id="celular-check" placeholder="55 1234 5678">
+					  </div>
+					  <button type="submit" class="btn btn-consulta">Consultar</button>
+					</form>
+					
 				</div>
 				<div id="celular-valido" class="col-xs-12 hidden">
 					<p>Ingresa un número de celular válido</p>
-
 				</div>
-				<div id="btn-consulta-estatus" class="col-xs-12 hidden">
-					<a href="status.html" class="btn btn-form">Consultar</a>
-
-				</div>
+				
 
 			</div>
 		</section>
@@ -442,6 +444,9 @@
 
 		<section class="testimonios" id="testimonios">
 			<div class="container">
+				<div class="center steps-header" style="padding-top: 0px;">
+					<h2>Testimonios</h2>
+				</div>
 
 				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
               <!-- Wrapper for slides -->
@@ -463,7 +468,7 @@
 														<p>Es increible!!! en 5 minutos puedo tramitar un credito, es accesible rapido y sencillo, no tengo que ir mas lejos de mi celular</p>
 													</div>
 												</div>
-												<p>Laura López, Directora de Finanzas INAPAM</span>
+												<p style="float:right;">Laura López, Directora de Finanzas INAPAM</span>
 											</div>
 
 										</div>
@@ -475,12 +480,12 @@
 														<p>Es increible!!! en 5 minutos puedo tramitar un credito, es accesible rapido y sencillo, no tengo que ir mas lejos de mi celular</p>
 													</div>
 												</div>
-												<p>Laura López, Directora de Finanzas INAPAM</p>
+												<p style="float:left; padding-left: 37px;">Laura López, Directora de Finanzas INAPAM</p>
 											</div>
 											<div class="col-md-3">
 
 												<div class="person-testimony">
-													<img class="testimonio-pic" src="img/profile.jpg" alt="">
+													<img class="testimonio-pic right-pic" src="img/profile.jpg" alt="">
 												</div>
 											</div>
 										</div>
@@ -518,7 +523,6 @@
 				</div> -->
 			</div>
 		</section>
-
 		<section id="preguntas-frecuentes">
 			<div class="container">
 
@@ -569,6 +573,7 @@
 			</div>
 		</section>
 
+
 	</div><!-- fin home -->
 
 
@@ -576,7 +581,7 @@
 		<div class="container">
 			<p>¿Necesitas un asesor? Contáctanos</p>
 			<p><a href="tel:5500000000"><i class="fa fa-volume-control-phone fa-2x" aria-hidden="true"></i> 55 0000 0000</a></p>
-			<p><a href="mailto:contact@vepormas.com"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i> contacto@consubanco.com</a></p>
+			<p><a href="mailto:contact@vepormas.com"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i> contacto@credenz.com</a></p>
 
 		</div>
 	</footer>
