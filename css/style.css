@@ -144,7 +144,7 @@ h5.status {
 
 .lead .title-status, .lead .lead-status {
   font-size: 3.4em;
-  color: #0F2765; }
+  color: #ec008c; }
 
 .lead span {
   font-size: 1.6em;
@@ -1463,7 +1463,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 1rem;
+  padding: 0;
   background-color: #ec008c;
   text-align: center; }
 
