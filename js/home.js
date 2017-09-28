@@ -421,7 +421,6 @@ function NumeroALetras(num) {
         phoneRegionCode: 'MX'
       });
       cargaEventosInputs(inputsSolicitud)
-      window.scrollTo(0,document.body.scrollHeight);
       // al ingresar el codigo SMS recibido, si se escribe un numero paso enseguida al siguiente input para una facil captura del codigo
       var indexInputCode = 0;
       $(".code-input").bind('keyup', function() {
