@@ -1,0 +1,427 @@
+.panel-heading a{
+  display: none;
+}
+
+.panel-default {
+  border: 0;
+}
+
+.panel-default>.panel-heading {
+    background-color: transparent;
+    border:0;
+    text-align: center;
+}
+
+.panel-default>.panel-heading+.panel-collapse>.panel-body {
+    border: 0;
+}
+
+.panel.section-panel {
+  margin-top: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 9px 0;
+
+  border-radius: 16px;
+}
+
+.panel.section-panel img {
+  padding: 15px 0;
+  margin: 0 auto;
+}
+
+span.mobile-only {
+  font-size: 20px;
+    line-height: 24px;
+}
+
+a[aria-expanded="false"] + span{
+  display: none;
+}
+
+.swiper-slide .panel {
+  background: #fff;
+}
+
+.swiper-slide .panel p {
+  margin: 7px 0 0 0;
+
+}
+
+.credit-proposals-wrapper .panel .panel-header span {
+	display: block;
+	margin: 8px 0;
+}
+
+.credit-proposals-wrapper img {
+	width: 13%;
+}
+
+.credit-proposals-wrapper .panel {
+	border-radius: 18px;
+}
+
+.credit-proposals-wrapper .panel .panel-header {
+	border-radius: 15px;
+	color: #fff;
+	text-align: center;
+	background-color: #333;
+	padding: 15px;
+}
+
+#credit-proposals ul {
+	list-style-type: none;
+}
+
+.credit-proposals-wrapper .panel.active .panel-header {
+	background-color: $blue-1;
+}
+
+.credit-proposals-wrapper .panel.panel-red .panel-header {
+	background-color: $red-bg;
+}
+
+.credit-proposals-wrapper .panel.panel-green .panel-header {
+	background-color: $green-bg;
+}
+
+.credit-proposals-wrapper .panel.panel-dark .panel-header {
+	background-color: $dark-bg;
+}
+
+.credit-proposals-wrapper .panel .panel-body .list-title {
+	font-weight: 800;
+	font-size: 16px;
+}
+
+.credit-proposals-wrapper .panel .panel-body .list-item {
+	color: $blue-1;
+	font-weight: 500;
+  line-height: 20px
+}
+
+.credit-proposals-wrapper .panel .panel-body .list-item-percentage {
+  display: block;
+}
+
+.home .panel-heading {
+  border-bottom: 1px solid #ddd;
+}
+
+.home .panel-heading a {
+  float: right;
+  color: $blue-1;
+}
+
+.dummy-document {
+  height: 300px;
+  background-color: #ddd;
+  border-radius: 8px;
+}
+
+.dummy-document i {
+  color: white;
+  padding: 40%;
+}
+
+.doc-info {
+  padding: 20px 0px 3px 0;
+  box-shadow: 0 2px 5px 0;
+  margin: 12px 0;
+  text-align: center;
+  background-color: #fff;
+}
+
+.doc-info i{
+  color: $red-bg;
+}
+
+.doc-name {
+  font-weight: 600;
+  margin: 14px 0 0 0;
+  color: $blue-1;
+}
+
+.doc-date {
+  font-size: 12px;
+  font-style: italic;
+  color: #ddd;
+}
+
+.testimonio-pic {
+  height: 80px;
+    position: relative;
+    /* margin: 0 auto; */
+    /* border-radius: 50%; */
+    padding: 0 !important;
+    top: 37px;
+    /* left: 20%; */
+}
+
+.btn-oferta-list {
+  margin-top: 12px;
+  display: block;
+}
+.pin {
+  color: #fff;
+}
+
+.pin img {
+  height: 68px;
+}
+
+#optionsIdPhoto label {
+  display: block;
+}
+
+.only-desktop {
+  display: none;
+}
+
+.contratos {
+  min-height: 162px;
+}
+
+.icon-contratos img{
+  height: 100px !important;
+  min-height: 160px !important;
+}
+
+#frente-reverso label {
+  display: block;
+}
+
+/* CSS talk bubble */
+.talk-bubble {
+	margin: 40px;
+  display: inline-block;
+  position: relative;
+	width: 90%;
+	height: auto;
+	background-color: #5b5098;
+  color: #fff;
+}
+.border{
+  border: 8px solid #666;
+}
+.round{
+  border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+
+}
+
+/* Right triangle placed top left flush. */
+.tri-right.border.left-top:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: -40px;
+	right: auto;
+  top: -8px;
+	bottom: auto;
+	border: 32px solid;
+	border-color: #666 transparent transparent transparent;
+}
+.tri-right.left-top:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: -20px;
+	right: auto;
+  top: 0px;
+	bottom: auto;
+	border: 22px solid;
+	border-color: #5b5098 transparent transparent transparent;
+}
+
+/* Right triangle, left side slightly down */
+.tri-right.border.left-in:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: -40px;
+	right: auto;
+  top: 30px;
+	bottom: auto;
+	border: 20px solid;
+	border-color: #666 #666 transparent transparent;
+}
+.tri-right.left-in:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: -20px;
+	right: auto;
+  top: 38px;
+	bottom: auto;
+	border: 12px solid;
+	border-color: #5b5098 #5b5098 transparent transparent;
+}
+
+/*Right triangle, placed bottom left side slightly in*/
+.tri-right.border.btm-left:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: -8px;
+  right: auto;
+  top: auto;
+	bottom: -40px;
+	border: 32px solid;
+	border-color: transparent transparent transparent #666;
+}
+.tri-right.btm-left:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 0px;
+  right: auto;
+  top: auto;
+	bottom: -20px;
+	border: 22px solid;
+	border-color: transparent transparent transparent #5b5098;
+}
+
+/*Right triangle, placed bottom left side slightly in*/
+.tri-right.border.btm-left-in:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 30px;
+  right: auto;
+  top: auto;
+	bottom: -40px;
+	border: 20px solid;
+	border-color: #666 transparent transparent #666;
+}
+.tri-right.btm-left-in:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 38px;
+  right: auto;
+  top: auto;
+	bottom: -20px;
+	border: 12px solid;
+	border-color: #5b5098 transparent transparent #5b5098;
+}
+
+/*Right triangle, placed bottom right side slightly in*/
+.tri-right.border.btm-right-in:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: 30px;
+	bottom: -40px;
+	border: 20px solid;
+	border-color: #666 #666 transparent transparent;
+}
+.tri-right.btm-right-in:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: 38px;
+	bottom: -20px;
+	border: 12px solid;
+	border-color: #5b5098 #5b5098 transparent transparent;
+}
+
+/*Right triangle, placed bottom right side slightly in*/
+.tri-right.border.btm-right:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: -8px;
+	bottom: -40px;
+	border: 20px solid;
+	border-color: #666 #666 transparent transparent;
+}
+.tri-right.btm-right:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: 0px;
+	bottom: -20px;
+	border: 12px solid;
+	border-color: #5b5098 #5b5098 transparent transparent;
+}
+
+/* Right triangle, right side slightly down*/
+.tri-right.border.right-in:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: -40px;
+  top: 30px;
+	bottom: auto;
+	border: 20px solid;
+	border-color: #666 transparent transparent #666;
+}
+.tri-right.right-in:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: -20px;
+  top: 38px;
+	bottom: auto;
+	border: 12px solid;
+	border-color: #5b5098 transparent transparent #5b5098;
+}
+
+/* Right triangle placed top right flush. */
+.tri-right.border.right-top:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: -40px;
+  top: -8px;
+	bottom: auto;
+	border: 32px solid;
+	border-color: #666 transparent transparent transparent;
+}
+.tri-right.right-top:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: -20px;
+  top: 0px;
+	bottom: auto;
+	border: 20px solid;
+	border-color: #5b5098 transparent transparent transparent;
+}
+
+/* talk bubble contents */
+.talktext{
+  padding: 1em;
+	text-align: left;
+  line-height: 1.5em;
+}
+.talktext p{
+  /* remove webkit p margins */
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}

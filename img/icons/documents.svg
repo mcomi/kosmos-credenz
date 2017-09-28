@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="56px" viewBox="0 0 48 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>documents</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="home0" transform="translate(-429.000000, -2244.000000)" fill-rule="nonzero" fill="#0865CA">
+            <g id="section-steps" transform="translate(77.000000, 1976.000000)">
+                <g id="Group-9" transform="translate(270.000000, 268.000000)">
+                    <g id="documents" transform="translate(82.000000, 0.000000)">
+                        <path d="M43,0 L13,0 C10.554,0 8.521,1.768 8.092,4.092 C6.064,4.467 4.467,6.064 4.092,8.092 C1.768,8.521 0,10.554 0,13 L0,51 C0,53.757 2.243,56 5,56 L35,56 C37.446,56 39.479,54.232 39.908,51.908 C41.936,51.533 43.533,49.936 43.908,47.908 C46.232,47.479 48,45.446 48,43 L48,5 C48,2.243 45.757,0 43,0 Z M38,51 C38,52.654 36.654,54 35,54 L5,54 C3.346,54 2,52.654 2,51 L2,13 C2,11.346 3.346,10 5,10 L35,10 C36.654,10 38,11.346 38,13 L38,51 Z M42,47 C42,48.302 41.161,49.402 40,49.816 L40,13 C40,10.243 37.757,8 35,8 L6.184,8 C6.598,6.839 7.698,6 9,6 L39,6 C40.654,6 42,7.346 42,9 L42,47 Z M46,43 C46,44.302 45.161,45.402 44,45.816 L44,9 C44,6.243 41.757,4 39,4 L10.184,4 C10.598,2.839 11.698,2 13,2 L43,2 C44.654,2 46,3.346 46,5 L46,43 Z" id="Shape"></path>
+                        <path d="M16,22 L8,22 L8,14 L14,14 L14,12 L7,12 C6.448,12 6,12.447 6,13 L6,23 C6,23.553 6.448,24 7,24 L17,24 C17.552,24 18,23.553 18,23 L18,18 L16,18 L16,22 Z" id="Shape"></path>
+                        <path d="M10.707,30.293 L9.293,31.707 L11.293,33.707 C11.488,33.902 11.744,34 12,34 C12.256,34 12.512,33.902 12.707,33.707 L17.707,28.707 L16.293,27.293 L12,31.586 L10.707,30.293 Z" id="Shape"></path>
+                        <path d="M16,36 L8,36 L8,28 L14,28 L14,26 L7,26 C6.448,26 6,26.447 6,27 L6,37 C6,37.553 6.448,38 7,38 L17,38 C17.552,38 18,37.553 18,37 L18,32 L16,32 L16,36 Z" id="Shape"></path>
+                        <path d="M16,50 L8,50 L8,42 L14,42 L14,40 L7,40 C6.448,40 6,40.447 6,41 L6,51 C6,51.553 6.448,52 7,52 L17,52 C17.552,52 18,51.553 18,51 L18,46 L16,46 L16,50 Z" id="Shape"></path>
+                        <rect id="Rectangle-path" x="20" y="13" width="14" height="2"></rect>
+                        <rect id="Rectangle-path" x="20" y="17" width="14" height="2"></rect>
+                        <rect id="Rectangle-path" x="20" y="21" width="14" height="2"></rect>
+                        <rect id="Rectangle-path" x="20" y="27" width="14" height="2"></rect>
+                        <rect id="Rectangle-path" x="20" y="31" width="14" height="2"></rect>
+                        <rect id="Rectangle-path" x="20" y="35" width="14" height="2"></rect>
+                        <rect id="Rectangle-path" x="20" y="41" width="14" height="2"></rect>
+                        <rect id="Rectangle-path" x="20" y="45" width="14" height="2"></rect>
+                        <rect id="Rectangle-path" x="20" y="49" width="14" height="2"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

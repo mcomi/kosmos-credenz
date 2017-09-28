@@ -1,0 +1,250 @@
+@import 'partials/variables';
+@import 'partials/background';
+@import 'partials/fonts';
+@import 'partials/nav';
+@import 'partials/side_menu';
+@import 'partials/icons';
+@import 'partials/forms';
+@import 'partials/buttons';
+@import 'partials/panels';
+@import 'partials/slider';
+@import 'partials/loader';
+@import 'partials/editable';
+@import 'partials/lists';
+@import 'partials/tables';
+@import 'partials/modal';
+@import 'partials/progress-wizard';
+
+body {
+	background-color: #fff;
+	font-family: 'Raleway', sans-serif;
+	color: #2B3B46;
+	position: relative;
+	margin: 0;
+	padding-bottom: 7rem;
+	min-height: 100%;
+}
+
+.home, .form {
+	padding-top: 80px;
+	padding-bottom: 10rem;
+}
+
+.status {
+	padding-top: 80px;
+	padding-bottom: 20rem;
+
+}
+
+.container {
+	padding-top: 30px;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: $header-bg;
+  text-align: center;
+}
+
+.center {
+	text-align: center;
+}
+
+.nav-btn-back {
+	color: $blue-1;
+	font-size: 1.2em;
+}
+
+.nav-btn-back i {
+	padding-right: 6px;
+	font-size: 1.3em;
+	font-weight: 100;
+}
+
+.add-on input {
+	text-align: center;
+	width: 100%;
+}
+
+.add-on .input-group-btn {
+	position: absolute;
+}
+
+.add-on .btn-default {
+	border-color: transparent !important;
+}
+
+.add-on .btn-default:hover {
+	background-color: #fff;
+	cursor: pointer;
+}
+
+.add-on .input-group-btn.left {
+	top: 4px;
+	border: 0;
+	left: 0;
+	z-index: 4;
+}
+
+.add-on .input-group-btn.left i {
+	color: red;
+}
+
+.add-on .input-group-btn.right i {
+	color: $blue-1;
+}
+
+.add-on .input-group-btn.right {
+	top: 4px;
+	border: 0;
+	right: 35px !important;
+	z-index: 4;
+}
+/* stop the glowing blue shadow */
+.add-on .form-control:focus {
+	border-color: #cccccc;
+}
+
+.form-control[disabled],
+.form-control[readonly] {
+	background-color: #fff;
+}
+
+.credit-proposals-wrapper {
+	padding-top: 25px;
+}
+
+#pre-autorizacion p {
+	margin: 32px 0;
+}
+
+.img-title {
+	padding-top: 25px;
+}
+
+.folio-aut {
+	padding-bottom: 25px;
+}
+
+.folio-aut img {
+	padding-left: 10px;
+}
+
+.denegado .title-section {
+	padding-bottom: 64px;
+}
+
+.dropzone {
+	border: 1px dashed $blue-1;
+	min-height: 100px;
+	border-radius: 8px;
+}
+
+.dropzone .dz-message span i {
+	position: absolute;
+	top: 10px;
+	right: 23px;
+	font-size: 2em;
+	color: $blue-1;
+}
+
+.profile-pic {
+	height: 80px;
+	position: absolute;
+	margin: 0 auto;
+	border-radius: 50%;
+	padding: 0 !important;
+	top:-50px;
+	left: 35%;
+}
+
+#photo-label {
+	position: absolute;
+  right: 30px;
+  top: -2px;
+}
+
+.modal {
+	margin: 0 auto;
+}
+
+.padding-top {
+	padding-top: 40px;
+}
+
+.menu_credit_type .col-xs-6 {
+  min-height: 120px;
+}
+
+.footer p {
+	color: #fff;
+}
+
+.footer a:hover {
+	color: $blue-1;
+}
+
+.testimonios {
+	background: $header-bg;
+	min-height: 450px;
+	padding: 50px 20px;
+	margin-top: 30px;
+}
+
+.steps-info img {
+	margin: 0 auto;
+}
+
+#cel-credit {
+	height: 400px;
+    padding-top: 100px;
+    background-image: url(../img/cel-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 400px;
+}
+#map {
+    width: 100%;
+    height: 400px;
+}
+.controls {
+    margin-top: 10px;
+    border: 1px solid transparent;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 32px;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+#searchInput {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 50%;
+}
+#searchInput:focus {
+    border-color: #4d90fe;
+}
+
+#pasos-credito {
+	background: #efefef;
+	padding-bottom: 20px;
+}
+
+.step {
+	background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+	margin: 0 -8px;
+}
+/* importamos responsive al final */
+@import 'partials/responsive';

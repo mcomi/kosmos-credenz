@@ -1,0 +1,120 @@
+.btn-form {
+  color: white;
+  background-color: $blue-1;
+  padding: 2px 43px;
+}
+
+.btns-section {
+  width: 50%;
+}
+
+.padding-btns {
+  padding: 15px;
+}
+
+.btn-blue-outline {
+  background: #fff;
+  color: $blue-1;
+  border: 1px solid $blue-1;
+}
+
+.btn-red-outline {
+  background: #fff;
+  color: $red-bg;
+  border: 1px solid $red-bg;
+}
+
+.btn-grey {
+  background-color: #ddd;
+}
+
+a {
+  border: 0;
+  -webkit-appearance: none;
+  color: #ddd;
+}
+
+a:focus,
+a:hover {
+  color: transparent;
+  -webkit-appearance: none;
+  text-decoration: none;
+}
+
+a:focus .doc-info,
+a:hover .doc-info {
+  border: 1px solid $blue-1;
+}
+
+.btn .caret {
+  margin-left: 0;
+  margin-top: 7px;
+}
+
+.btn-group {
+  margin: 10px;
+}
+
+.btn-group .btn-default {
+  border: 0;
+}
+
+.btn-group .btn-default:hover {
+  color: $blue-1;
+  background-color: #fff;
+}
+
+.btn-default.active.focus,
+.btn-default.active:focus,
+.btn-default.active:hover,
+.btn-default:active.focus,
+.btn-default:active:focus,
+.btn-default:active:hover,
+.open > .dropdown-toggle.btn-default.focus,
+.open > .dropdown-toggle.btn-default:focus,
+.open > .dropdown-toggle.btn-default:hover {
+  color: $red-bg;
+  background-color: #fff;
+  border: 0;
+}
+
+#btn-solicita-credito-fixed {
+  position: fixed;
+  top: 14%;
+  right: 2%;
+  border: 1px solid $blue-1;
+  padding: 8px 20px;
+  border-radius: 24px;
+  background: transparent;
+  color: $blue-1;
+  z-index: 20;
+}
+
+#btn-solicita-credito-fixed:hover {
+  color: #fff;
+  background: $blue-1;
+}
+
+#btn-consulta-estatus {
+  padding-top: 20px;
+}
+
+.controls .left {
+  position: absolute;
+  left: -12%;
+  top: 56%;
+  background: transparent;
+  border: 0;
+  font-size: 23px;
+  color: #fff;
+}
+
+.controls .right {
+  position: absolute;
+  right: -12% !important;
+  top: 56%;
+  background: transparent;
+  border: 0;
+  font-size: 23px;
+  color: #fff;
+}

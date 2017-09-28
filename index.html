@@ -1,0 +1,608 @@
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="bx+ using webpack and bootstrap">
+	<meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1, maximum-scale=1">
+
+	<title>Consubanco - Solicita tu Crédito</title>
+
+	<!-- Disable tap highlight on IE -->
+	<meta name="msapplication-tap-highlight" content="no">
+
+	<!-- Web Application Manifest -->
+	<link rel="manifest" href="manifest.json">
+
+	<!-- Add to homescreen for Chrome on Android -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="application-name" content="bx+">
+	<link rel="icon" sizes="192x192" href="/img/chrome-touch-icon-192x192.png">
+
+	<!-- Add to homescreen for Safari on iOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="bx+">
+	<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.1.1/min/dropzone.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/css/bootstrap-editable.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.1/css/bootstrap-slider.min.css" />
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Tile icon for Win8 (144x144 + tile color) -->
+	<meta name="msapplication-TileImage" content="/img/ms-touch-icon-144x144-precomposed.png">
+	<meta name="msapplication-TileColor" content="#263238">
+
+	<!-- Color the status bar on mobile devices -->
+	<meta name="theme-color" content="#263238">
+	<!--Start of Zendesk Chat Script-->
+	<script type="text/javascript">
+	window.$zopim||(function(d,s){var z=$zopim=function(c){
+	z._.push(c)},$=z.s=
+	d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+	_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+	$.src='https://v2.zopim.com/?3yzgriahgDDeSaTbggkQTjm0lYtBrfvG';z.t=+new Date;$.
+	type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+	</script>
+	<!--End of Zendesk Chat Script-->
+</head>
+
+<body>
+	<div class="mobile-wrapper"></div>
+
+	<nav id="menu-mobile">
+		<span class="open-menu">
+			<button class="btn">
+				<i class="fa fa-sort-up"></i>
+			</button>
+		</span>
+		<div class="sidebar-header">
+			<span class="text-right"><a href="#" id="nav-close">X</a></span>
+			<div class="sidebar-header-logo">
+
+				<img src="img/logo.png" alt="">
+			</div>
+
+		</div>
+		<ul class="list-unstyled main-menu">
+
+			<!--Include your navigation here-->
+
+			<li><a href="analiticas.html"><span class="icon"><img src="img/icons/nomina.svg" alt=""></span><span class="menu-text">Crédito nómina </span></a></li>
+			<li><a href="index.html"><span class="icon"><img src="img/icons/url.svg" alt=""></span><span class="menu-text">Url de acceso </span></a></li>
+			<li><a href="simulador.html"><span class="icon"><img src="img/icons/steps_credit.svg" alt=""></span><span class="menu-text">Pasos para crédito </span></a></li>
+			<li><a href="analiticas.html"><span class="icon"><img src="img/icons/testimonies.svg" alt=""></span><span class="menu-text">Testimonios </span></a></li>
+			<li><a href="index.html"><span class="icon"><img src="img/icons/faq.svg"  alt=""></span><span class="menu-text">Preguntas frecuentes </span></a></li>
+		</ul>
+	</nav>
+	<!-- <div class="navbar navbar-inverse navbar-fixed-top">
+
+
+</div> -->
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">
+      	<img src="img/logo.png" alt="">
+      </a>
+				<span id="nav-expander" class="nav-expander fixed">
+				<img src="img/icons/menu.png" alt="">
+			</span>
+			</div>
+			<ul id="desktop-menu" class="nav navbar-nav">
+				<li>
+					<span><img src="img/icons/nomina.svg" alt=""></span>
+					<a href="#cotizador">Crédito nómina</a>
+				</li>
+				<li>
+					<span><img src="img/icons/url.svg" alt=""></span>
+					<a href="#contacto">Url de acceso</a>
+				</li>
+				<li>
+					<span><img src="img/icons/steps_credit.svg" alt=""></span>
+					<a href="#pasos-credito">Pasos para crédito</a>
+				</li>
+				<li>
+					<span><img src="img/icons/testimonies.svg" alt=""></span>
+					<a href="#testimonios">Testimonios</a>
+				</li>
+				<li>
+					<span><img src="img/icons/faq.svg" alt=""></span>
+					<a href="#preguntas-frecuentes">Preguntas frecuentes</a>
+				</li>
+
+			</ul>
+
+		</div>
+		<!-- /.container-fluid -->
+	</div>
+
+	<div class="row">
+		<img src="img/circle.png" alt="" class="left-oval-desktop">
+		<img src="img/oval-level_2-1.svg" alt="" class="right-oval-desktop">
+		<a href="identificacion.html" id="btn-solicita-credito-fixed" class="btn btn-outline">Solicita tu Crédito</a>
+	</div>
+
+	<div class="home">
+		<section id="cotizador" class="container">
+			<div class="row center">
+				<div class="menu_credit_type col-xs-12 col-md-6 col-md-offset-3">
+					<h4>Bienvenido al cotizador de crédito nómina</h4>
+					<h1 class="big-title">CREDENZ</h1>
+					<span class="action">¡¡Obtén tu dinero en 24 horas!!</span>
+				</div>
+			</div>
+			<div class="row center padding-top" id="step1-credit">
+				<div class="col-xs-12 col-md-10 col-md-offset-1">
+					<p>Para iniciar cuentanos tu depencia  el monto que necesitas y algunos datos</p>
+					<div class="menu_credit_type col-xs-12 col-md-10 col-md-offset-2">
+						<div class="col-xs-6 col-md-2">
+							<input type="radio" value="pemex" id="pemex" name="dependencia">
+							<label for="pemex">
+								<div class="icon-item">
+									<img src="img/icons/sep.png" alt="">
+								</div>
+							</label>
+							<p class="credit-text">SEP</p>
+						</div>
+						<div class="col-xs-6 col-md-2">
+							<input type="radio" value="ssap" id="ssap" name="dependencia">
+							<label for="ssap">
+								<div class="icon-item">
+									<img src="img/icons/pensionados.svg" alt="">
+								</div>
+							</label>
+							<p class="credit-text">Jubilados y Pensionados</p>
+						</div>
+						<div class="col-xs-6 col-md-2">
+							<input type="radio" value="ssah" id="ssah" name="dependencia">
+							<label for="ssah">
+								<div class="icon-item">
+									<img src="img/icons/pemex.svg" alt="">
+								</div>
+							</label>
+							<p class="credit-text">PEMEX</p>
+						</div>
+						<div class="col-xs-6 col-md-2">
+							<input type="radio" value="gob_quer" id="gob_quer" name="dependencia">
+							<label for="gob_quer">
+								<div class="icon-item">
+									<img src="img/icons/imss.svg" alt="">
+								</div>
+							</label>
+							<p class="credit-text">IMSS</p>
+						</div>
+						<div class="col-xs-6 col-md-2">
+							<input type="radio" value="otra" id="otra" name="dependencia">
+							<label for="otra">
+								<div class="icon-item">
+									<img src="img/icons/otros.png" alt="">
+								</div>
+							</label>
+							<p class="credit-text">OTRO</p>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+
+			<div class="row">
+				<div id="otraDependencia" class="form-group col-xs-12 col-md-6 col-md-offset-3 padding-dekstop-col hidden">
+					<label for="dependencia">Ingresa tu dependencia</label>
+					<input type="text" class="form-control validate" id="dependencia" placeholder="">
+					<span class="input-success"></span>
+					<span class="input-error"></span>
+				</div>
+				<div class="form-group col-xs-12 col-md-5 col-md-offset-3 padding-dekstop-col">
+					<label for="percepciones">Percepciones libres
+						<i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Tooltip on right"></i>
+					</label>
+					<input type="tel" class="form-control validate input-number" id="percepciones" placeholder="">
+					<span class="input-success"></span>
+					<span class="input-error"></span>
+				</div>
+				<div class="col-xs-12 col-md-offset-3 padding-dekstop-col">
+					<button id="btnSolicitarOfertas" class="btn btn-form">Solicitar</button>
+				</div>
+			</div>
+
+			<div id="loader-ofertas-credito" class="row hidden">
+				<div class="sk-folding-cube">
+					<div class="sk-cube1 sk-cube"></div>
+					<div class="sk-cube2 sk-cube"></div>
+					<div class="sk-cube4 sk-cube"></div>
+					<div class="sk-cube3 sk-cube"></div>
+
+				</div>
+				<div class="center">
+					<span>Generando opciones de crédito</span>
+				</div>
+			</div>
+
+			<div id="ofertas-credito" class="hidden">
+
+				<h2 class="center">Tus opciones de crédito</h2>
+
+				<div class="row">
+					<div class="col-xs-12 col-md-4 col-md-offset-4 center">
+						<div class="panel panel-border section-panel">
+							<div class="panel-heading">
+								<h6>La oferta más solicitada
+									<div class="pin">
+										<img src="img/icons/personal_credit_white.png" alt="">
+									</div>
+								</h6>
+							</div>
+							<div class="panel-body">
+								<div class="col-md-12">
+									<h3 class="oferta-principal">Préstamo</h3>
+									<div id="cambia-monto-oferta" class="hidden">
+										<p>Puedes escribir el monto o mover la barra a la cantidad deseada</p>
+										<input id="input-monto" type="text" class="form-control">
+										<span class="input-error"></span>
+										<div style="padding: 30px;">
+
+											<input id="slider-monto" type="text" />
+										</div>
+									</div>
+									<p id="monto-opcion-credito" class="item-oferta-principal" class="first-column">$30,000</p>
+									<h3 class="oferta-principal">Período</h3>
+									<div id="cambia-periodo-oferta" class="hidden">
+										<div class="form-group col-xs-12 padding-dekstop-col">
+											<select class="form-control" id="periodo" placeholder="">
+											<option value="22">22 meses</option>
+											<option value="20">20 meses</option>
+											<option value="18">18 meses</option>
+											<option value="16">16 meses</option>
+											<option value="14">14 meses</option>
+											<option value="12">12 meses</option>
+										</select>
+										</div>
+									</div>
+									<p id="periodo-opcion-credito" class="item-oferta-principal">22 meses</p>
+									<h3 class="oferta-principal">Descuento</h3>
+									<p id="monto-quincena" class="item-quincena">$177.14</p>
+									<button class="btn btn-form choose-credit">Elegir</button>
+								</div>
+							</div>
+
+							<div><button id="btn-mas-ofertas" class="btn-link">Modificar oferta</button></div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12 col-md-11 col-md-offset-1">
+					<div id="form-cotizador"></div>
+					<div id="propuestas-cotizador"></div>
+				</div>
+			</div>
+
+
+		</section>
+
+		<section class="hidden" id="datos-basicos">
+			<div class="row">
+
+				<div class="col-xs-12 col-md-12 center">
+					<p>Necesitamos algunos datos para continuar tu solicitud</p>
+				</div>
+
+				<div class="col-xs-12">
+					<div class="form-group col-xs-12 col-md-4 col-md-offset-2 padding-dekstop-col">
+						<label for="nombre">Nombre</label>
+						<input type="text" class="form-control validate" id="nombre" placeholder="">
+						<span class="input-success"></span>
+						<span class="input-error"></span>
+					</div>
+					<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+						<label for="celular">Celular</label>
+						<input type="tel" class="form-control validate" id="celular" placeholder="">
+						<span class="input-success"></span>
+						<span class="input-error"></span>
+					</div>
+				</div>
+				<div class="col-xs-12">
+					<div class="form-group col-xs-12 col-md-4 col-md-offset-2 padding-dekstop-col">
+						<label for="email">Correo electrónico</label>
+						<input type="tel" class="form-control validate" id="email" placeholder="">
+						<span class="input-success"></span>
+						<span class="input-error"></span>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="row">
+				<div id="loader-phone-message" class="row hidden">
+					<div class="sk-folding-cube">
+						<div class="sk-cube1 sk-cube"></div>
+						<div class="sk-cube2 sk-cube"></div>
+						<div class="sk-cube4 sk-cube"></div>
+						<div class="sk-cube3 sk-cube"></div>
+
+					</div>
+					<div class="center">
+						<span>Enviando mensaje SMS</span>
+					</div>
+				</div>
+				<div class="col-xs-12 alert-div">
+
+					<div id="phone-message-alert" class="alert alert-info alert-dismissible hidden" role="alert">
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<i class="fa fa-info-circle"></i> Hemos enviado un código SMS a tu celular, si no lo recibes en 15 segundos, puede que el número ingresado no este correcto
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-12 code-submit">
+					<h1 class="title-section">Ingresar código SMS</h1>
+					<input type="tel" class="code-input" maxlength="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+					<input type="tel" class="code-input" maxlength="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+					<input type="tel" class="code-input" maxlength="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+					<input type="tel" class="code-input" maxlength="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+					<input type="tel" class="code-input" maxlength="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+				</div>
+			</div>
+			<div class="row">
+
+				<div class="col-xs-12 center">
+					<a id="btnContinuarSolicitud" href="solicitud.html" class="btn btn-form hidden">Solicitar</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="container" id="cel-credit">
+			<div class="row center">
+				<div class="col-xs-12">
+					<div class="type-wrap col-md-8 col-md-offset-2">
+							<div id="typed-strings" class="lead">
+								<span>Si ya solicitaste el crédito, puedes <br>consultar el estatus ingresando tu celular</span>
+							</div>
+							<span id="typed" style="white-space:pre;"></span>
+					</div>
+
+
+					<!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> -->
+				</div>
+				<div class="col-xs-12 col-md-4 col-md-offset-4">
+					<input id="celular-check" type="text" class="check-status" placeholder="55 1234 5678">
+
+				</div>
+				<div id="celular-valido" class="col-xs-12 hidden">
+					<p>Ingresa un número de celular válido</p>
+
+				</div>
+				<div id="btn-consulta-estatus" class="col-xs-12 hidden">
+					<a href="status.html" class="btn btn-form">Consultar</a>
+
+				</div>
+
+			</div>
+		</section>
+
+		<section id="pasos-credito" class="row">
+			<div class="container">
+
+				<div class="center steps-header">
+					<h2>PASOS PARA MÍ CRÉDITO</h2>
+					<span>Tu solicitud de crédito en minutos, es muy fácil</span>
+				</div>
+				<div class="row steps-info center">
+					<div class="col-xs-12 col-md-2 col-md-offset-1">
+						<div class="step">
+
+							<img src="img/icons/responsive.svg" alt="">
+							<h5 class="steps-title">Registrate</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-2">
+						<div class="step">
+
+							<img src="img/icons/documents.svg" alt="">
+							<h5 class="steps-title">Elige tu crédito</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-2">
+						<div class="step">
+
+							<img src="img/icons/tax.svg" alt="">
+							<h5 class="steps-title">Firma contratos</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-2">
+						<div class="step">
+
+							<img src="img/icons/mail.svg" alt="">
+							<h5 class="steps-title">Envía contratos</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-2">
+						<div class="step">
+
+							<img src="img/icons/money_1.svg" alt="">
+							<h5 class="steps-title">Recibe tu dinero</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="testimonios" id="testimonios">
+			<div class="container">
+
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+
+                  <div class="row" style="padding: 20px">
+										<div class="col-xs-12 col-md-6">
+											<div class="col-md-3">
+
+												<div class="person-testimony">
+													<img class="testimonio-pic" src="img/profile.jpg" alt="">
+												</div>
+											</div>
+											<div class="col-md-9">
+
+												<div class="talk-bubble tri-right round left-in">
+													<div class="talktext">
+														<p>Es increible!!! en 5 minutos puedo tramitar un credito, es accesible rapido y sencillo, no tengo que ir mas lejos de mi celular</p>
+													</div>
+												</div>
+												<p>Laura López, Directora de Finanzas INAPAM</span>
+											</div>
+
+										</div>
+										<div class="col-xs-12 col-md-6">
+											<div class="col-md-9">
+
+												<div class="talk-bubble tri-right round right-in">
+													<div class="talktext">
+														<p>Es increible!!! en 5 minutos puedo tramitar un credito, es accesible rapido y sencillo, no tengo que ir mas lejos de mi celular</p>
+													</div>
+												</div>
+												<p>Laura López, Directora de Finanzas INAPAM</p>
+											</div>
+											<div class="col-md-3">
+
+												<div class="person-testimony">
+													<img class="testimonio-pic" src="img/profile.jpg" alt="">
+												</div>
+											</div>
+										</div>
+                  </div>
+                </div>
+
+              </div>
+							<!-- <div class="controls testimonial_control pull-right">
+								<a class="left fa fa-chevron-left btn btn-default testimonial_btn" href="#carousel-example-generic"
+								data-slide="prev"></a>
+
+								<a class="right fa fa-chevron-right btn btn-default testimonial_btn" href="#carousel-example-generic"
+								data-slide="next"></a> -->
+							</div>
+            </div>
+
+				<!-- <div class="center">
+					<div class="col-xs-12 col-md-4 col-md-offset-4">
+						<h2 class="light-title">Testimonios</h2>
+						<div class="panel panel-border section-panel">
+							<div class="panel-body">
+								<img class="testimonio-pic" src="img/profile.jpg" alt="">
+								<div class="person">
+									<img src="img/quotes.png" alt="">
+									<p>Laura López</p>
+									<span>Directora de Finanzas INAPAM</span>
+								</div>
+								<blockquote>
+									Es inceible!!! en 5 minutos puedo tramitar un credito, es accesible rapido y sencillo, no tengo que ir mas lejos de mi celular
+								</blockquote>
+							</div>
+						</div>
+					</div>
+
+				</div> -->
+			</div>
+		</section>
+
+		<section id="preguntas-frecuentes">
+			<div class="container">
+
+				<div class="row center">
+					<div class="col-xs-12 col-md-4 col-md-offset-4">
+						<h2 class="section-h">Preguntas frecuentes</h2>
+						<div class="questions">
+
+							<a role="button" data-toggle="collapse" href="#donde" aria-expanded="false" aria-controls="donde">
+								<p>¿Dónde puedo recoger mi crédito?</p>
+							</a>
+							<div class="collapse" id="donde">
+							  <div class="well">
+							    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure.
+							  </div>
+							</div>
+							<a role="button" data-toggle="collapse" href="#via-nomina" aria-expanded="false" aria-controls="via-nomina">
+								<p>¿El descuento es vía nómina?</p>
+							</a>
+							<div class="collapse" id="via-nomina">
+							  <div class="well">
+							    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure.
+							  </div>
+							</div>
+							<a role="button" data-toggle="collapse" href="#veces-credito" aria-expanded="false" aria-controls="veces-credito">
+								<p>¿Cuántas veces puedo solicitar el crédito?</p>
+							</a>
+							<div class="collapse" id="veces-credito">
+							  <div class="well">
+							    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure.
+							  </div>
+							</div>
+							<a role="button" data-toggle="collapse" href="#que-es-buro" aria-expanded="false" aria-controls="que-es-buro">
+								<p>¿Qué es un buró de crédito?</p>
+							</a>
+							<div class="collapse" id="que-es-buro">
+							  <div class="well">
+							    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure.
+							  </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</div><!-- fin home -->
+
+
+	<footer id="contacto" class="footer">
+		<div class="container">
+			<p>¿Necesitas un asesor? Contáctanos</p>
+			<p><a href="tel:5500000000"><i class="fa fa-volume-control-phone fa-2x" aria-hidden="true"></i> 55 0000 0000</a></p>
+			<p><a href="mailto:contact@vepormas.com"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i> contacto@consubanco.com</a></p>
+
+		</div>
+	</footer>
+
+
+
+	<script src="libs/jquery.js"></script>
+	<script src="libs/bootstrap.js"></script>
+	<script src="libs/jquery.navgoco.min.js"></script>
+	<script src="libs/bootstrap-datepicker.min.js"></script>
+	<script src="libs/bootstrap-datepicker.es.min.js"></script>
+	<script src="libs/bootstrap-editable.min.js"></script>
+	<script src="libs/bootstrap-slider.js"></script>
+	<script src="libs/cleave.min.js"></script>
+	<script src="libs/cleave-phone.mx.js"></script>
+	<script src="libs/swiper.min.js"></script>
+	<script src="libs/dropzone.min.js"></script>
+	<script src="libs/typed.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/locale/es.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+
+	<script src="js/index.js"></script>
+	<script src="js/home.js"></script>
+
+
+</body>
+
+</html>

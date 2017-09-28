@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="43px" height="62px" viewBox="0 0 43 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>oval-level_2-movil</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="43" height="63"></rect>
+    </defs>
+    <g id="dasboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="enviar-contratos" transform="translate(-317.000000, -326.000000)">
+            <g id="background" transform="translate(0.000000, 148.000000)">
+                <g id="oval-level_2-movil" transform="translate(317.000000, 177.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask"></g>
+                    <g id="oval-level_2" mask="url(#mask-2)">
+                        <g transform="translate(0.000000, 1.000000)" id="g-link">
+                            <g opacity="0.2">
+                                <path d="M46.2377379,-9.55104124e-14 C40.082299,-9.55104124e-14 31.288815,2.35025846 24.4938501,7.4504792 C12.3428539,16.5637263 0,31.2728268 0,31.2728268 C0,31.2728268 12.7905222,45.6621644 25.2932577,54.8073877 C31.8484003,59.6038336 40.3221213,61.9221157 46.2377379,61.9221157 C63.4409902,61.9221157 77.4146358,48.0603873 77.4146358,30.9530638 C77.4146358,13.8457403 63.4409902,-1.13686838e-13 46.2377379,-1.13686838e-13" id="g" fill="#061439" fill-rule="nonzero"></path>
+                            </g>
+                            <g>
+                                <path d="M46.2377379,-9.55104124e-14 C40.082299,-9.55104124e-14 31.288815,2.35025846 24.4938501,7.4504792 C12.3428539,16.5637263 0,31.2728268 0,31.2728268 C0,31.2728268 12.7905222,45.6621644 25.2932577,54.8073877 C31.8484003,59.6038336 40.3221213,61.9221157 46.2377379,61.9221157 C63.4409902,61.9221157 77.4146358,48.0603873 77.4146358,30.9530638 C77.4146358,13.8457403 63.4409902,-1.13686838e-13 46.2377379,-1.13686838e-13" id="g" fill="#153587" fill-rule="nonzero"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

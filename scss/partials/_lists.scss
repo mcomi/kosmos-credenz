@@ -1,0 +1,19 @@
+.verify-list {
+  font-size: 18px;
+  padding-bottom: 15px;
+  color: $blue-1;
+  text-transform: uppercase;
+  i {
+    float: right;
+  }
+  .fa-check-circle {
+    color: $blue-1;
+  }
+  .fa-times-circle {
+    color: $red-bg;
+  }
+  span {
+    float: right;
+    color: #2C82BE;
+  }
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="334px" height="547px" viewBox="0 0 334 547" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>oval-level_1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="336" height="558"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="envío-de-contratos" transform="translate(0.000000, -297.000000)">
+            <g id="background" transform="translate(-48.000000, 130.000000)">
+                <g id="oval-level_1" transform="translate(48.000000, 159.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask"></g>
+                    <g mask="url(#mask-2)" id="i-link">
+                        <g transform="translate(-391.000000, -8.000000)">
+                            <g opacity="0.2">
+                                <path d="M291.821322,0 C349.612685,0 431.895556,21.9850665 495.48754,69.8222794 C609.351565,155.39933 724.647842,293.038736 724.647842,293.038736 C724.647842,293.038736 604.553521,427.670413 487.681767,513.462301 C426.309774,558.578236 347.034632,580.062014 291.463259,580.062014 C130.692985,580.062014 0,450.22838 0,290.031007 C0,129.833633 130.621372,0 291.821322,0 Z" id="i" fill="#061439" fill-rule="nonzero"></path>
+                            </g>
+                            <g>
+                                <path d="M291.821322,0 C349.612685,0 431.895556,21.9850665 495.48754,69.8222794 C609.351565,155.39933 724.647842,293.038736 724.647842,293.038736 C724.647842,293.038736 604.553521,427.670413 487.681767,513.462301 C426.309774,558.578236 347.034632,580.062014 291.463259,580.062014 C130.692985,580.062014 0,450.22838 0,290.031007 C0,129.833633 130.621372,0 291.821322,0 Z" id="i" fill="#2154CF" fill-rule="nonzero"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="55px" height="90px" viewBox="0 0 55 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>oval-level_1-movil</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="60" height="90"></rect>
+    </defs>
+    <g id="dasboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="enviar-contratos" transform="translate(0.000000, -148.000000)">
+            <g id="background" transform="translate(0.000000, 148.000000)">
+                <g id="oval-level_1-movil">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask"></g>
+                    <g id="oval-level_1" mask="url(#mask-2)">
+                        <g transform="translate(-64.000000, -2.000000)" id="i-link">
+                            <g opacity="0.2">
+                                <path d="M47.9101232,0 C57.3980912,0 70.9069824,3.60942523 81.3472742,11.4631583 C100.04104,25.5128754 118.969948,48.1099937 118.969948,48.1099937 C118.969948,48.1099937 99.2533154,70.2133143 80.0657519,84.2983027 C69.9899297,91.7052665 56.9748361,95.2323922 47.8513378,95.2323922 C21.4566809,95.2323922 0,73.9167962 0,47.6161961 C0,21.3155959 21.4449239,0 47.9101232,0 Z" id="i" fill="#061439" fill-rule="nonzero"></path>
+                            </g>
+                            <g>
+                                <path d="M47.9101232,0 C57.3980912,0 70.9069824,3.60942523 81.3472742,11.4631583 C100.04104,25.5128754 118.969948,48.1099937 118.969948,48.1099937 C118.969948,48.1099937 99.2533154,70.2133143 80.0657519,84.2983027 C69.9899297,91.7052665 56.9748361,95.2323922 47.8513378,95.2323922 C21.4566809,95.2323922 0,73.9167962 0,47.6161961 C0,21.3155959 21.4449239,0 47.9101232,0 Z" id="i" fill="#2154CF" fill-rule="nonzero"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

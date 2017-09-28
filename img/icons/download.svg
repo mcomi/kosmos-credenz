@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="52px" viewBox="0 0 60 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>cloud-computing</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="contratos" transform="translate(-459.000000, -734.000000)" stroke-width="2">
+            <g id="Group-9" transform="translate(272.000000, 719.000000)">
+                <g id="Download" transform="translate(101.000000, 0.000000)">
+                    <g id="Group-6" transform="translate(15.000000, 15.000000)">
+                        <g id="cloud-computing" transform="translate(71.000000, 0.000000)">
+                            <path d="M50.003,17.5 C49.888,8.801 42.81,1.5 34.084,1.5 C28.525,1.5 23.305,4.505 20.423,8.836 C19.157,7.993 17.636,7.5 16,7.5 C11.582,7.5 8,11.082 8,15.5 C8,15.653 8.014,15.802 8.023,15.954 C8.013,16.136 8,16.32 8,16.5 C4.012,18.412 1,22.957 1,27.655 C1,34.17 6.33,39.5 12.845,39.5 L37.352,39.5 C37.49,39.5 37.624,39.484 37.76,39.479 C37.897,39.484 38.031,39.5 38.168,39.5 L47.971,39.5 C54.037,39.5 59,34.537 59,28.472 C59,23.101 55.106,18.461 50.003,17.5 Z" id="Shape" stroke="#7383BF" fill="#7FABDA" fill-rule="nonzero"></path>
+                            <path d="M50.003,17.5 C50.003,17.5 47.468,17.125 45,17.5" id="Shape" stroke="#7383BF" fill="#7FABDA" fill-rule="nonzero"></path>
+                            <path d="M8,15.5 C8,11.082 11.582,7.5 16,7.5 C20.418,7.5 24,11.082 24,15.5" id="Shape" stroke="#7383BF" fill="#7FABDA" fill-rule="nonzero"></path>
+                            <path d="M31,27.5 L31,50.5" id="Shape" stroke="#424A60"></path>
+                            <path d="M31,50.5 L23,42.5" id="Shape" stroke="#424A60"></path>
+                            <path d="M39,42.5 L31,50.5" id="Shape" stroke="#424A60"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

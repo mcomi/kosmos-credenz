@@ -1,0 +1,143 @@
+input[type=checkbox] {
+	visibility: hidden;
+}
+
+input[type=file],
+input[type=radio] {
+	display: none;
+}
+
+input:checked + label div {
+	border: 1px solid $blue-1;
+}
+
+input.valid {
+	border-bottom: 2px solid $blue-1;
+}
+
+input.invalid {
+	border-bottom: 2px solid $red-bg;
+}
+
+.code-submit {
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+.code-input {
+	outline: none;
+	background: #FFFFFF;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.11), inset 0 1px 3px 0 rgba(0,0,0,0.50);
+	border-radius: 8px;
+	width: 54px;
+	height: 54px;
+	font-size: 24px;
+	text-align: center;
+}
+
+.forma-solicitud .panel {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.checkboxForm {
+	width: 100%;
+	margin: 51px auto;
+	position: relative;
+
+	label {
+		cursor: pointer;
+		position: absolute;
+		width: 25px;
+		height: 25px;
+		top: 0;
+		left: 0;
+		background: #fff;
+		border: 1px solid $blue-1;
+
+		&:after {
+			opacity: 0.2;
+			content: '';
+			position: absolute;
+			width: 13px;
+			height: 7px;
+			background: transparent;
+			top: 7px;
+			left: 6px;
+			border: 2px solid $blue-1;
+			border-top: none;
+			border-right: none;
+			transform: rotate(-45deg);
+		}
+	}
+
+	span {
+		padding-left: 10px;
+	}
+}
+/**
+ * Create the hover event of the tick
+ */
+.checkboxForm label:hover::after {
+	opacity: 0.5;
+}
+/**
+ * Create the checkbox state for the tick
+ */
+.checkboxForm input[type=checkbox]:checked + label:after {
+	opacity: 1;
+}
+
+#detalles-solicitud .form-group {
+	margin-top: 0;
+}
+
+select.form-control {
+	display: inline-block;
+	border: 0;
+	box-shadow: 0 3px 4px #e8e8e8;
+}
+
+.filter-bar .form-group span {
+	display: inline-block;
+}
+
+.form-inline .form-group {
+	vertical-align: inherit;
+}
+
+.date-search {
+	margin: 0 20px;
+}
+
+input.check-status {
+	border: 0;
+	border-bottom: 1px solid $blue-1;
+	outline: none;
+	-webkit-appearance: none;
+	font-size: 2em;
+	text-align: center;
+	color: $blue-1;
+	width: 90%;
+}
+
+input.check-status::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+	color:    $blue-1;
+	opacity: 0.3;
+}
+input.check-status:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color:    $blue-1;
+	opacity: 0.3;
+}
+input.check-status::-moz-placeholder { /* Mozilla Firefox 19+ */
+	color:    $blue-1;
+	opacity: 0.3;
+}
+input.check-status:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color:    $blue-1;
+	opacity: 0.3;
+}
+input.check-status::-ms-input-placeholder { /* Microsoft Edge */
+	color:    $blue-1;
+	opacity: 0.3;
+}
