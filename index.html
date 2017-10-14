@@ -124,10 +124,10 @@
 	</div>
 
 	<div class="row">
-		<img src="img/circle-morado.png" alt="" class="left-oval-desktop">
-		<img src="img/circle-pink.png" alt="" class="left-oval-desktop down">
-		<img src="img/circle-verde.png" alt="" class="right-oval-desktop">
-		<img src="img/circle-amarillo.png" alt="" class="right-oval-desktop down">
+		<img src="img/circle-morado-1.png" alt="" class="left-oval-desktop">
+		<img src="img/circle-pink-1.png" alt="" class="left-oval-desktop down">
+		<img src="img/circle-verde-1.png" alt="" class="right-oval-desktop">
+		<img src="img/circle-amarillo-1.png" alt="" class="right-oval-desktop down">
 		<a href="identificacion.html" id="btn-solicita-credito-fixed" class="btn btn-outline">Solicita tu Crédito</a>
 	</div>
 
@@ -141,10 +141,48 @@
 				</div>
 			</div>
 			<div class="row center padding-top" id="step1-credit">
-				<div class="col-xs-12 col-md-10 col-md-offset-1">
+				<div class="col-xs-12 col-md-6 col-md-offset-3">
+					<label for="estado">¿En qúe Estado te encuentras?</label>
+					<select class="form-control validate" id="estado" placeholder="">
+						<option value="" selected>...</option>
+						<option value="1">Aguascalientes</option>
+						<option value="2">Baja California</option>
+						<option value="3">Baja California Sur</option>
+						<option value="4">Campeche</option>
+						<option value="5">Coahuila de Zaragoza</option>
+						<option value="6">Colima</option>
+						<option value="7">Chiapas</option>
+						<option value="8">Chihuahua</option>
+						<option value="9">Distrito Federal</option>
+						<option value="10">Durango</option>
+						<option value="11">Guanajuato</option>
+						<option value="12">Guerrero</option>
+						<option value="13">Hidalgo</option>
+						<option value="14">Jalisco</option>
+						<option value="15">México</option>
+						<option value="16">Michoacán de Ocampo</option>
+						<option value="17">Morelos</option>
+						<option value="18">Nayarit</option>
+						<option value="19">Nuevo León</option>
+						<option value="20">Oaxaca</option>
+						<option value="21">Puebla</option>
+						<option value="22">Querétaro</option>
+						<option value="23">Quintana Roo</option>
+						<option value="24">San Luis Potosí</option>
+						<option value="25">Sinaloa</option>
+						<option value="26">Sonora</option>
+						<option value="27">Tabasco</option>
+						<option value="28">Tamaulipas</option>
+						<option value="29">Tlaxcala</option>
+						<option value="30">Veracruz de Ignacio de la Llave</option>
+						<option value="31">Yucatán</option>
+						<option value="32">Zacatecas</option>
+					</select>
+				</div>
+				<div id="elige-dependencia" class="col-xs-12 col-md-10 col-md-offset-1 hidden padding-top">
 					<p>Para iniciar cuentanos tu depencia  el monto que necesitas y algunos datos</p>
-					<div class="menu_credit_type col-xs-12 col-md-10 col-md-offset-2">
-						<div class="col-xs-6 col-md-2">
+					<div id="opciones-dependencias" class="menu_credit_type col-xs-12 col-md-10 col-md-offset-2">
+						<div id="dependencia1" class="col-xs-6 col-md-2">
 							<input type="radio" value="pemex" id="pemex" name="dependencia">
 							<label for="pemex">
 								<div class="icon-item">
@@ -153,7 +191,7 @@
 							</label>
 							<p class="credit-text">SEP</p>
 						</div>
-						<div class="col-xs-6 col-md-2">
+						<div id="dependencia2" class="col-xs-6 col-md-2">
 							<input type="radio" value="ssap" id="ssap" name="dependencia">
 							<label for="ssap">
 								<div class="icon-item">
@@ -162,7 +200,7 @@
 							</label>
 							<p class="credit-text">Jubilados y Pensionados</p>
 						</div>
-						<div class="col-xs-6 col-md-2">
+						<div id="dependencia3" class="col-xs-6 col-md-2">
 							<input type="radio" value="ssah" id="ssah" name="dependencia">
 							<label for="ssah">
 								<div class="icon-item">
@@ -171,7 +209,7 @@
 							</label>
 							<p class="credit-text">PEMEX</p>
 						</div>
-						<div class="col-xs-6 col-md-2">
+						<div id="dependencia4" class="col-xs-6 col-md-2">
 							<input type="radio" value="gob_quer" id="gob_quer" name="dependencia">
 							<label for="gob_quer">
 								<div class="icon-item">
@@ -203,7 +241,7 @@
 					<span class="input-error"></span>
 				</div>
 				<div class="form-group col-xs-12 col-md-5 col-md-offset-3 padding-dekstop-col">
-					<label for="percepciones">Percepciones libres
+					<label for="percepciones" id="label-percepciones">Percepciones libres
 						<i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Tooltip on right"></i>
 					</label>
 					<input type="tel" class="form-control validate input-number" id="percepciones" placeholder="">
@@ -380,12 +418,12 @@
 					  </div>
 					  <button type="submit" class="btn btn-consulta">Consultar</button>
 					</form>
-					
+
 				</div>
 				<div id="celular-valido" class="col-xs-12 hidden">
 					<p>Ingresa un número de celular válido</p>
 				</div>
-				
+
 
 			</div>
 		</section>

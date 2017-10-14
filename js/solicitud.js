@@ -4,6 +4,52 @@ $(function() {
   $.fn.editable.defaults.mode = 'inline';
   $('#username').editable();
 });
+var $steps = $('.step');
+var $menuSteps = $('.menu-step');
+  var currentStep = 0,
+      nextStep;
+  $menuSteps.eq(0).addClass('active'); // active first menu
+  $steps.slice(1).hide(); //hide all but first
+  $('#enviar').hide()
+
+  $('#next').on('click', function(e) {
+    e.preventDefault();
+
+    nextStep = currentStep + 1;
+    $($steps.get(currentStep)).hide();
+    $($steps.get(nextStep)).show();
+    $($menuSteps.get(currentStep)).removeClass('active');
+    $($menuSteps.get(nextStep)).addClass('active');
+    if (nextStep == 4) {
+      $('#next').hide()
+      $('#enviar').show()
+      return;
+    }else{
+      $('#next').show()
+    }
+    currentStep = nextStep;
+    window.scrollTo(0, 0);
+  });
+
+  $('#prev').on('click', function(e) {
+    e.preventDefault();
+    if(currentStep==0){
+      $('#prev').attr('disabled',true)
+      return
+    }
+    nextStep = currentStep - 1;
+
+    $($steps.get(currentStep)).hide();
+    $($steps.get(nextStep)).show();
+    $($menuSteps.get(currentStep)).removeClass('active');
+    $($menuSteps.get(nextStep)).addClass('active');
+    if (nextStep == 0) {
+      $('#prev').attr('disabled',true)
+      return;
+    }
+    $('#prev').attr('disabled',false)
+    currentStep = nextStep;
+  });
 
 $('#fecha_nac').combodate();
 $('#fecha_nac_ca').combodate();
@@ -231,3 +277,68 @@ $("input[name='tarjeta_credito']").click(function() {
     $('#ult_digitos_tarjeta').prop('disabled', true)
   }
 });
+
+/* MODAL */
+
+const panelActiveWebcam = $('#panel-webcam')
+const panelesAnexaId = $('.anexa-identificacion')
+
+const panelCargaSmartphone = $('.carga-smartphone')
+panelCargaSmartphone.click(function(){
+  $('#loader-smartphone').removeClass('hidden')
+  setTimeout(function(){
+    $('#loader-smartphone').addClass('hidden')
+    $('#sms-sent').removeClass('hidden')
+  },3000)
+})
+
+panelActiveWebcam.click(function(){
+  $('#webcam').removeClass('hidden')
+  $('#optionsIdPhoto').addClass('hidden')
+
+  // Grab elements, create settings, etc.
+  const video = document.getElementById('video');
+
+  // Get access to the camera!
+  if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+      // Not adding `{ audio: true }` since we only want image now
+      navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
+          video.src = window.URL.createObjectURL(stream);
+          video.play();
+      });
+  }
+
+  // Elements for taking the snapshot
+  const canvas = document.getElementById('canvas');
+  const context = canvas.getContext('2d');
+
+  // Trigger photo take
+  document.getElementById("snap").addEventListener("click", function() {
+    context.drawImage(video, 0, 0, 480, 320);
+    // canvas.toDataURL() para guardar foto
+  });
+})
+
+panelesAnexaId.each(function(){
+  var panel = $(this)
+  panel.click(function(){
+    $('#frente-reverso').removeClass('hidden')
+    $('#optionsIdPhoto').addClass('hidden')
+
+  })
+})
+
+$('input[type=file]').change(function() {
+
+  $('#loader-id').removeClass('hidden') // si pasa se muestra loader
+
+  setTimeout(function() {
+    $('#loader-id').addClass('hidden')
+  }, 3000)
+})
+
+const saveImageBtn = $('#savePhotoWebcam')
+saveImageBtn.click(function() {
+  $('#optionsIdPhoto').removeClass('hidden')
+  $('#webcam').addClass('hidden')
+})

@@ -216,7 +216,21 @@ h2 {
   margin: 10px 15px;
   height: 40px; }
 
+.form-nav {
+  float: none !important; }
+
+li.url {
+  font-weight: bold;
+  float: none !important;
+  text-align: center; }
+
+li.url a {
+  color: #ec008c !important; }
+
 .scrollmenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #fff;
   overflow: auto;
   white-space: nowrap;
@@ -234,18 +248,23 @@ h2 {
   color: #5b56a6;
   border: 1px solid #ddd; }
 
-.scrollmenu a {
-  display: inline-block;
+.scrollmenu li {
+  list-style-type: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   color: #6c767c;
   text-align: center;
   padding: 14px;
   text-decoration: none; }
 
-.scrollmenu a.active {
-  color: #5b56a6; }
+.scrollmenu li.active {
+  color: #5b56a6;
+  font-weight: 600;
+  border-bottom: 2px solid #5b56a6; }
 
-.scrollmenu a:hover {
-  color: #5b56a6; }
+.scrollmenu li span {
+  display: none; }
 
 .container-fluid > .navbar-collapse, .container-fluid > .navbar-header, .container > .navbar-collapse, .container > .navbar-header {
   margin-right: 0;
@@ -1608,6 +1627,9 @@ body {
   outline: none;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); }
 
+#cotizador {
+  min-height: 100vh; }
+
 #searchInput {
   background-color: #fff;
   font-family: Roboto;
@@ -1635,6 +1657,9 @@ body {
   background: #efefef;
   margin-top: -100px;
   margin-bottom: 120px; }
+
+.float-right {
+  float: right; }
 
 /* importamos responsive al final */
 /* tablet, landscape iPad, lo-res laptops ands desktops */
@@ -1829,14 +1854,16 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-  .scrollmenu a {
+  .scrollmenu li {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
     padding: 20px; }
-  .scrollmenu a.active {
+  .scrollmenu li.active {
     color: #5b56a6;
     border-bottom: 2px solid #5b56a6; }
+  .scrollmenu li span {
+    display: inline-block; }
   .credit-promo {
     margin: 0 auto; }
   .swiper-container {

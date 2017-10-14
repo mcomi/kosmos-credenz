@@ -1,6 +1,11 @@
+$('#estado').change(function() {
+  if($(this).val()!=""){
+    console.log($(this).val())
+    $('#elige-dependencia').removeClass('hidden')
+    dameDependencias($(this).val());
+  }
+})
 
-
-function newTyped(){ /* A new typed object */ }
 $("input[name='tipo-credito']").click(function(){
   if ($(this).prop('value') == 'hipoteca') {
     $('#hipoteca-options').removeClass('hidden')
@@ -18,6 +23,111 @@ menuLinks.each(function(index) {
   })
 
 });
+
+// cargo nombres e iconos de dependencias, lo asigno en esta variable
+var dependencias = [
+  {
+    nombre:'PEMEX',
+    imgIcono: 'pemex.svg'
+  },
+  {
+    nombre:'SEP',
+    imgIcono: 'sep.svg'
+  },
+  {
+    nombre:'Jubilados y Pensionados',
+    imgIcono: 'pensionados.svg'
+  },
+  {
+    nombre:'IMSS',
+    imgIcono: 'imss.svg'
+  },
+  {
+    nombre:'GOB CDMX',
+    imgIcono: 'pemex.svg'
+  },
+  {
+    nombre:'pemex',
+    imgIcono: 'pemex.svg'
+  }
+]
+
+/* funcion para generar las dependencias dependiendo del estado */
+function dameDependencias(estado) {
+  /* no estan definidas por lo que genero aleatoriamente dependencias para mostrar */
+  switch(estado) {
+    case '1':
+        getRandomDependencias()
+        break;
+    case '2':
+        getRandomDependencias()
+        break;
+    default:
+        getRandomDependencias()
+  }
+}
+
+function getRandomDependencias() {
+  var randomDependencias = getUnique(dependencias, 4);
+  var htmlOpcionesDependencias = '';
+  var dependenciasList = document.getElementById('opciones-dependencias')
+  htmlOpcionesDependencias = randomDependencias.map((dependencia, i) => {
+    return `
+    <div class="col-xs-6 col-md-2">
+      <input type="radio" value="${dependencia.nombre}" id="${dependencia.nombre}" name="dependencia">
+      <label for="${dependencia.nombre}">
+        <div class="icon-item">
+          <img src="img/icons/${dependencia.imgIcono}" alt="">
+        </div>
+      </label>
+      <p class="credit-text">${dependencia.nombre}</p>
+    </div>
+  `;
+  }).join('');
+  dependenciasList.innerHTML = htmlOpcionesDependencias+`<div class="col-xs-6 col-md-2">
+  <input type="radio" value="otra" id="otra" name="dependencia">
+    <label for="otra">
+      <div class="icon-item">
+        <img src="img/icons/otros.png" alt="">
+      </div>
+    </label>
+    <p class="credit-text">OTRO</p>
+  </div>`
+
+  let optsDependencias = $("input[name='dependencia']")
+  let otraDependenciaElegida = $("#otraDependencia")
+
+    optsDependencias.each(function() {
+      let input = $(this)
+      input.change(function(){
+        if(input.val() == 'GOB CDMX'){
+          $('#label-percepciones').text('Ingresos libres')
+        }else{
+          $('#label-percepciones').text('Percepciones libres')
+        }
+        if(input.val() == 'otra'){
+          otraDependenciaElegida.removeClass('hidden')
+          inputsSolicitud = $('input')
+          cargaEventosInputs(inputsSolicitud)
+        }
+      })
+    })
+}
+
+function getUnique(dependencias, count) {
+  // Make a copy of the array
+  var tmp = dependencias.slice(dependencias);
+  var ret = [];
+
+  for (var i = 0; i < count; i++) {
+    var index = Math.floor(Math.random() * tmp.length);
+    var removed = tmp.splice(index, 1);
+    // Since we are only removing one element
+    ret.push(removed[0]);
+  }
+  return ret;
+}
+
 
 
 
@@ -319,19 +429,7 @@ function NumeroALetras(num) {
     })
 
   }
-  const optsDependencias = $("input[name='dependencia']")
-  const otraDependenciaElegida = $("#otraDependencia")
 
-  optsDependencias.each(function() {
-    let input = $(this)
-    input.change(function(){
-      if(input.val() == 'otra'){
-        otraDependenciaElegida.removeClass('hidden')
-        inputsSolicitud = $('input')
-        cargaEventosInputs(inputsSolicitud)
-      }
-    })
-  })
 
 
   $('[data-toggle="tooltip"]').tooltip()
