@@ -32,7 +32,7 @@ var dependencias = [
   },
   {
     nombre:'SEP',
-    imgIcono: 'sep.svg'
+    imgIcono: 'sep.png'
   },
   {
     nombre:'Jubilados y Pensionados',
