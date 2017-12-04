@@ -21,7 +21,6 @@ body {
 	color: #2B3B46;
 	position: relative;
 	margin: 0;
-	padding-bottom: 7rem;
 	min-height: 100%;
 }
 
@@ -45,8 +44,8 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 1rem;
-  background-color: $header-bg;
+  padding: 0;
+  background-color: $primary-pink;
   text-align: center;
 }
 
@@ -192,7 +191,6 @@ body {
 	background: $header-bg;
 	min-height: 450px;
 	padding: 50px 20px;
-	margin-top: 30px;
 }
 
 .steps-info img {
@@ -200,12 +198,12 @@ body {
 }
 
 #cel-credit {
+	margin-top: 40px;
 	height: 400px;
-    padding-top: 100px;
-    background-image: url(../img/cel-bg.jpg);
+    padding-top: 50px;
+    background-image: url(../img/money-bg.jpg);
     background-repeat: no-repeat;
-    background-position: right;
-    background-size: 400px;
+    background-size: cover;
 }
 #map {
     width: 100%;
@@ -220,6 +218,9 @@ body {
     height: 32px;
     outline: none;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+#cotizador {
+	min-height: 66vh;
 }
 #searchInput {
     background-color: #fff;
@@ -237,14 +238,24 @@ body {
 
 #pasos-credito {
 	background: #efefef;
-	padding-bottom: 20px;
+	padding-bottom: 70px;
 }
 
 .step {
-	background: #fff;
-  padding: 20px;
-  border-radius: 15px;
-	margin: 0 -8px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 5px 25px;
 }
+
+#preguntas-frecuentes {
+    background: #efefef;
+    margin-top: -46px;
+    margin-bottom: 35px;
+}
+.float-right {
+	float: right;
+}
+
 /* importamos responsive al final */
 @import 'partials/responsive';

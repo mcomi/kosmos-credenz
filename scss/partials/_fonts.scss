@@ -26,6 +26,8 @@ span.input-success {
   color: $blue-1;
 }
 
+
+
 span.action {
   font-size: 22px;
   color: $primary-pink;
@@ -139,17 +141,18 @@ h5.status {
 }
 
 .lead {
-   padding: 60px 0;
+    padding: 0;
+    margin-bottom: 0;
 }
 
 .lead .title-status, .lead .lead-status {
   font-size: 3.4em;
-  color: $blue-2;
+  color: $primary-pink;
 }
 
 .lead span {
-  font-size: 20px;
-  color: $blue-1;
+  font-size: 1.6em;
+    color: #fff;
 }
 
 .steps-title-status {

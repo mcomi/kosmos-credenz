@@ -32,6 +32,21 @@
 		display: block;
 	}
 
+	#cotizador {
+    min-height: 85vh;
+	}
+
+	.lead {
+	   padding: 60px 0;
+	}
+
+	.step {
+		background: #fff;
+	  padding: 20px;
+	  border-radius: 15px;
+		margin: 0 -8px;
+	}
+
 	.navbar {
 		background-color: $header-bg;
 		box-shadow: 0 4px 2px -2px #ccc;
@@ -46,6 +61,11 @@
 
 	.navbar-nav {
 		float: right;
+	}
+
+	.navbar-brand>img {
+	    margin: 0 auto;
+	    height: 60px;
 	}
 
 	.navbar-nav > li > a {
@@ -64,12 +84,21 @@
 	}
 
 	.left-oval-desktop {
-		height: 70vh;
+		opacity: 1;
+		height: 50vh;
+	}
+
+	.left-oval-desktop.down {
+	  opacity: 1;
+	}
+
+	.right-oval-desktop.down {
+	  opacity: 1;
 	}
 
 	.right-oval-desktop {
-		top: 350px;
-		height: 40vh;
+		opacity: 1;
+		height: 50vh;
 	}
 
 	.checkboxForm {
@@ -301,14 +330,18 @@
 		display: flex;
 	}
 
-	.scrollmenu a {
+	.scrollmenu li {
 		flex: 1;
 		padding: 20px;
 	}
 
-	.scrollmenu a.active {
+	.scrollmenu li.active {
 		color: $blue-1;
 		border-bottom: 2px solid $blue-1;
+	}
+
+	.scrollmenu li span{
+	    display: inline-block;
 	}
 
 	.credit-promo {
