@@ -3,10 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="description" content="Credenz using webpack and bootstrap">
+	<meta name="description" content="bx+ using webpack and bootstrap">
 	<meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1, maximum-scale=1">
 
-	<title>Credenz - Solicita tu Crédito</title>
+	<title>Consubanco - Carga contratos</title>
 
 	<!-- Disable tap highlight on IE -->
 	<meta name="msapplication-tap-highlight" content="no">
@@ -32,7 +32,6 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.1.1/min/dropzone.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/css/bootstrap-editable.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.1/css/bootstrap-slider.min.css" />
 	<link rel="stylesheet" href="css/style.css">
 
 	<!-- Tile icon for Win8 (144x144 + tile color) -->
@@ -41,16 +40,7 @@
 
 	<!-- Color the status bar on mobile devices -->
 	<meta name="theme-color" content="#263238">
-	<!--Start of Zendesk Chat Script-->
-	<script type="text/javascript">
-	window.$zopim||(function(d,s){var z=$zopim=function(c){
-	z._.push(c)},$=z.s=
-	d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
-	_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
-	$.src='https://v2.zopim.com/?3yzgriahgDDeSaTbggkQTjm0lYtBrfvG';z.t=+new Date;$.
-	type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
-	</script>
-	<!--End of Zendesk Chat Script-->
+
 </head>
 
 <body>
@@ -66,7 +56,7 @@
 			<span class="text-right"><a href="#" id="nav-close">X</a></span>
 			<div class="sidebar-header-logo">
 
-				<img src="img/logo.png" alt="">
+				<img src="img/logo.gif" alt="">
 			</div>
 
 		</div>
@@ -74,65 +64,103 @@
 
 			<!--Include your navigation here-->
 
-			<li><a href="analiticas.html"><span class="icon"><img src="img/icons/nomina.svg" alt=""></span><span class="menu-text">Crédito nómina </span></a></li>
-			<li><a href="index.html"><span class="icon"><img src="img/icons/url.svg" alt=""></span><span class="menu-text">Url de acceso </span></a></li>
-			<li><a href="simulador.html"><span class="icon"><img src="img/icons/steps_credit.svg" alt=""></span><span class="menu-text">Pasos para crédito </span></a></li>
-			<li><a href="analiticas.html"><span class="icon"><img src="img/icons/testimonies.svg" alt=""></span><span class="menu-text">Testimonios </span></a></li>
-			<li><a href="index.html"><span class="icon"><img src="img/icons/faq.svg"  alt=""></span><span class="menu-text">Preguntas frecuentes </span></a></li>
+			<li><a href="analiticas.html"><span class="icon"><img src="img/icons/money.svg" class="svg svg-menu-mobile" alt=""></span><span class="menu-text">Cotizador </span></a></li>
+			<li><a href="simulador.html"><span class="icon"><img src="img/icons/steps.svg" class="svg svg-menu-mobile" alt=""></span><span class="menu-text">Pasos para crédito </span></a></li>
+			<li><a href="index.html"><span class="icon"><img src="img/icons/testimonials.svg" class="svg svg-menu-mobile" alt=""></span><span class="menu-text">Testimonios </span></a></li>
+			<li><a href="index.html"><span class="icon"><img src="img/icons/faq.svg"  class="svg svg-menu-mobile" alt=""></span><span class="menu-text">Preguntas frecuentes </span></a></li>
+			<li><a href="analiticas.html"><span class="icon"><img src="img/icons/contact.svg" class="svg svg-menu-mobile" alt=""></span><span class="menu-text">Contacto </span></a></li>
+			<li><a href="solicitudes.html"><span class="icon"><img src="img/icons/menu.svg" class="svg svg-menu-mobile" alt=""></span><span class="menu-text">Secciones </span></a></li>
 		</ul>
 	</nav>
 	<!-- <div class="navbar navbar-inverse navbar-fixed-top">
 
 
 </div> -->
-<div class="navbar navbar-default navbar-fixed-top">
+	<div class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
-				<div class="navbar-header">
-						<a class="navbar-brand" href="#">
-		<img src="img/logo.png" alt="">
-	</a>
-						<span id="nav-expander" class="nav-expander fixed">
-		<img src="img/icons/menu.png" alt="">
-	</span>
-				</div>
-				<ul id="desktop-menu" class="nav navbar-nav form-nav">
-						<li class="url">
-								<span>TU URL: </span>
-								<a href="#cotizador">https://goo.gl/mTqwSDA</a>
-						</li>
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">
+      	<img src="img/logo.gif" alt="">
+      </a>
+				<span id="nav-expander" class="nav-expander fixed">
+				<img src="img/icons/menu.png" alt="">
+			</span>
+			</div>
+			<ul id="desktop-menu" class="nav navbar-nav">
+				<li>
+					<span><img src="img/icons/money.svg" alt=""></span>
+					<a href="#cotizador">Cotizador</a>
+				</li>
+				<li>
+					<span><img src="img/icons/steps.svg" alt=""></span>
+					<a href="#pasos-credito">Pasos para crédito</a>
+				</li>
+				<li>
+					<span><img src="img/icons/testimonials.svg" alt=""></span>
+					<a href="#testimonios">Testimonios</a>
+				</li>
+				<li>
+					<span><img src="img/icons/faq.svg" alt=""></span>
+					<a href="#preguntas-frecuentes">Preguntas frecuentes</a>
+				</li>
+				<li>
+					<span><img src="img/icons/contact.svg" alt=""></span>
+					<a href="#contacto">Contacto</a>
+				</li>
+				<li class="dropdown">
+					<span><img src="img/icons/menu.svg" alt=""></span>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Secciones </a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Nosotros</a></li>
+						<li><a href="#">Créditos personales</a></li>
+						<li><a href="#">Sucursales</a></li>
+						<li><a href="#">Ayuda</a></li>
+					</ul>
+				</li>
+			</ul>
 
-				</ul>
 		</div>
 		<!-- /.container-fluid -->
-</div>
-
-	<div class="row">
-
 	</div>
 
-	<div>
-		<div>
-		<section id="cotizador" class="container" style="padding-bottom: 150px;">
+	<div class="row">
+		<img src="img/oval-level_1_cp.png" alt="" class="left-oval-desktop">
+		<img src="img/oval-level_2-1_cp.png" alt="" class="right-oval-desktop">
+		<!-- <button id="btn-solicita-credito-fixed" class="btn btn-outline">Solicita tu Crédito</button> -->
+	</div>
 
+	<div class="status">
+		<section id="cotizador" class="container">
 
+			<div class="row">
+				<div class="center col-xs-12 col-md-10 col-md-offset-1">
+					<ul class="progress-indicator">
+					  <li class="completed"><span class="bubble"></span> <span class="text">Confirmación y opciones de crédito</span> </li>
+					  <li class="completed"> <span class="bubble"></span> <span class="text">Datos complementarios</span> </li>
+					  <li class="completed"> <span class="bubble"></span> <span class="text">Firma y carga de contratos</span> </li>
+					  <li> <span class="bubble"></span> <span class="text">Envía contratos y recibe tu dinero</span> </li>
+					</ul>
+
+				</div>
+			</div>
 
 
 
 		<section class="container">
 			<div class="row center">
 				<div class="col-xs-12">
-					<h3 class="steps-title-status">Descarga tus contratos</h3>
+					<h3 class="steps-title-status">Descarga, firma y envía tus contratos</h3>
 					<div class="col-md-8 col-md-offset-2">
 							<div class="lead">
-								<p class="title-status">Descarga tus contratos</p>
+								<p class="title-status">Descarga, firma y envía tus contratos</p>
 							</div>
 					</div>
 				</div>
 			</div>
 
 			<div class="row">
-				<div class="col-md-6 col-md-offset-3 col-xs-12 center">
-					<div id="contratos" class="panel panel-border section-panel col-xs-8 col-xs-offset-2 col-md-5 col-md-offset-4">
+				<div class="col-md-6 col-xs-12 center">
+					<div class="panel panel-border section-panel col-xs-8 col-xs-offset-2 col-md-5 col-md-offset-4 contratos">
 						<div id="panel-webcam" class="panel-body">
 							<img src="img/icons/download.svg" alt="" class="img-responsive">
 							<p>Ver guía de firmas y descargar contratos</p>
@@ -143,7 +171,18 @@
 						como se muestra en la animación, de lo contrario se atrasara tu tramite
 					</div>
 				</div>
-
+				<div class="col-md-6 col-xs-12 center">
+					<div class="panel panel-border section-panel col-xs-4 col-xs-offset-4 col-md-5 col-md-offset-3 contratos">
+						<div id="panel-webcam" class="panel-body center">
+							<img src="img/icons/upload.svg" alt="" class="img-responsive">
+							<p>Carga contratos firmados</p>
+						</div>
+					</div>
+					<div class="col-xs-12">
+						Guarda muy bien tus contratos firmados, ya que una vez validados
+						tendras que enviarlos para recibir tu dinero
+					</div>
+				</div>
 			</div>
 
 			<div class="row padding-top">
@@ -151,44 +190,22 @@
 
 					<a href="" class="btn-link"><i class="fa fa-video-camera"></i> Ver guía de firma nuevamente</a>
 				</div>
-
-			</div>
-
-			<row id="instrucciones" class="hidden">
-				<div class="col-md-8 col-md-offset-2 center padding-top">
-					<p>Envía los contratos firmados a la central utilizando esta guía pre-pagada de estafeta</p>
-
-						<div class="row">
-
-							<div class="panel panel-border section-panel col-md-6 col-md-offset-3 icons-contratos">
-								<div id="panel-webcam" class="panel-body">
-									<img src="img/estafeta_logo.svg" alt="" class="img-responsive">
-								</div>
-							</div>
-							<div class="col-xs-12">
-								Descargar tú Guía prepagada estafeta
-							</div>
-						</div>
-
-					<p style="padding-top:20px;">Recuerda firmarlos tal cual la guía de firmas para que el crédito pueda ser desembolsado</p>
-					<p>Una vez que envíes los contratos puedes consultar el estatus de tu solicitud de crédito <a href="">"aquí"</a></p>
-					<p>Una vez que recibamos los contratos nos comunicaremos contigo para poder continuar con tu solicitud y realizar el desembolso de tu crédito</p>
+				<div class="col-xs-12 center padding-top">
+					<a href="" class="btn btn-form">Enviar</a>
 				</div>
-			</row>
+			</div>
 		</section>
 
 
 
-	</div>
-
 	</div><!-- fin home -->
 
 
-	<footer id="contacto" class="footer" style="margin-top:30px;">
+	<footer id="contacto" class="footer">
 		<div class="container">
 			<p>¿Necesitas un asesor? Contáctanos</p>
 			<p><a href="tel:5500000000"><i class="fa fa-volume-control-phone fa-2x" aria-hidden="true"></i> 55 0000 0000</a></p>
-			<p><a href="mailto:contact@vepormas.com"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i> contacto@credenz.com</a></p>
+			<p><a href="mailto:contact@vepormas.com"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i> contacto@consubanco.com</a></p>
 
 		</div>
 	</footer>
@@ -201,7 +218,6 @@
 	<script src="libs/bootstrap-datepicker.min.js"></script>
 	<script src="libs/bootstrap-datepicker.es.min.js"></script>
 	<script src="libs/bootstrap-editable.min.js"></script>
-	<script src="libs/bootstrap-slider.js"></script>
 	<script src="libs/cleave.min.js"></script>
 	<script src="libs/cleave-phone.mx.js"></script>
 	<script src="libs/swiper.min.js"></script>
@@ -212,7 +228,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
 
 	<script src="js/index.js"></script>
-	<script src="js/contratos.js"></script>
 
 
 </body>
