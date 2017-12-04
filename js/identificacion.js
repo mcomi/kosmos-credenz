@@ -1,6 +1,15 @@
 const panelActiveWebcam = $('#panel-webcam')
 const panelesAnexaId = $('.anexa-identificacion')
 
+const panelCargaSmartphone = $('.carga-smartphone')
+panelCargaSmartphone.click(function(){
+  $('#loader-smartphone').removeClass('hidden')
+  setTimeout(function(){
+    $('#loader-smartphone').addClass('hidden')
+    $('#sms-sent').removeClass('hidden')
+  },3000)
+})
+
 panelActiveWebcam.click(function(){
   $('#webcam').removeClass('hidden')
   $('#optionsIdPhoto').addClass('hidden')

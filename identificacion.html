@@ -1,541 +1,493 @@
 <html lang="es">
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="description" content="bx+ using webpack and bootstrap">
-	<meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1, maximum-scale=1">
-
-	<title>Consubanco - Sube Identificación</title>
-
-	<!-- Disable tap highlight on IE -->
-	<meta name="msapplication-tap-highlight" content="no">
-
-	<!-- Web Application Manifest -->
-	<link rel="manifest" href="manifest.json">
-
-	<!-- Add to homescreen for Chrome on Android -->
-	<meta name="mobile-web-app-capable" content="yes">
-	<meta name="application-name" content="bx+">
-	<link rel="icon" sizes="192x192" href="/img/chrome-touch-icon-192x192.png">
-
-	<!-- Add to homescreen for Safari on iOS -->
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black">
-	<meta name="apple-mobile-web-app-title" content="bx+">
-	<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.1.1/min/dropzone.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/css/bootstrap-editable.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-	<link rel="stylesheet" href="css/style.css">
-
-	<!-- Tile icon for Win8 (144x144 + tile color) -->
-	<meta name="msapplication-TileImage" content="/img/ms-touch-icon-144x144-precomposed.png">
-	<meta name="msapplication-TileColor" content="#263238">
-
-	<!-- Color the status bar on mobile devices -->
-	<meta name="theme-color" content="#263238">
-
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="bx+ using webpack and bootstrap">
+    <meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1, maximum-scale=1">
+    <title>Consubanco - Sube Identificación</title>
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- Web Application Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="bx+">
+    <link rel="icon" sizes="192x192" href="/img/chrome-touch-icon-192x192.png">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="bx+">
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.1.1/min/dropzone.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/css/bootstrap-editable.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="/img/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#263238">
+    <!-- Color the status bar on mobile devices -->
+    <meta name="theme-color" content="#263238">
 </head>
 
 <body>
-	<div class="mobile-wrapper"></div>
-
-	<nav id="menu-mobile">
-		<span class="open-menu">
+    <div class="mobile-wrapper"></div>
+    <nav id="menu-mobile">
+        <span class="open-menu">
 			<button class="btn">
 				<i class="fa fa-sort-up"></i>
 			</button>
 		</span>
-		<div class="sidebar-header">
-			<span class="text-right"><a href="#" id="nav-close">X</a></span>
-			<div class="sidebar-header-logo">
-
-				<img src="img/logo.gif" alt="">
-			</div>
-
-		</div>
-		<ul class="list-unstyled main-menu">
-
-			<!--Include your navigation here-->
-
-			<li><a href="analiticas.html"><span class="icon"><img src="img/icons/money.svg" class="svg svg-menu-mobile" alt=""></span><span class="menu-text">Cotizador </span></a></li>
-			<li><a href="simulador.html"><span class="icon"><img src="img/icons/steps.svg" class="svg svg-menu-mobile" alt=""></span><span class="menu-text">Pasos para crédito </span></a></li>
-			<li><a href="index.html"><span class="icon"><img src="img/icons/testimonials.svg" class="svg svg-menu-mobile" alt=""></span><span class="menu-text">Testimonios </span></a></li>
-			<li><a href="index.html"><span class="icon"><img src="img/icons/faq.svg"  class="svg svg-menu-mobile" alt=""></span><span class="menu-text">Preguntas frecuentes </span></a></li>
-			<li><a href="analiticas.html"><span class="icon"><img src="img/icons/contact.svg" class="svg svg-menu-mobile" alt=""></span><span class="menu-text">Contacto </span></a></li>
-			<li><a href="solicitudes.html"><span class="icon"><img src="img/icons/menu.svg" class="svg svg-menu-mobile" alt=""></span><span class="menu-text">Secciones </span></a></li>
-		</ul>
-	</nav>
-	<!-- <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="sidebar-header">
+            <span class="text-right"><a href="#" id="nav-close">X</a></span>
+            <div class="sidebar-header-logo">
+                <img src="img/logo.gif" alt="">
+            </div>
+        </div>
+        <ul class="list-unstyled main-menu">
+            <!--Include your navigation here-->
+            <li><a href="analiticas.html"><span class="icon"><img src="img/icons/money.svg" class="svg svg-menu" alt=""></span><span class="menu-text">Cotizador </span></a></li>
+            <li><a href="simulador.html"><span class="icon"><img src="img/icons/steps.svg" class="svg svg-menu" alt=""></span><span class="menu-text">Pasos para crédito </span></a></li>
+            <li><a href="index.html"><span class="icon"><img src="img/icons/testimonials.svg" class="svg svg-menu" alt=""></span><span class="menu-text">Testimonios </span></a></li>
+            <li><a href="index.html"><span class="icon"><img src="img/icons/faq.svg"  class="svg svg-menu" alt=""></span><span class="menu-text">Preguntas frecuentes </span></a></li>
+            <li><a href="analiticas.html"><span class="icon"><img src="img/icons/contact.svg" class="svg svg-menu" alt=""></span><span class="menu-text">Contacto </span></a></li>
+            <li><a href="solicitudes.html"><span class="icon"><img src="img/icons/menu.svg" class="svg svg-menu" alt=""></span><span class="menu-text">Secciones </span></a></li>
+        </ul>
+    </nav>
+    <!-- <div class="navbar navbar-inverse navbar-fixed-top">
 
 
 </div> -->
-	<div class="navbar navbar-default navbar-fixed-top">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="#">
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
       	<img src="img/logo.gif" alt="">
       </a>
-				<span id="nav-expander" class="nav-expander fixed">
+                <span id="nav-expander" class="nav-expander fixed">
 				<img src="img/icons/menu.png" alt="">
 			</span>
-			</div>
-			<ul id="desktop-menu" class="nav navbar-nav">
-				<li>
-					<span><img src="img/icons/money.svg" alt=""></span>
-					<a href="#cotizador">Cotizador</a>
-				</li>
-				<li>
-					<span><img src="img/icons/steps.svg" alt=""></span>
-					<a href="#pasos-credito">Pasos para crédito</a>
-				</li>
-				<li>
-					<span><img src="img/icons/testimonials.svg" alt=""></span>
-					<a href="#testimonios">Testimonios</a>
-				</li>
-				<li>
-					<span><img src="img/icons/faq.svg" alt=""></span>
-					<a href="#preguntas-frecuentes">Preguntas frecuentes</a>
-				</li>
-				<li>
-					<span><img src="img/icons/contact.svg" alt=""></span>
-					<a href="#contacto">Contacto</a>
-				</li>
-				<li class="dropdown">
-					<span><img src="img/icons/menu.svg" alt=""></span>
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Secciones </a>
-					<ul class="dropdown-menu">
-						<li><a href="#">Nosotros</a></li>
-						<li><a href="#">Créditos personales</a></li>
-						<li><a href="#">Sucursales</a></li>
-						<li><a href="#">Ayuda</a></li>
-					</ul>
-				</li>
-			</ul>
-
-		</div>
-		<!-- /.container-fluid -->
-	</div>
-
-	<div class="row">
-		<img src="img/oval-level_1_cp.png" alt="" class="left-oval-desktop">
-		<img src="img/oval-level_2-1_cp.png" alt="" class="right-oval-desktop">
-		<!-- <button id="btn-solicita-credito-fixed" class="btn btn-outline">Solicita tu Crédito</button> -->
-	</div>
-
-	<div class="home">
-		<section id="cotizador" class="container">
-			<div class="row center">
-				<div class="menu_credit_type col-xs-12 col-md-6 col-md-offset-3">
-					<h4>Bienvenido al cotizador de crédito nómina</h4>
-					<h1 class="big-title">CONSUBANCO</h1>
-					<span class="action">¡¡Obtén tu dinero en 24 horas!!</span>
-				</div>
-			</div>
-			<div class="row center padding-top" id="step1-credit">
-				<div class="col-xs-12 col-md-8 col-md-offset-2">
-					<p>Ahora tus datos personales, recuerda que deben ser identicos a los de tu idenficación oficial,
-						te sugerimos tomarle una foto considerando las opciones que te damos abajo, para agilizar
-						y optimizar tu registro </p>
-
-
-
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="center col-xs-12">
-					<div class="col-xs-6 col-md-2 col-md-offset-4">
-						<input type="radio" value="ine" id="ine" name="id" data-toggle="modal" data-target="#modalCargaId">
-						<label for="ine">
-							<div class="icon-item">
-								<img src="img/icons/ine.svg" alt="">
-							</div>
-						</label>
-						<p class="credit-text">IFE o INE</p>
-					</div>
-					<div class="col-xs-6 col-md-2">
-						<input type="radio" value="recibo-nomina" id="recibo-nomina" name="id" data-toggle="modal" data-target="#modalCargaRecibo">
-						<label for="recibo-nomina">
-							<div class="icon-item">
-								<img src="img/icons/invoice.svg" alt="">
-							</div>
-						</label>
-						<p class="credit-text">Recibo de nómina</p>
-					</div>
-					<div class="col-xs-12 center">
-						<a href="ofertas-revision.html" class="btn btn-form">Solicita tu crédito</a>
-					</div>
-				</div>
-			</div>
-
-			<div class="modal" id="modalCargaId" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-			  <div class="modal-dialog" role="document">
-			    <div class="modal-content">
-			      <div class="modal-header">
-			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-
-			      </div>
-			      <div class="modal-body">
-							<div id="optionsIdPhoto" class="row">
-
-								<div class="menu_credit_type center col-xs-12 col-md-8 col-md-offset-2">
-									<h3>Elige el medio para capturar tu identificación </h3>
-								</div>
-
-								<div class="col-xs-12 col-md-8 col-md-offset-2">
-									<div class="col-xs-12 col-md-6 only-desktop">
-										<div class="panel panel-border section-panel">
-											<div id="panel-webcam" class="panel-body">
-												<img src="img/icons/webcam.svg" alt="" class="img-responsive">
-											</div>
-										</div>
-										<h4 class="center">Webcam</h4>
-									</div>
-									<div class="col-xs-12 col-md-6 only-mobile">
-											<div class="panel panel-border section-panel anexa-identificacion">
-
-												<div class="panel-body">
-													<img src="img/icons/mobile-app.svg" alt="" class="img-responsive">
-												</div>
-											</div>
-										</label>
-										<h4 class="center">Smarthphone</h4>
-									</div>
-									<div class="col-xs-12 col-md-6 only-desktop">
-
-											<div class="panel panel-border section-panel anexa-identificacion">
-
-												<div class="panel-body">
-													<img src="img/icons/computer.svg" alt="" class="img-responsive">
-												</div>
-											</div>
-										</label>
-										<h4 class="center">Cargar desde mi PC</h4>
-									</div>
-								</div>
-
-
-
-								<div class="col-xs-12 center" style="padding: 20px 0;">
-									La foto debe ser legible sin tachaduras ni difusion de cámara
-								</div>
-
-								<div class="col-xs-12">
-									<div class="col-xs-6 col-md-4 col-md-offset-2 center">
-										<img src="img/icons/yes-icon.svg" class="svg" alt="">
-										<img src="img/ine-si.png" class="img-responsive" alt="" style="padding: 20px 0;">
-									</div>
-									<div class="col-xs-6 col-md-4 center">
-										<img src="img/icons/yes-icon.svg" class="svg no" alt="">
-										<img src="img/ine-no.png" class="img-responsive" alt="" style="padding: 20px 0;">
-									</div>
-								</div>
-
-
-							</div>
-							<div id="webcam" class="row hidden">
-								<div class="col-xs-12 col-md-6">
-
-									<video id="video" width="480" height="320" autoplay></video>
-									<button class="btn btn-form" id="snap">Tomar foto</button>
-								</div>
-								<div class="col-xs-12 col-md-6">
-									<canvas id="canvas" width="480" height="320"></canvas>
-									<button id="savePhotoWebcam" class="btn btn-form" id="snap">Guardar foto</button>
-								</div>
-							</div>
-
-							<div id="frente-reverso" class="row hidden">
-								<div class="col-xs-12 center" style="padding: 20px 0;">
-									<div id="loader-id" class="row hidden">
-										<div class="sk-folding-cube">
-											<div class="sk-cube1 sk-cube"></div>
-											<div class="sk-cube2 sk-cube"></div>
-											<div class="sk-cube4 sk-cube"></div>
-											<div class="sk-cube3 sk-cube"></div>
-
-										</div>
-										<div class="center">
-											<span>Revisando el archivo cargado</span>
-										</div>
-									</div>
-
-								</div>
-								<div class="col-xs-12 col-md-8 col-md-offset-2">
-
-									<div class="col-xs-12 col-md-6">
-										<input type="file" class="input-file" name="frente" id="frente" accept="image/*;capture=camera">
-										<label for="frente">
-											<div class="panel panel-border section-panel">
-
-												<div class="panel-body">
-													<img src="img/icons/front-id.svg" alt="" class="img-responsive">
-
-												</div>
-											</div>
-										</label>
-										<h4 class="center">Captura o anexa el frente de tu Identificación</h4>
-									</div>
-									<div class="col-xs-12 col-md-6">
-										<input type="file" class="input-file" name="reverso" id="reverso" accept="image/*;capture=camera">
-										<label for="reverso">
-											<div class="panel panel-border section-panel">
-
-												<div class="panel-body">
-													<img src="img/icons/back-id.svg" alt="" class="img-responsive">
-
-												</div>
-											</div>
-										</label>
-										<h4 class="center">Captura o anexa el reverso de tu Identificación</h4>
-									</div>
-								</div>
-							</div>
-			      </div>
-
-			    </div>
-			  </div>
-			</div>
-
-			<div class="modal" id="modalCargaRecibo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-			  <div class="modal-dialog" role="document">
-			    <div class="modal-content">
-			      <div class="modal-header">
-			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-
-			      </div>
-			      <div class="modal-body">
-							<div id="optionsIdPhoto" class="row">
-
-								<div class="menu_credit_type center col-xs-12 col-md-8 col-md-offset-2">
-									<h3>Elige el medio para la captura tu úttimo recibo de nómina </h3>
-								</div>
-
-								<div class="col-xs-12 col-md-8 col-md-offset-2">
-									<div class="col-xs-12 col-md-6 only-desktop">
-										<div class="panel panel-border section-panel">
-											<div id="panel-webcam" class="panel-body">
-												<img src="img/icons/webcam.svg" alt="" class="img-responsive">
-											</div>
-										</div>
-										<h4 class="center">Webcam</h4>
-									</div>
-									<div class="col-xs-12 col-md-6 only-mobile">
-										<input type="file" class="input-file" name="smarthphone" id="smarthphone" accept="image/*;capture=camera">
-										<label for="smarthphone">
-											<div class="panel panel-border section-panel">
-
-												<div class="panel-body">
-													<img src="img/icons/mobile-app.svg" alt="" class="img-responsive">
-												</div>
-											</div>
-										</label>
-										<h4 class="center">Smarthphone</h4>
-									</div>
-									<div class="col-xs-12 col-md-6">
-										<input type="file" class="input-file" name="computer" id="computer">
-										<label for="computer">
-											<div class="panel panel-border section-panel">
-
-												<div class="panel-body">
-													<img src="img/icons/computer.svg" alt="" class="img-responsive">
-												</div>
-											</div>
-										</label>
-										<h4 class="center">Computadora</h4>
-									</div>
-								</div>
-
-								<div class="col-xs-12 center" style="padding: 20px 0;">
-									<div id="loader-files" class="row hidden">
-										<div class="sk-folding-cube">
-											<div class="sk-cube1 sk-cube"></div>
-											<div class="sk-cube2 sk-cube"></div>
-											<div class="sk-cube4 sk-cube"></div>
-											<div class="sk-cube3 sk-cube"></div>
-
-										</div>
-										<div class="center">
-											<span>Revisando el archivo cargado</span>
-										</div>
-									</div>
-
-								</div>
-
-								<div class="col-xs-12 center" style="padding: 20px 0;">
-									La foto debe ser legible sin tachaduras ni difusion de cámara
-								</div>
-
-								<div class="col-xs-12">
-									<div class="col-xs-6 col-md-4 col-md-offset-2 center">
-										<img src="img/icons/yes-icon.svg" class="svg" alt="">
-										<img src="img/recibo-si.png" class="img-responsive" alt="" style="padding: 20px 0;">
-									</div>
-									<div class="col-xs-6 col-md-4 center">
-										<img src="img/icons/yes-icon.svg" class="svg no" alt="">
-										<img src="img/recibo-no.png" class="img-responsive" alt="" style="padding: 20px 0;">
-									</div>
-								</div>
-
-
-							</div>
-							<div id="webcam" class="row hidden">
-								<div class="col-xs-12 col-md-6">
-
-									<video id="video" width="480" height="320" autoplay></video>
-									<button class="btn btn-form" id="snap">Tomar foto</button>
-								</div>
-								<div class="col-xs-12 col-md-6">
-									<canvas id="canvas" width="480" height="320"></canvas>
-									<button id="savePhotoWebcam" class="btn btn-form" id="snap">Guardar foto</button>
-								</div>
-							</div>
-			      </div>
-
-			    </div>
-			  </div>
-			</div>
-
-			<div class="row">
-				<div class="col-xs-12 col-md-11 col-md-offset-1">
-					<div id="form-cotizador"></div>
-					<div id="propuestas-cotizador"></div>
-				</div>
-			</div>
-		</section>
-
-		<section class="container" id="cel-credit">
-			<div class="row center">
-				<div class="col-xs-12">
-					<div class="type-wrap col-md-8 col-md-offset-2">
-							<div id="typed-strings" class="lead">
-								<span>Si ya solicitaste el crédito, puedes <br>consultar el estatus ingresando tu celular</span>
-							</div>
-							<span id="typed" style="white-space:pre;"></span>
-					</div>
-
-
-					<!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> -->
-				</div>
-				<div class="col-xs-12 col-md-4 col-md-offset-4">
-					<input id="celular-check" type="text" class="check-status" placeholder="55 1234 5678">
-
-				</div>
-				<div id="celular-valido" class="col-xs-12 hidden">
-					<p>Ingresa un número de celular válido</p>
-
-				</div>
-				<div id="btn-consulta-estatus" class="col-xs-12 hidden">
-					<a href="status.html" class="btn btn-form">Consultar</a>
-
-				</div>
-
-			</div>
-		</section>
-
-		<section id="pasos-credito" class="container">
-			<div class="center steps-header">
-				<h2>PASOS PARA MÍ CRÉDITO</h2>
-				<span>Tu solicitud de crédito en minutos, es muy fácil</span>
-			</div>
-			<div class="row steps-info center">
-					<div class="col-xs-12 col-md-2 col-md-offset-1">
-							<img src="img/icons/responsive.png" alt="">
-							<h5 class="steps-title">Registrate</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, similique maiores sequi, voluptatem quod aspernatur aut totam praesentium pariatur molestiae ab sit dolores recusandae eos tempore magnam ipsa. Atque, eveniet.</p>
-					</div>
-					<div class="col-xs-12 col-md-2">
-							<img src="img/icons/documents.png" alt="">
-							<h5 class="steps-title">Elige tu crédito</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias nostrum dignissimos praesentium ut sed earum eum? Unde magnam perspiciatis alias voluptatem voluptatum labore accusamus odit aliquam, minima vitae velit sequi!</p>
-					</div>
-					<div class="col-xs-12 col-md-2">
-							<img src="img/icons/tax.png" alt="">
-							<h5 class="steps-title">Firma contratos</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam qui quisquam incidunt, magni ipsam officiis aperiam voluptatum, sapiente laudantium amet non nostrum facilis quasi aspernatur iusto atque, debitis velit omnis.</p>
-					</div>
-					<div class="col-xs-12 col-md-2">
-							<img src="img/icons/mail.png" alt="">
-							<h5 class="steps-title">Envía contratos</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima impedit pariatur eius perferendis quasi sit ut atque, ab aliquid dolorum quo necessitatibus dolore. Voluptatibus repellat soluta corporis, dignissimos, enim id.</p>
-					</div>
-					<div class="col-xs-12 col-md-2">
-							<img src="img/icons/money.png" alt="">
-							<h5 class="steps-title">Recibe tu dinero</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae neque beatae impedit modi est ullam expedita exercitationem fugiat debitis, saepe minima aut nisi maiores unde id explicabo dolor, omnis libero.</p>
-					</div>
-			</div>
-		</section>
-
-		<section class="testimonios" id="testimonios">
-			<div class="row">
-				<img src="img/oval-level_1_cp.png" alt="" class="left-oval-testimony">
-				<img src="img/oval-level_2-1_cp.png" alt="" class="right-oval-testimony">
-			</div>
-			<div class="container">
-				<div class="col-xs-12 col-md-4 col-md-offset-4 center">
-					<h2 class="light-title">Testimonios</h2>
-				</div>
-				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner">
-                <div class="item active">
-                  <div class="row" style="padding: 20px">
-										<div class="col-xs-12 col-md-4 col-md-offset-4">
-
-											<div class="panel panel-border section-panel">
-												<div class="panel-body">
-													<img class="testimonio-pic" src="img/profile.jpg" alt="">
-													<div class="person">
-														<img src="img/quotes.png" alt="">
-														<p>Laura López</p>
-														<span>Directora de Finanzas INAPAM</span>
-													</div>
-													<blockquote>
-														Es increible!!! en 5 minutos puedo tramitar un credito, es accesible rapido y sencillo, no tengo que ir mas lejos de mi celular
-													</blockquote>
-												</div>
-											</div>
-										</div>
-                  </div>
-                </div>
-               <div class="item">
-                   <div class="row" style="padding: 20px">
-										 <div class="col-xs-12 col-md-4 col-md-offset-4">
-											 <div class="panel panel-border section-panel">
-												 <div class="panel-body">
-													 <img class="testimonio-pic" src="img/profile.jpg" alt="">
-													 <div class="person">
-														 <img src="img/quotes.png" alt="">
-														 <p>Ximena Perujo</p>
-														 <span>Directora de PyME</span>
-													 </div>
-													 <blockquote>
-														 Es increible!!! en 5 minutos puedo tramitar un credito, es accesible rapido y sencillo, no tengo que ir mas lejos de mi celular
-													 </blockquote>
-												 </div>
-											 </div>
-										 </div>
-                  </div>
-                </div>
-              </div>
-							<div class="controls testimonial_control pull-right">
-								<a class="left fa fa-chevron-left btn btn-default testimonial_btn" href="#carousel-example-generic"
-								data-slide="prev"></a>
-
-								<a class="right fa fa-chevron-right btn btn-default testimonial_btn" href="#carousel-example-generic"
-								data-slide="next"></a>
-							</div>
             </div>
-
-				<!-- <div class="center">
+            <ul id="desktop-menu" class="nav navbar-nav">
+                <li>
+                    <span><img src="img/icons/money.svg" alt=""></span>
+                    <a href="#cotizador">Cotizador</a>
+                </li>
+                <li>
+                    <span><img src="img/icons/steps.svg" alt=""></span>
+                    <a href="#pasos-credito">Pasos para crédito</a>
+                </li>
+                <li>
+                    <span><img src="img/icons/testimonials.svg" alt=""></span>
+                    <a href="#testimonios">Testimonios</a>
+                </li>
+                <li>
+                    <span><img src="img/icons/faq.svg" alt=""></span>
+                    <a href="#preguntas-frecuentes">Preguntas frecuentes</a>
+                </li>
+                <li>
+                    <span><img src="img/icons/contact.svg" alt=""></span>
+                    <a href="#contacto">Contacto</a>
+                </li>
+                <li class="dropdown">
+                    <span><img src="img/icons/menu.svg" alt=""></span>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Secciones </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Créditos personales</a></li>
+                        <li><a href="#">Sucursales</a></li>
+                        <li><a href="#">Ayuda</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- /.container-fluid -->
+    </div>
+    <div class="row">
+        <img src="img/oval-level_1.svg" alt="" class="left-oval-desktop">
+        <img src="img/oval-level_2-1.svg" alt="" class="right-oval-desktop">
+        <!-- <button id="btn-solicita-credito-fixed" class="btn btn-outline">Solicita tu Crédito</button> -->
+    </div>
+    <div class="home">
+        <section id="cotizador" class="container">
+            <div class="row center">
+                <div class="menu_credit_type col-xs-12 col-md-6 col-md-offset-3">
+                    <h4>Bienvenido al cotizador de crédito nómina</h4>
+                    <h1 class="big-title">CONSUBANCO</h1>
+                    <span class="action">¡¡Obtén tu dinero en 24 horas!!</span>
+                </div>
+            </div>
+            <div class="row center padding-top" id="step1-credit">
+                <div class="col-xs-12 col-md-8 col-md-offset-2">
+                    <p>Ahora tus datos personales, recuerda que deben ser identicos a los de tu idenficación oficial, te sugerimos tomarle una foto considerando las opciones que te damos abajo, para agilizar y optimizar tu registro </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="center col-xs-12">
+                    <div class="col-xs-6 col-md-2 col-md-offset-4">
+                        <input type="radio" value="ine" id="ine" name="id" data-toggle="modal" data-target="#modalCargaId">
+                        <label for="ine">
+                            <div class="icon-item">
+                                <img src="img/icons/ine.svg" alt="">
+                            </div>
+                        </label>
+                        <p class="credit-text">IFE o INE</p>
+                    </div>
+                    <div class="col-xs-6 col-md-2">
+                        <input type="radio" value="pasaporte" id="pasaporte" name="id" data-toggle="modal" data-target="#modalCargaId">
+                        <label for="pasaporte">
+                            <div class="icon-item">
+                                <img src="img/icons/passport.png" alt="">
+                            </div>
+                        </label>
+                        <p class="credit-text">Pasaporte</p>
+                    </div>
+                    <div class="col-xs-6 col-md-2 col-md-offset-5">
+                        <input type="radio" value="recibo-nomina" id="recibo-nomina" name="id" data-toggle="modal" data-target="#modalCargaRecibo">
+                        <label for="recibo-nomina">
+                            <div class="icon-item">
+                                <img src="img/icons/invoice.svg" alt="">
+                            </div>
+                        </label>
+                        <p class="credit-text">Recibo de nómina</p>
+                    </div>
+                    <div class="col-xs-12 center">
+                        <a href="ofertas-revision.html" class="btn btn-form">Solicita tu crédito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modalCargaId" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="optionsIdPhoto" class="row">
+                                <div class="menu_credit_type center col-xs-12 col-md-8 col-md-offset-2">
+                                    <h3>Elige el medio para capturar tu identificación </h3>
+                                </div>
+                                <div class="col-xs-12">
+                                	
+	                                <div id="loader-smartphone" class="hidden">
+	                                    <div class="sk-folding-cube">
+	                                        <div class="sk-cube1 sk-cube"></div>
+	                                        <div class="sk-cube2 sk-cube"></div>
+	                                        <div class="sk-cube4 sk-cube"></div>
+	                                        <div class="sk-cube3 sk-cube"></div>
+	                                    </div>
+	                                    <div class="center">
+	                                        <span>Estamos enviando un mensaje a tu teléfono</span>
+	                                    </div>
+	                                </div>
+                                </div>
+                                <div class="col-xs-12 alert-div">
+                                    <div id="sms-sent" class="alert alert-info alert-dismissible hidden" role="alert">
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <i class="fa fa-info-circle"></i> Hemos enviado un código SMS a tu celular con las instrucciones.
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-8 col-md-offset-2">
+                                    <div class="col-xs-12 col-md-6 only-desktop">
+                                        <div class="panel panel-border section-panel">
+                                            <div id="panel-webcam" class="panel-body">
+                                                <img src="img/icons/webcam.svg" alt="" class="img-responsive">
+                                            </div>
+                                        </div>
+                                        <h4 class="center">Capturar con Webcam</h4>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6 only-mobile">
+                                        <div class="panel panel-border section-panel carga-smartphone">
+                                            <div class="panel-body">
+                                                <img src="img/icons/mobile-app.svg" alt="" class="img-responsive">
+                                            </div>
+                                        </div>
+                                        <h4 class="center">Capturar con Smarthphone</h4>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6 only-desktop">
+                                        <div class="panel panel-border section-panel anexa-identificacion">
+                                            <div class="panel-body">
+                                                <img src="img/icons/computer.svg" alt="" class="img-responsive">
+                                            </div>
+                                        </div>
+                                        <h4 class="center">Cargar desde mi PC</h4>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-xs-12 center" style="padding: 20px 0;">
+                                    La foto debe ser legible sin tachaduras ni difusion de cámara
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="col-xs-6 col-md-4 col-md-offset-2 center">
+                                        <img src="img/icons/yes-icon.svg" class="svg" alt="">
+                                        <img src="img/ine-si.png" class="img-responsive" alt="" style="padding: 20px 0;">
+                                    </div>
+                                    <div class="col-xs-6 col-md-4 center">
+                                        <img src="img/icons/yes-icon.svg" class="svg no" alt="">
+                                        <img src="img/ine-no.png" class="img-responsive" alt="" style="padding: 20px 0;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="webcam" class="row hidden">
+                                <div class="col-xs-12 col-md-6">
+                                    <video id="video" width="480" height="320" autoplay></video>
+                                    <button class="btn btn-form" id="snap">Tomar foto</button>
+                                </div>
+                                <div class="col-xs-12 col-md-6">
+                                    <canvas id="canvas" width="480" height="320"></canvas>
+                                    <button id="savePhotoWebcam" class="btn btn-form" id="snap">Guardar foto</button>
+                                </div>
+                            </div>
+                            <div id="frente-reverso" class="row hidden">
+                                <div class="col-xs-12 center" style="padding: 20px 0;">
+                                    <div id="loader-id" class="row hidden">
+                                        <div class="sk-folding-cube">
+                                            <div class="sk-cube1 sk-cube"></div>
+                                            <div class="sk-cube2 sk-cube"></div>
+                                            <div class="sk-cube4 sk-cube"></div>
+                                            <div class="sk-cube3 sk-cube"></div>
+                                        </div>
+                                        <div class="center">
+                                            <span>Revisando el archivo cargado</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-8 col-md-offset-2">
+                                    <div class="col-xs-12 col-md-6">
+                                        <input type="file" class="input-file" name="frente" id="frente" accept="image/*;capture=camera">
+                                        <label for="frente">
+                                            <div class="panel panel-border section-panel">
+                                                <div class="panel-body">
+                                                    <img src="img/icons/front-id.svg" alt="" class="img-responsive">
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <h4 class="center">Captura o anexa el frente de tu Identificación</h4>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6">
+                                        <input type="file" class="input-file" name="reverso" id="reverso" accept="image/*;capture=camera">
+                                        <label for="reverso">
+                                            <div class="panel panel-border section-panel">
+                                                <div class="panel-body">
+                                                    <img src="img/icons/back-id.svg" alt="" class="img-responsive">
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <h4 class="center">Captura o anexa el reverso de tu Identificación</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modalCargaRecibo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="optionsIdPhoto" class="row">
+                                <div class="menu_credit_type center col-xs-12 col-md-8 col-md-offset-2">
+                                    <h3>Elige el medio para la captura tu úttimo recibo de nómina </h3>
+                                </div>
+                                <div class="col-xs-12 col-md-8 col-md-offset-2">
+                                    <div class="col-xs-12 col-md-6 only-desktop">
+                                        <div class="panel panel-border section-panel">
+                                            <div id="panel-webcam" class="panel-body">
+                                                <img src="img/icons/webcam.svg" alt="" class="img-responsive">
+                                            </div>
+                                        </div>
+                                        <h4 class="center">Webcam</h4>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6 only-mobile">
+                                        <input type="file" class="input-file" name="smarthphone" id="smarthphone" accept="image/*;capture=camera">
+                                        <label for="smarthphone">
+                                            <div class="panel panel-border section-panel">
+                                                <div class="panel-body">
+                                                    <img src="img/icons/mobile-app.svg" alt="" class="img-responsive">
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <h4 class="center">Smarthphone</h4>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6">
+                                        <input type="file" class="input-file" name="computer" id="computer">
+                                        <label for="computer">
+                                            <div class="panel panel-border section-panel">
+                                                <div class="panel-body">
+                                                    <img src="img/icons/computer.svg" alt="" class="img-responsive">
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <h4 class="center">Computadora</h4>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 center" style="padding: 20px 0;">
+                                    <div id="loader-files" class="row hidden">
+                                        <div class="sk-folding-cube">
+                                            <div class="sk-cube1 sk-cube"></div>
+                                            <div class="sk-cube2 sk-cube"></div>
+                                            <div class="sk-cube4 sk-cube"></div>
+                                            <div class="sk-cube3 sk-cube"></div>
+                                        </div>
+                                        <div class="center">
+                                            <span>Revisando el archivo cargado</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 center" style="padding: 20px 0;">
+                                    La foto debe ser legible sin tachaduras ni difusion de cámara
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="col-xs-6 col-md-4 col-md-offset-2 center">
+                                        <img src="img/icons/yes-icon.svg" class="svg" alt="">
+                                        <img src="img/recibo-si.png" class="img-responsive" alt="" style="padding: 20px 0;">
+                                    </div>
+                                    <div class="col-xs-6 col-md-4 center">
+                                        <img src="img/icons/yes-icon.svg" class="svg no" alt="">
+                                        <img src="img/recibo-no.png" class="img-responsive" alt="" style="padding: 20px 0;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="webcam" class="row hidden">
+                                <div class="col-xs-12 col-md-6">
+                                    <video id="video" width="480" height="320" autoplay></video>
+                                    <button class="btn btn-form" id="snap">Tomar foto</button>
+                                </div>
+                                <div class="col-xs-12 col-md-6">
+                                    <canvas id="canvas" width="480" height="320"></canvas>
+                                    <button id="savePhotoWebcam" class="btn btn-form" id="snap">Guardar foto</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-11 col-md-offset-1">
+                    <div id="form-cotizador"></div>
+                    <div id="propuestas-cotizador"></div>
+                </div>
+            </div>
+        </section>
+        <section class="container" id="cel-credit">
+            <div class="row center">
+                <div class="col-xs-12">
+                    <div class="type-wrap col-md-8 col-md-offset-2">
+                        <div id="typed-strings" class="lead">
+                            <span>Si ya solicitaste el crédito, puedes <br>consultar el estatus ingresando tu celular</span>
+                        </div>
+                        <span id="typed" style="white-space:pre;"></span>
+                    </div>
+                    <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> -->
+                </div>
+                <div class="col-xs-12 col-md-4 col-md-offset-4">
+                    <input id="celular-check" type="text" class="check-status" placeholder="55 1234 5678">
+                </div>
+                <div id="celular-valido" class="col-xs-12 hidden">
+                    <p>Ingresa un número de celular válido</p>
+                </div>
+                <div id="btn-consulta-estatus" class="col-xs-12 hidden">
+                    <a href="status.html" class="btn btn-form">Consultar</a>
+                </div>
+            </div>
+        </section>
+        <section id="pasos-credito" class="container">
+            <div class="center steps-header">
+                <h2>PASOS PARA MÍ CRÉDITO</h2>
+                <span>Tu solicitud de crédito en minutos, es muy fácil</span>
+            </div>
+            <div class="row steps-info center">
+                <div class="col-xs-12 col-md-2 col-md-offset-1">
+                    <img src="img/icons/responsive.svg" alt="">
+                    <h5 class="steps-title">Registrate</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, similique maiores sequi, voluptatem quod aspernatur aut totam praesentium pariatur molestiae ab sit dolores recusandae eos tempore magnam ipsa. Atque, eveniet.</p>
+                </div>
+                <div class="col-xs-12 col-md-2">
+                    <img src="img/icons/documents.svg" alt="">
+                    <h5 class="steps-title">Elige tu crédito</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias nostrum dignissimos praesentium ut sed earum eum? Unde magnam perspiciatis alias voluptatem voluptatum labore accusamus odit aliquam, minima vitae velit sequi!</p>
+                </div>
+                <div class="col-xs-12 col-md-2">
+                    <img src="img/icons/tax.svg" alt="">
+                    <h5 class="steps-title">Firma contratos</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam qui quisquam incidunt, magni ipsam officiis aperiam voluptatum, sapiente laudantium amet non nostrum facilis quasi aspernatur iusto atque, debitis velit omnis.</p>
+                </div>
+                <div class="col-xs-12 col-md-2">
+                    <img src="img/icons/mail.svg" alt="">
+                    <h5 class="steps-title">Envía contratos</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima impedit pariatur eius perferendis quasi sit ut atque, ab aliquid dolorum quo necessitatibus dolore. Voluptatibus repellat soluta corporis, dignissimos, enim id.</p>
+                </div>
+                <div class="col-xs-12 col-md-2">
+                    <img src="img/icons/money_1.svg" alt="">
+                    <h5 class="steps-title">Recibe tu dinero</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae neque beatae impedit modi est ullam expedita exercitationem fugiat debitis, saepe minima aut nisi maiores unde id explicabo dolor, omnis libero.</p>
+                </div>
+            </div>
+        </section>
+        <section class="testimonios" id="testimonios">
+            <div class="row">
+                <img src="img/oval-level_1-1.svg" alt="" class="left-oval-testimony">
+                <img src="img/oval-level_2.svg" alt="" class="right-oval-testimony">
+            </div>
+            <div class="container">
+                <div class="col-xs-12 col-md-4 col-md-offset-4 center">
+                    <h2 class="light-title">Testimonios</h2>
+                </div>
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="row" style="padding: 20px">
+                                <div class="col-xs-12 col-md-4 col-md-offset-4">
+                                    <div class="panel panel-border section-panel">
+                                        <div class="panel-body">
+                                            <img class="testimonio-pic" src="img/profile.jpg" alt="">
+                                            <div class="person">
+                                                <img src="img/quotes.png" alt="">
+                                                <p>Laura López</p>
+                                                <span>Directora de Finanzas INAPAM</span>
+                                            </div>
+                                            <blockquote>
+                                                Es increible!!! en 5 minutos puedo tramitar un credito, es accesible rapido y sencillo, no tengo que ir mas lejos de mi celular
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row" style="padding: 20px">
+                                <div class="col-xs-12 col-md-4 col-md-offset-4">
+                                    <div class="panel panel-border section-panel">
+                                        <div class="panel-body">
+                                            <img class="testimonio-pic" src="img/profile.jpg" alt="">
+                                            <div class="person">
+                                                <img src="img/quotes.png" alt="">
+                                                <p>Ximena Perujo</p>
+                                                <span>Directora de PyME</span>
+                                            </div>
+                                            <blockquote>
+                                                Es increible!!! en 5 minutos puedo tramitar un credito, es accesible rapido y sencillo, no tengo que ir mas lejos de mi celular
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="controls testimonial_control pull-right">
+                        <a class="left fa fa-chevron-left btn btn-default testimonial_btn" href="#carousel-example-generic" data-slide="prev"></a>
+                        <a class="right fa fa-chevron-right btn btn-default testimonial_btn" href="#carousel-example-generic" data-slide="next"></a>
+                    </div>
+                </div>
+                <!-- <div class="center">
 					<div class="col-xs-12 col-md-4 col-md-offset-4">
 						<h2 class="light-title">Testimonios</h2>
 						<div class="panel panel-border section-panel">
@@ -554,92 +506,76 @@
 					</div>
 
 				</div> -->
-			</div>
-		</section>
-
-		<section id="preguntas-frecuentes">
-			<div class="container">
-
-				<div class="row center">
-					<div class="col-xs-12 col-md-4 col-md-offset-4">
-						<h2 class="section-h">Preguntas frecuentes</h2>
-						<div class="questions">
-
-							<a role="button" data-toggle="collapse" href="#donde" aria-expanded="false" aria-controls="donde">
-								<p>¿Dónde puedo recoger mi crédito?</p>
-							</a>
-							<div class="collapse" id="donde">
-							  <div class="well">
-							    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-									Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure.
-							  </div>
-							</div>
-							<a role="button" data-toggle="collapse" href="#via-nomina" aria-expanded="false" aria-controls="via-nomina">
-								<p>¿El descuento es vía nómina?</p>
-							</a>
-							<div class="collapse" id="via-nomina">
-							  <div class="well">
-							    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-									Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure.
-							  </div>
-							</div>
-							<a role="button" data-toggle="collapse" href="#veces-credito" aria-expanded="false" aria-controls="veces-credito">
-								<p>¿Cuántas veces puedo solicitar el crédito?</p>
-							</a>
-							<div class="collapse" id="veces-credito">
-							  <div class="well">
-							    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-									Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure.
-							  </div>
-							</div>
-							<a role="button" data-toggle="collapse" href="#que-es-buro" aria-expanded="false" aria-controls="que-es-buro">
-								<p>¿Qué es un buró de crédito?</p>
-							</a>
-							<div class="collapse" id="que-es-buro">
-							  <div class="well">
-							    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-									Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure.
-							  </div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-	</div><!-- fin home -->
-
-
-	<footer id="contacto" class="footer">
-		<div class="container">
-			<p>¿Necesitas un asesor? Contáctanos</p>
-			<p><a href="tel:5500000000"><i class="fa fa-volume-control-phone fa-2x" aria-hidden="true"></i> 55 0000 0000</a></p>
-			<p><a href="mailto:contact@vepormas.com"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i> contacto@consubanco.com</a></p>
-
-		</div>
-	</footer>
-
-
-
-	<script src="libs/jquery.js"></script>
-	<script src="libs/bootstrap.js"></script>
-	<script src="libs/jquery.navgoco.min.js"></script>
-	<script src="libs/bootstrap-datepicker.min.js"></script>
-	<script src="libs/bootstrap-datepicker.es.min.js"></script>
-	<script src="libs/bootstrap-editable.min.js"></script>
-	<script src="libs/cleave.min.js"></script>
-	<script src="libs/cleave-phone.mx.js"></script>
-	<script src="libs/swiper.min.js"></script>
-	<script src="libs/dropzone.min.js"></script>
-	<script src="libs/typed.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/locale/es.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
-
-	<script src="js/index.js"></script>
-	<script src="js/identificacion.js"></script>
-
-
+            </div>
+        </section>
+        <section id="preguntas-frecuentes">
+            <div class="container">
+                <div class="row center">
+                    <div class="col-xs-12 col-md-4 col-md-offset-4">
+                        <h2 class="section-h">Preguntas frecuentes</h2>
+                        <div class="questions">
+                            <a role="button" data-toggle="collapse" href="#donde" aria-expanded="false" aria-controls="donde">
+                                <p>¿Dónde puedo recoger mi crédito?</p>
+                            </a>
+                            <div class="collapse" id="donde">
+                                <div class="well">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure.
+                                </div>
+                            </div>
+                            <a role="button" data-toggle="collapse" href="#via-nomina" aria-expanded="false" aria-controls="via-nomina">
+                                <p>¿El descuento es vía nómina?</p>
+                            </a>
+                            <div class="collapse" id="via-nomina">
+                                <div class="well">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure.
+                                </div>
+                            </div>
+                            <a role="button" data-toggle="collapse" href="#veces-credito" aria-expanded="false" aria-controls="veces-credito">
+                                <p>¿Cuántas veces puedo solicitar el crédito?</p>
+                            </a>
+                            <div class="collapse" id="veces-credito">
+                                <div class="well">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure.
+                                </div>
+                            </div>
+                            <a role="button" data-toggle="collapse" href="#que-es-buro" aria-expanded="false" aria-controls="que-es-buro">
+                                <p>¿Qué es un buró de crédito?</p>
+                            </a>
+                            <div class="collapse" id="que-es-buro">
+                                <div class="well">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- fin home -->
+    <footer id="contacto" class="footer">
+        <div class="container">
+            <p>¿Necesitas un asesor? Contáctanos</p>
+            <p><a href="tel:5500000000"><i class="fa fa-volume-control-phone fa-2x" aria-hidden="true"></i> 55 0000 0000</a></p>
+            <p><a href="mailto:contact@vepormas.com"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i> contacto@consubanco.com</a></p>
+        </div>
+    </footer>
+    <script src="libs/jquery.js"></script>
+    <script src="libs/bootstrap.js"></script>
+    <script src="libs/jquery.navgoco.min.js"></script>
+    <script src="libs/bootstrap-datepicker.min.js"></script>
+    <script src="libs/bootstrap-datepicker.es.min.js"></script>
+    <script src="libs/bootstrap-editable.min.js"></script>
+    <script src="libs/cleave.min.js"></script>
+    <script src="libs/cleave-phone.mx.js"></script>
+    <script src="libs/swiper.min.js"></script>
+    <script src="libs/dropzone.min.js"></script>
+    <script src="libs/typed.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/locale/es.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/identificacion.js"></script>
 </body>
 
 </html>
