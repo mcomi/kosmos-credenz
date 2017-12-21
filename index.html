@@ -97,23 +97,18 @@
 			</div>
 			<ul id="desktop-menu" class="nav navbar-nav">
 				<li>
-					<span><img src="img/icons/nomina.svg" alt=""></span>
 					<a href="#cotizador">Crédito nómina</a>
 				</li>
 				<li>
-					<span><img src="img/icons/url.svg" alt=""></span>
-					<a href="#contacto">Url de acceso</a>
+					<a href="#contacto">Continuar mi solicitud</a>
 				</li>
 				<li>
-					<span><img src="img/icons/steps_credit.svg" alt=""></span>
 					<a href="#pasos-credito">Pasos para crédito</a>
 				</li>
 				<li>
-					<span><img src="img/icons/testimonies.svg" alt=""></span>
 					<a href="#testimonios">Testimonios</a>
 				</li>
 				<li>
-					<span><img src="img/icons/faq.svg" alt=""></span>
 					<a href="#preguntas-frecuentes">Preguntas frecuentes</a>
 				</li>
 
@@ -124,135 +119,128 @@
 	</div>
 
 	<div >
-		<img src="img/circle-morado-1.png" alt="" class="left-oval-desktop">
-		<img src="img/circle-pink-1.png" alt="" class="left-oval-desktop down">
-		<img src="img/circle-verde-1.png" alt="" class="right-oval-desktop">
-		<img src="img/circle-amarillo-1.png" alt="" class="right-oval-desktop down">
+
 		<a href="identificacion.html" id="btn-solicita-credito-fixed" class="btn btn-outline">Solicita tu Crédito</a>
 	</div>
 
 	<div class="home">
-		<section id="cotizador" class="container">
-			<div class="row center">
-		    <div class="menu_credit_type col-xs-12 col-md-6 col-md-offset-3">
-		      <h4>Bienvenido al cotizador de crédito nómina</h4>
-		      <h1 class="big-title">CREDENZ</h1>
-		      <span class="action">¡¡Obtén tu dinero en 24 horas!!</span>
-		    </div>
-		  </div>
+		<section id="cotizador">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2" id="cotizador-container">
+						<div class="row center">
+					    <div class="menu_credit_type col-xs-12 col-md-6 col-md-offset-3">
+					      <h4>Bienvenido al cotizador de sitio principal</h4>
 
-			<div class="row center padding-top" id="step1-credit">
-		    <div class="col-xs-12 col-md-6 col-md-offset-3">
-		      <label for="estado">¿En qúe Estado te encuentras?</label>
-		      <select class="form-control validate" id="estado" placeholder="">
-		        <option value="" selected>...</option>
-		        <option value="1">Aguascalientes</option>
-		        <option value="2">Baja California</option>
-		        <option value="3">Baja California Sur</option>
-		        <option value="4">Campeche</option>
-		        <option value="5">Coahuila de Zaragoza</option>
-		        <option value="6">Colima</option>
-		        <option value="7">Chiapas</option>
-		        <option value="8">Chihuahua</option>
-		        <option value="9">Distrito Federal</option>
-		        <option value="10">Durango</option>
-		        <option value="11">Guanajuato</option>
-		        <option value="12">Guerrero</option>
-		        <option value="13">Hidalgo</option>
-		        <option value="14">Jalisco</option>
-		        <option value="15">México</option>
-		        <option value="16">Michoacán de Ocampo</option>
-		        <option value="17">Morelos</option>
-		        <option value="18">Nayarit</option>
-		        <option value="19">Nuevo León</option>
-		        <option value="20">Oaxaca</option>
-		        <option value="21">Puebla</option>
-		        <option value="22">Querétaro</option>
-		        <option value="23">Quintana Roo</option>
-		        <option value="24">San Luis Potosí</option>
-		        <option value="25">Sinaloa</option>
-		        <option value="26">Sonora</option>
-		        <option value="27">Tabasco</option>
-		        <option value="28">Tamaulipas</option>
-		        <option value="29">Tlaxcala</option>
-		        <option value="30">Veracruz de Ignacio de la Llave</option>
-		        <option value="31">Yucatán</option>
-		        <option value="32">Zacatecas</option>
-		      </select>
-		    </div>
-		    <div id="elige-dependencia" class="col-xs-12 col-md-10 col-md-offset-1 hidden padding-top">
-		      <p>Para iniciar cuentanos tu depencia  el monto que necesitas y algunos datos</p>
-		      <div id="opciones-dependencias" class="menu_credit_type col-xs-12 col-md-10 col-md-offset-2">
-		        <div id="dependencia1" class="col-xs-6 col-md-2">
-		          <input type="radio" value="pemex" id="pemex" name="dependencia">
-		          <label for="pemex">
-		            <div class="icon-item">
-		              <img src="img/icons/sep.png" alt="">
-		            </div>
-		          </label>
-		          <p class="credit-text">SEP</p>
-		        </div>
-		        <div id="dependencia2" class="col-xs-6 col-md-2">
-		          <input type="radio" value="ssap" id="ssap" name="dependencia">
-		          <label for="ssap">
-		            <div class="icon-item">
-		              <img src="img/icons/pensionados.svg" alt="">
-		            </div>
-		          </label>
-		          <p class="credit-text">Jubilados y Pensionados</p>
-		        </div>
-		        <div id="dependencia3" class="col-xs-6 col-md-2">
-		          <input type="radio" value="ssah" id="ssah" name="dependencia">
-		          <label for="ssah">
-		            <div class="icon-item">
-		              <img src="img/icons/pemex.svg" alt="">
-		            </div>
-		          </label>
-		          <p class="credit-text">PEMEX</p>
-		        </div>
-		        <div id="dependencia4" class="col-xs-6 col-md-2">
-		          <input type="radio" value="gob_quer" id="gob_quer" name="dependencia">
-		          <label for="gob_quer">
-		            <div class="icon-item">
-		              <img src="img/icons/imss.svg" alt="">
-		            </div>
-		          </label>
-		          <p class="credit-text">IMSS</p>
-		        </div>
-		        <div class="col-xs-6 col-md-2">
-		          <input type="radio" value="otra" id="otra" name="dependencia">
-		          <label for="otra">
-		            <div class="icon-item">
-		              <img src="img/icons/otros.png" alt="">
-		            </div>
-		          </label>
-		          <p class="credit-text">OTRO</p>
-		        </div>
-		      </div>
+					      <span class="action">¡Obtén tu dinero en 24 horas!</span>
+					    </div>
+					  </div>
+
+						<div class="row center padding-top" id="step1-credit">
+					    <div class="col-xs-12 col-md-6 col-md-offset-3">
+					      <label for="estado">¿En qúe estado te encuentras?</label>
+					      <select class="form-control validate" id="estado" placeholder="">
+					        <option value="" selected>...</option>
+					        <option value="1">Aguascalientes</option>
+					        <option value="2">Baja California</option>
+					        <option value="3">Baja California Sur</option>
+					        <option value="4">Campeche</option>
+					        <option value="5">Coahuila de Zaragoza</option>
+					        <option value="6">Colima</option>
+					        <option value="7">Chiapas</option>
+					        <option value="8">Chihuahua</option>
+					        <option value="9">Distrito Federal</option>
+					        <option value="10">Durango</option>
+					        <option value="11">Guanajuato</option>
+					        <option value="12">Guerrero</option>
+					        <option value="13">Hidalgo</option>
+					        <option value="14">Jalisco</option>
+					        <option value="15">México</option>
+					        <option value="16">Michoacán de Ocampo</option>
+					        <option value="17">Morelos</option>
+					        <option value="18">Nayarit</option>
+					        <option value="19">Nuevo León</option>
+					        <option value="20">Oaxaca</option>
+					        <option value="21">Puebla</option>
+					        <option value="22">Querétaro</option>
+					        <option value="23">Quintana Roo</option>
+					        <option value="24">San Luis Potosí</option>
+					        <option value="25">Sinaloa</option>
+					        <option value="26">Sonora</option>
+					        <option value="27">Tabasco</option>
+					        <option value="28">Tamaulipas</option>
+					        <option value="29">Tlaxcala</option>
+					        <option value="30">Veracruz de Ignacio de la Llave</option>
+					        <option value="31">Yucatán</option>
+					        <option value="32">Zacatecas</option>
+					      </select>
+					    </div>
+					    <div id="elige-dependencia" class="col-xs-12 col-md-10 col-md-offset-1 hidden padding-top">
+					      <p class="small">Para iniciar cuentanos tu depencia, el monto que necesitas y algunos datos</p>
+					      <div id="opciones-dependencias" class="menu_credit_type col-xs-12 col-md-8 col-md-offset-2">
+					        <div id="dependencia1" class="col-xs-6 col-md-2">
+					          <input type="radio" value="pemex" id="pemex" name="dependencia">
+					          <label for="pemex">
+					            <div class="icon-item">
+					              <img src="img/icons/sep.png" alt="">
+					            </div>
+					          </label>
+					          <p class="credit-text">SEP</p>
+					        </div>
 
 
-		    </div>
-		  </div>
+					        <div id="dependencia4" class="col-xs-6 col-md-2">
+					          <input type="radio" value="gob_quer" id="gob_quer" name="dependencia">
+					          <label for="gob_quer">
+					            <div class="icon-item">
+					              <img src="img/icons/imss.svg" alt="">
+					            </div>
+					          </label>
+					          <p class="credit-text">IMSS</p>
+					        </div>
+					        <div class="col-xs-6 col-md-2">
+					          <input type="radio" value="otra" id="otra" name="dependencia">
+					          <label for="otra">
+					            <div class="icon-item">
+					              <img src="img/icons/otros.png" alt="">
+					            </div>
+					          </label>
+					          <p class="credit-text">OTRO</p>
+					        </div>
+					      </div>
 
-			<div class="row">
-		    <div id="otraDependencia" class="form-group col-xs-12 col-md-6 col-md-offset-3 padding-dekstop-col hidden">
-		      <label for="dependencia">Ingresa tu dependencia</label>
-		      <input type="text" class="form-control validate" id="dependencia" placeholder="">
-		      <span class="input-success"></span>
-		      <span class="input-error"></span>
-		    </div>
-		    <div class="form-group col-xs-12 col-md-5 col-md-offset-3 padding-dekstop-col">
-		      <label for="percepciones" id="label-percepciones">Percepciones libres
-		        <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Tooltip on right"></i>
-		      </label>
-		      <input type="tel" class="form-control validate input-number" id="percepciones" placeholder="">
-		      <span class="input-success"></span>
-		      <span class="input-error"></span>
-		    </div>
-		    <div class="col-xs-12 col-md-5 col-md-offset-3 padding-dekstop-col">
-		      <button id="btnSolicitarOfertas" class="btn btn-form">Solicitar</button>
-		    </div>
-		  </div>
+
+					    </div>
+					  </div>
+
+						<div class="row">
+					    <div id="otraDependencia" class="form-group col-xs-12 col-md-6 col-md-offset-3 padding-dekstop-col hidden">
+					      <label for="dependencia">Ingresa tu dependencia</label>
+					      <input type="text" class="form-control validate" id="dependencia" placeholder="">
+					      <span class="input-success"></span>
+					      <span class="input-error"></span>
+					    </div>
+					    <div class="form-group col-xs-12 col-md-5 col-md-offset-3 padding-dekstop-col">
+					      <label for="percepciones" id="label-percepciones">Percepciones libres
+					        <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Tooltip on right"></i>
+					      </label>
+					      <input type="tel" class="form-control validate input-number" id="percepciones" placeholder="">
+					      <span class="input-success"></span>
+					      <span class="input-error"></span>
+					    </div>
+					    <div class="col-xs-12 col-md-5 col-md-offset-3 padding-dekstop-col">
+					      <button id="btnSolicitarOfertas" class="btn btn-form">Solicitar</button>
+					    </div>
+					  </div>
+					</div>
+				</div>
+
+			</div>
+
+
+
+
+
 
 			<div id="loader-ofertas-credito" class="row hidden">
 		    <div class="sk-folding-cube">
@@ -330,32 +318,32 @@
 		</section>
 
 		<section id="cel-credit">
-		  <div class="container center">
+		  <div class="container">
 		    <div class="col-xs-12">
-		      <div class="col-md-8 col-md-offset-2">
-		          <div class="lead">
-		            <span>Si ya solicitaste el crédito, puedes <br>consultar el estatus ingresando tu celular</span>
-		          </div>
-		      </div>
+					<div class="cuadro-amarillo"> </div>
+  				<div class="cuadro-gris"></div>
+				  <div class="continua-credito">
+							<div class="row">
+								<div class="col-xs-12">
+									<h2 class="continua-titulo">Si ya solicitaste el crédito</h2>
+									<span> Puedes consultar el estatus ingresando tu celular</span>
+								</div>
+								<div class="col-xs-12 col-md-4 col-md-offset-4">
+									<input type="text" class="continua-cel-input" id="celular-check" placeholder="55 1234 5678">
+								</div>
+								<div class="col-xs-12 derecha">
+									<button type="submit" class="btn btn-consulta-credit">Consultar</button>
+								</div>
+								<div id="celular-valido" class="col-xs-12 hidden">
+									<p>Ingresa un número de celular válido</p>
+								</div>
 
+							</div>
 
-		      <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> -->
-		    </div>
-		    <div class="col-xs-12 col-md-6 col-md-offset-3">
-		      <form class="form-inline">
-		        <div class="form-group">
-		          <input type="text" class="form-control" id="celular-check" placeholder="55 1234 5678">
-		        </div>
-		        <button type="submit" class="btn btn-consulta">Consultar</button>
-		      </form>
+					</div>
+				</div>
+			</div>
 
-		    </div>
-		    <div id="celular-valido" class="col-xs-12 hidden">
-		      <p>Ingresa un número de celular válido</p>
-		    </div>
-
-
-		  </div>
 		</section>
 
 		<section id="pasos-credito">
@@ -366,55 +354,63 @@
 		      <span>Tu solicitud de crédito en minutos, es muy fácil</span>
 		    </div>
 		    <div class="row steps-info center">
-		      <div class="col-xs-12 col-md-2 col-md-offset-1">
-		        <div class="step">
+					<div class="col-xs-12 col-md-10 col-md-offset-1">
 
-		          <img src="img/icons/responsive.svg" alt="">
-		          <h5 class="steps-title">Registrate</h5>
-		          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-		        </div>
-		      </div>
-		      <div class="col-xs-12 col-md-2">
-		        <div class="step">
+						<div class="col-xs-12 col-md-4">
+							<div class="step">
+								<div class="border-hover"></div>
+								<h3>01</h3>
+								<img src="img/icons/01.png" alt="">
+								<h5 class="steps-title">Registr<span class="underline">ate</span></h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-4">
+							<div class="step">
+								<div class="border-hover"></div>
+								<h3>02</h3>
+								<img src="img/icons/02.png" alt="">
+								<h5 class="steps-title">Elige tu créd<span class="underline">ito</span></h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-4">
+							<div class="step">
+								<div class="border-hover"></div>
+								<h3>03</h3>
+								<img src="img/icons/03.png" alt="">
+								<h5 class="steps-title">Firma contra<span class="underline">tos</span></h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-8 col-md-offset-3">
 
-		          <img src="img/icons/documents.svg" alt="">
-		          <h5 class="steps-title">Elige tu crédito</h5>
-		          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-		        </div>
-		      </div>
-		      <div class="col-xs-12 col-md-2">
-		        <div class="step">
-
-		          <img src="img/icons/tax.svg" alt="">
-		          <h5 class="steps-title">Firma contratos</h5>
-		          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-		        </div>
-		      </div>
-		      <div class="col-xs-12 col-md-2">
-		        <div class="step">
-
-		          <img src="img/icons/mail.svg" alt="">
-		          <h5 class="steps-title">Envía contratos</h5>
-		          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-		        </div>
-		      </div>
-		      <div class="col-xs-12 col-md-2">
-		        <div class="step">
-
-		          <img src="img/icons/money_1.svg" alt="">
-		          <h5 class="steps-title">Recibe tu dinero</h5>
-		          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-		        </div>
-		      </div>
+						<div class="col-xs-12 col-md-5">
+							<div class="step">
+								<div class="border-hover"></div>
+								<h3>04</h3>
+								<img src="img/icons/04.png" alt="">
+								<h5 class="steps-title">Envía contra<span class="underline">tos</span></h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-5">
+							<div class="step">
+								<div class="border-hover"></div>
+								<h3>05</h3>
+								<img src="img/icons/05.png" alt="">
+								<h5 class="steps-title">Recibe tu din<span class="underline">ero</span></h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+							</div>
+						</div>
+					</div>
 		    </div>
 		  </div>
 		</section>
 
 		<section class="testimonios" id="testimonios">
 		  <div class="container">
-		    <div class="center steps-header" style="padding-top: 0px;">
-		      <h2>Testimonios</h2>
-		    </div>
 
 		    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 		          <!-- Wrapper for slides -->
@@ -422,42 +418,25 @@
 		            <div class="item active">
 
 		              <div class="row">
-		                <div class="col-xs-12 col-md-6">
-		                  <div class="col-md-3 col-xs-4">
+										<div class="col-xs-12 col-md-10 col-md-offset-1 testimony-container">
+											<div class="col-md-4 col-xs-12" id="pic-testimony">
+											</div>
+											<div class="col-md-8 col-xs-12 testimony-quotes">
+												<div class="col-md-6 col-xs-6 testimony-name active">
+													<h2>Laura López</h2>
+													<span>Directora de Finanzas INAPAM</span>
+												</div>
+												<div class="col-md-6 col-xs-6 testimony-name">
+													<h2>Ximena Estrada</h2>
+													<span>Directora de Economía INAPAM</span>
+												</div>
+												<div class="col-md-12 col-xs-12">
+													<blockquote>Es increible!!! en 5 minutos puedo tramitar un credito, es accesible rapido y sencillo, no tengo que ir mas lejos de mi celular</blockquote>
+												</div>
+											</div>
+										</div>
 
-		                    <div class="person-testimony">
-		                      <img class="testimonio-pic" src="img/profile.jpg" alt="">
-		                    </div>
-		                  </div>
-		                  <div class="col-md-9 col-xs-8">
 
-		                    <div class="talk-bubble tri-right round left-in">
-		                      <div class="talktext">
-		                        <p>Es increible!!! en 5 minutos puedo tramitar un credito, es accesible rapido y sencillo, no tengo que ir mas lejos de mi celular</p>
-		                      </div>
-		                    </div>
-		                  </div>
-											<p>Laura López, Directora de Finanzas INAPAM</span>
-
-		                </div>
-		                <div class="col-xs-12 col-md-6">
-		                  <div class="col-md-9 col-xs-8">
-
-		                    <div class="talk-bubble left tri-right round right-in">
-		                      <div class="talktext">
-		                        <p>Es increible!!! en 5 minutos puedo tramitar un credito, es accesible rapido y sencillo, no tengo que ir mas lejos de mi celular</p>
-		                      </div>
-		                    </div>
-
-		                  </div>
-		                  <div class="col-md-3 col-xs-4">
-
-		                    <div class="person-testimony">
-		                      <img class="testimonio-pic" src="img/profile.jpg" alt="">
-		                    </div>
-		                  </div>
-											<p class="testimony-name-right">Laura López, Directora de Finanzas INAPAM</p>
-		                </div>
 		              </div>
 		            </div>
 
@@ -474,47 +453,29 @@
 		  <div class="container">
 
 		    <div class="row center">
-		      <div class="col-xs-12 col-md-4 col-md-offset-4">
-		        <h2 class="section-h">Preguntas frecuentes</h2>
-		        <div class="questions">
+		      <div class="col-xs-12 col-md-9 col-md-offset-2 preguntas-container">
+		        <h2>Preguntas frecuentes</h2>
+						<div class="col-xs-12 col-md-6 question">
+							<h4>¿Dónde puedo recoger mi crédito?</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							Ut enim ad minim veniam, quis nostrud exercitation </p>
+						</div>
+						<div class="col-xs-12 col-md-6 question">
+							<h4>¿Cuántas veces puedo solicitar el crédito?</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							Ut enim ad minim veniam, quis nostrud exercitation </p>
+						</div>
+						<div class="col-xs-12 col-md-6 question">
+							<h4>¿El descuento es vía nómina?</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							Ut enim ad minim veniam, quis nostrud exercitation </p>
+						</div>
+						<div class="col-xs-12 col-md-6 question">
+							<h4>¿Qué es un buró de crédito?</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							Ut enim ad minim veniam, quis nostrud exercitation </p>
+						</div>
 
-		          <a role="button" data-toggle="collapse" href="#donde" aria-expanded="false" aria-controls="donde">
-		            <p>¿Dónde puedo recoger mi crédito?</p>
-		          </a>
-		          <div class="collapse" id="donde">
-		            <div class="well">
-		              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-		              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure.
-		            </div>
-		          </div>
-		          <a role="button" data-toggle="collapse" href="#via-nomina" aria-expanded="false" aria-controls="via-nomina">
-		            <p>¿El descuento es vía nómina?</p>
-		          </a>
-		          <div class="collapse" id="via-nomina">
-		            <div class="well">
-		              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-		              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure.
-		            </div>
-		          </div>
-		          <a role="button" data-toggle="collapse" href="#veces-credito" aria-expanded="false" aria-controls="veces-credito">
-		            <p>¿Cuántas veces puedo solicitar el crédito?</p>
-		          </a>
-		          <div class="collapse" id="veces-credito">
-		            <div class="well">
-		              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-		              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure.
-		            </div>
-		          </div>
-		          <a role="button" data-toggle="collapse" href="#que-es-buro" aria-expanded="false" aria-controls="que-es-buro">
-		            <p>¿Qué es un buró de crédito?</p>
-		          </a>
-		          <div class="collapse" id="que-es-buro">
-		            <div class="well">
-		              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-		              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure.
-		            </div>
-		          </div>
-		        </div>
 		      </div>
 		    </div>
 		  </div>
@@ -525,9 +486,9 @@
 
 	<footer id="contacto" class="footer">
 		<div class="container">
-			<p>¿Necesitas un asesor? Contáctanos</p>
-			<p><a href="tel:5500000000"><i class="fa fa-volume-control-phone fa-2x" aria-hidden="true"></i> 55 0000 0000</a></p>
-			<p><a href="mailto:contact@vepormas.com"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i> contacto@credenz.com</a></p>
+			<p class="footer-title"><b>¿Necesitas un asesor?</b> Contáctanos</p>
+			<p><a href="tel:018000300029"> 01800 03 00 029</a></p>
+			<p><a href="mailto:contacto@credenz.com"> contacto@credenz.com</a></p>
 
 		</div>
 	</footer>
