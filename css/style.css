@@ -810,8 +810,8 @@ a:hover .doc-info {
 
 #btn-solicita-credito-fixed {
   position: fixed;
-  top: 14%;
-  right: 2%;
+  top: 92%;
+  right: 54%;
   border: 1px solid #5b56a6;
   padding: 4px 12px;
   border-radius: 24px;
@@ -1890,7 +1890,7 @@ blockquote::after {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); }
 
 #cotizador {
-  min-height: 110vh;
+  min-height: 125vh;
   background-image: url("../img/family.jpg");
   /* Full height */
   height: 100%;
@@ -2335,7 +2335,8 @@ blockquote::after {
   .chart-row {
     padding-top: 40px; }
   #btn-solicita-credito-fixed {
-    top: 15%; }
+    top: 15%;
+    right: 2%; }
   .controls .left {
     left: 25%; }
   .controls .right {
