@@ -33,6 +33,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/css/bootstrap-editable.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.1/css/bootstrap-slider.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<link rel="stylesheet" href="css/style.css">
 
 	<!-- Tile icon for Win8 (144x144 + tile color) -->
@@ -43,12 +44,27 @@
 	<meta name="theme-color" content="#263238">
 	<!--Start of Zendesk Chat Script-->
 	<script type="text/javascript">
-	window.$zopim||(function(d,s){var z=$zopim=function(c){
-	z._.push(c)},$=z.s=
-	d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
-	_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
-	$.src='https://v2.zopim.com/?3yzgriahgDDeSaTbggkQTjm0lYtBrfvG';z.t=+new Date;$.
-	type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+		window.$zopim || (function(d, s) {
+			var z = $zopim = function(c) {
+					z._.push(c)
+				},
+				$ = z.s =
+				d.createElement(s),
+				e = d.getElementsByTagName(s)[0];
+			z.set = function(o) {
+				z.set.
+				_.push(o)
+			};
+			z._ = [];
+			z.set._ = [];
+			$.async = !0;
+			$.setAttribute('charset', 'utf-8');
+			$.src = 'https://v2.zopim.com/?3yzgriahgDDeSaTbggkQTjm0lYtBrfvG';
+			z.t = +new Date;
+			$.
+			type = 'text/javascript';
+			e.parentNode.insertBefore($, e)
+		})(document, 'script');
 	</script>
 	<!--End of Zendesk Chat Script-->
 </head>
@@ -118,7 +134,7 @@
 		<!-- /.container-fluid -->
 	</div>
 
-	<div >
+	<div>
 
 		<a href="identificacion.html" id="btn-solicita-credito-fixed" class="btn btn-outline">Solicita tu Crédito</a>
 	</div>
@@ -128,111 +144,265 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2" id="cotizador-container">
-						<div class="row center">
-					    <div class="menu_credit_type col-xs-12 col-md-6 col-md-offset-3">
-					      <h4>Bienvenido al cotizador de sitio principal</h4>
+						<div class="step-landing animated bounceInRight">
+							  <!-- encabezado -->
+								<div class="row center">
+									<div class="menu_credit_type col-xs-12 col-md-6 col-md-offset-3">
+										<h4>Bienvenido al cotizador de sitio principal</h4>
 
-					      <span class="action">¡Obtén tu dinero en 24 horas!</span>
-					    </div>
-					  </div>
+										<span class="action">¡Obtén tu dinero en 24 horas!</span>
+									</div>
+								</div>
 
-						<div class="row center padding-top" id="step1-credit">
-					    <div class="col-xs-12 col-md-6 col-md-offset-3">
-					      <label for="estado">¿En qúe estado te encuentras?</label>
-					      <select class="form-control validate" id="estado" placeholder="">
-					        <option value="" selected>...</option>
-					        <option value="1">Aguascalientes</option>
-					        <option value="2">Baja California</option>
-					        <option value="3">Baja California Sur</option>
-					        <option value="4">Campeche</option>
-					        <option value="5">Coahuila de Zaragoza</option>
-					        <option value="6">Colima</option>
-					        <option value="7">Chiapas</option>
-					        <option value="8">Chihuahua</option>
-					        <option value="9">Distrito Federal</option>
-					        <option value="10">Durango</option>
-					        <option value="11">Guanajuato</option>
-					        <option value="12">Guerrero</option>
-					        <option value="13">Hidalgo</option>
-					        <option value="14">Jalisco</option>
-					        <option value="15">México</option>
-					        <option value="16">Michoacán de Ocampo</option>
-					        <option value="17">Morelos</option>
-					        <option value="18">Nayarit</option>
-					        <option value="19">Nuevo León</option>
-					        <option value="20">Oaxaca</option>
-					        <option value="21">Puebla</option>
-					        <option value="22">Querétaro</option>
-					        <option value="23">Quintana Roo</option>
-					        <option value="24">San Luis Potosí</option>
-					        <option value="25">Sinaloa</option>
-					        <option value="26">Sonora</option>
-					        <option value="27">Tabasco</option>
-					        <option value="28">Tamaulipas</option>
-					        <option value="29">Tlaxcala</option>
-					        <option value="30">Veracruz de Ignacio de la Llave</option>
-					        <option value="31">Yucatán</option>
-					        <option value="32">Zacatecas</option>
-					      </select>
-					    </div>
-					    <div id="elige-dependencia" class="col-xs-12 col-md-10 col-md-offset-1 hidden padding-top">
-					      <p class="small">Para iniciar cuentanos tu depencia, el monto que necesitas y algunos datos</p>
-					      <div id="opciones-dependencias" class="menu_credit_type col-xs-12 col-md-8 col-md-offset-2">
-					        <div id="dependencia1" class="col-xs-6 col-md-2">
-					          <input type="radio" value="pemex" id="pemex" name="dependencia">
-					          <label for="pemex">
-					            <div class="icon-item">
-					              <img src="img/icons/sep.png" alt="">
-					            </div>
-					          </label>
-					          <p class="credit-text">SEP</p>
-					        </div>
+								<!-- dependencias -->
 
-
-					        <div id="dependencia4" class="col-xs-6 col-md-2">
-					          <input type="radio" value="gob_quer" id="gob_quer" name="dependencia">
-					          <label for="gob_quer">
-					            <div class="icon-item">
-					              <img src="img/icons/imss.svg" alt="">
-					            </div>
-					          </label>
-					          <p class="credit-text">IMSS</p>
-					        </div>
-					        <div class="col-xs-6 col-md-2">
-					          <input type="radio" value="otra" id="otra" name="dependencia">
-					          <label for="otra">
-					            <div class="icon-item">
-					              <img src="img/icons/otros.png" alt="">
-					            </div>
-					          </label>
-					          <p class="credit-text">OTRO</p>
-					        </div>
-					      </div>
+								<div class="row center padding-top">
+									<div class="col-xs-12 col-md-6 col-md-offset-3">
+										<label for="estado">¿En qúe estado te encuentras?</label>
+										<select class="form-control validate" id="estado" placeholder="">
+											<option value="" selected>...</option>
+											<option value="1">Aguascalientes</option>
+											<option value="2">Baja California</option>
+											<option value="3">Baja California Sur</option>
+											<option value="4">Campeche</option>
+											<option value="5">Coahuila de Zaragoza</option>
+											<option value="6">Colima</option>
+											<option value="7">Chiapas</option>
+											<option value="8">Chihuahua</option>
+											<option value="9">Distrito Federal</option>
+											<option value="10">Durango</option>
+											<option value="11">Guanajuato</option>
+											<option value="12">Guerrero</option>
+											<option value="13">Hidalgo</option>
+											<option value="14">Jalisco</option>
+											<option value="15">México</option>
+											<option value="16">Michoacán de Ocampo</option>
+											<option value="17">Morelos</option>
+											<option value="18">Nayarit</option>
+											<option value="19">Nuevo León</option>
+											<option value="20">Oaxaca</option>
+											<option value="21">Puebla</option>
+											<option value="22">Querétaro</option>
+											<option value="23">Quintana Roo</option>
+											<option value="24">San Luis Potosí</option>
+											<option value="25">Sinaloa</option>
+											<option value="26">Sonora</option>
+											<option value="27">Tabasco</option>
+											<option value="28">Tamaulipas</option>
+											<option value="29">Tlaxcala</option>
+											<option value="30">Veracruz de Ignacio de la Llave</option>
+											<option value="31">Yucatán</option>
+											<option value="32">Zacatecas</option>
+										</select>
+									</div>
+									<div id="elige-dependencia" class="col-xs-12 col-md-10 col-md-offset-1 padding-top">
+										<p class="small">Para iniciar cuentanos tu depencia, el monto que necesitas y algunos datos</p>
+										<div id="opciones-dependencias" class="menu_credit_type col-xs-12 col-md-8 col-md-offset-2">
+											<div id="dependencia1" class="col-xs-4 col-md-4">
+												<input type="radio" value="pemex" id="pemex" name="dependencia">
+												<label for="pemex">
+													<div class="icon-item">
+														<img src="img/icons/sep.png" alt="">
+													</div>
+												</label>
+												<p class="credit-text">SEP</p>
+											</div>
 
 
-					    </div>
-					  </div>
+											<div id="dependencia4" class="col-xs-4 col-md-4">
+												<input type="radio" value="gob_quer" id="gob_quer" name="dependencia">
+												<label for="gob_quer">
+													<div class="icon-item">
+														<img src="img/icons/imss.svg" alt="">
+													</div>
+												</label>
+												<p class="credit-text">IMSS</p>
+											</div>
+											<div class="col-xs-4 col-md-4">
+												<input type="radio" value="otra" id="otra" name="dependencia">
+												<label for="otra">
+													<div class="icon-item">
+														<img src="img/icons/otros.png" alt="">
+													</div>
+												</label>
+												<p class="credit-text">OTRO</p>
+											</div>
+										</div>
 
-						<div class="row">
-					    <div id="otraDependencia" class="form-group col-xs-12 col-md-6 col-md-offset-3 padding-dekstop-col hidden">
-					      <label for="dependencia">Ingresa tu dependencia</label>
-					      <input type="text" class="form-control validate" id="dependencia" placeholder="">
-					      <span class="input-success"></span>
-					      <span class="input-error"></span>
-					    </div>
-					    <div class="form-group col-xs-12 col-md-5 col-md-offset-3 padding-dekstop-col">
-					      <label for="percepciones" id="label-percepciones">Percepciones libres
-					        <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Tooltip on right"></i>
-					      </label>
-					      <input type="tel" class="form-control validate input-number" id="percepciones" placeholder="">
-					      <span class="input-success"></span>
-					      <span class="input-error"></span>
-					    </div>
-					    <div class="col-xs-12 col-md-5 col-md-offset-3 padding-dekstop-col">
-					      <button id="btnSolicitarOfertas" class="btn btn-form">Solicitar</button>
-					    </div>
-					  </div>
+
+									</div>
+								</div>
+
+								<div class="row">
+									<div id="otraDependencia" class="form-group col-xs-12 col-md-6 col-md-offset-3 padding-dekstop-col hidden">
+										<label for="dependencia">Elige tu dependencia</label>
+										<input type="text" class="form-control validate" id="dependencia" placeholder="">
+										<span class="input-success"></span>
+										<span class="input-error"></span>
+									</div>
+									<div id="periodos" class="form-group col-xs-12 col-md-6 col-md-offset-3 padding-dekstop-col hidden">
+										<label for="periodicidad">Elige la periodicidad de tus percepciones</label>
+										<select class="form-control validate" id="periodicidad" placeholder="">
+											<option value="" selected>...</option>
+											<option value="mensual">Mensual</option>
+											<option value="quincenal">Quincenal</option>
+										</select>
+									</div>
+									<div class="form-group col-xs-12 col-md-6 col-md-offset-3 padding-dekstop-col">
+										<label for="percepciones" id="label-percepciones">Percepciones libres
+											<i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Tooltip on right"></i>
+										</label>
+										<input type="tel" class="form-control validate input-number" id="percepciones" placeholder="">
+										<span class="input-success"></span>
+										<span class="input-error"></span>
+									</div>
+									<!-- <div class="col-xs-12 col-md-5 col-md-offset-3 padding-dekstop-col">
+										<button id="btnSolicitarOfertas" class="btn btn-form">Solicitar</button>
+									</div> -->
+								</div>
+
+						</div>
+						<div class="step-landing animated">
+							<div id="loader-ofertas-credito" class="row hidden">
+								<div class="sk-folding-cube">
+									<div class="sk-cube1 sk-cube"></div>
+									<div class="sk-cube2 sk-cube"></div>
+									<div class="sk-cube4 sk-cube"></div>
+									<div class="sk-cube3 sk-cube"></div>
+
+								</div>
+								<div class="center">
+									<span>Generando opciones de crédito</span>
+								</div>
+							</div>
+							<div id="ofertas-credito">
+
+								<h2 class="center">Tus opciones de crédito</h2>
+
+								<div class="row">
+									<div class="col-xs-12 col-md-6 col-md-offset-3 center">
+										<div class="panel panel-border section-panel">
+											<div class="panel-heading">
+												<h6>La oferta más solicitada
+													<!-- <div class="pin">
+														<img src="img/icons/personal_credit_white.png" alt="">
+													</div> -->
+												</h6>
+											</div>
+											<div class="panel-body">
+												<div class="col-md-12">
+													<h3 class="oferta-principal">Préstamo</h3>
+													<div id="cambia-monto-oferta" class="hidden">
+														<p class="instructions">Puedes escribir el monto o mover la barra a la cantidad deseada</p>
+														<input id="input-monto" type="text" class="form-control">
+														<span class="input-error"></span>
+														<div style="padding: 20px;">
+
+															<input id="slider-monto" type="text" />
+														</div>
+													</div>
+													<p id="monto-opcion-credito" class="item-oferta-principal" class="first-column">$30,000</p>
+													<h3 class="oferta-principal">Período</h3>
+													<div id="cambia-periodo-oferta" class="hidden">
+														<div class="form-group col-xs-12 padding-dekstop-col">
+															<select class="form-control" id="periodo" placeholder="">
+															<option value="22">22 meses</option>
+															<option value="20">20 meses</option>
+															<option value="18">18 meses</option>
+															<option value="16">16 meses</option>
+															<option value="14">14 meses</option>
+															<option value="12">12 meses</option>
+														</select>
+														</div>
+													</div>
+													<p id="periodo-opcion-credito" class="item-oferta-principal">22 meses</p>
+													<h3 class="oferta-principal">Descuento</h3>
+													<p id="monto-quincena" class="item-quincena">$177.14</p>
+													<button class="btn btn-form choose-credit">Elegir</button>
+												</div>
+											</div>
+
+											<div><button id="btn-mas-ofertas" class="btn-link">Modificar oferta</button></div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="step-landing animated">
+							<h2 class="center">Necesitamos algunos datos para continuar tu solicitud</h2>
+							<div class="row">
+								<div class="col-xs-12 col-md-10 col-md-offset-1">
+									<div class="row">
+
+										<div class="form-group col-xs-12 col-md-6 padding-dekstop-col">
+											<label for="nombre">Nombre
+											</label>
+											<input type="text" class="form-control validate" id="nombre" placeholder="">
+											<span class="input-success"></span>
+											<span class="input-error"></span>
+										</div>
+										<div class="form-group col-xs-12 col-md-6 padding-dekstop-col">
+											<label for="celular">Celular
+											</label>
+											<input type="tel" class="form-control validate" id="celular" placeholder="">
+											<span class="input-success"></span>
+											<span class="input-error"></span>
+										</div>
+									</div>
+									<div class="row">
+
+										<div class="form-group col-xs-12 col-md-6 padding-dekstop-col">
+											<label for="correo">Correo electrónico
+											</label>
+											<input type="email" class="form-control validate" id="correo" placeholder="">
+											<span class="input-success"></span>
+											<span class="input-error"></span>
+										</div>
+									</div>
+									<div class="row">
+											<div id="loader-phone-message" class="row hidden">
+													<div class="sk-folding-cube">
+															<div class="sk-cube1 sk-cube"></div>
+															<div class="sk-cube2 sk-cube"></div>
+															<div class="sk-cube4 sk-cube"></div>
+															<div class="sk-cube3 sk-cube"></div>
+													</div>
+													<div class="center">
+															<span>Enviando mensaje SMS</span>
+													</div>
+											</div>
+											<div class="col-xs-12 alert-div">
+													<div id="phone-message-alert" class="alert alert-info alert-dismissible hidden" role="alert">
+															<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+															<i class="fa fa-info-circle"></i> Hemos enviado un código SMS a tu celular, si no lo recibes en 15 segundos, puede que el número ingresado no este correcto
+													</div>
+											</div>
+											<div class="col-xs-12 col-md-12 code-submit">
+													<h1 class="title-section">Ingresar código SMS</h1>
+													<input type="tel" class="code-input" maxlength="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+													<input type="tel" class="code-input" maxlength="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+													<input type="tel" class="code-input" maxlength="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+													<input type="tel" class="code-input" maxlength="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+													<input type="tel" class="code-input" maxlength="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+											</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row center" style="padding: 20px;">
+							<div>
+								<button id="prev" class="btn btn-form btn-step">Regresar</button>
+								<button id="next" class="btn btn-form btn-step">Siguiente</button>
+								<p class="step-numbers">Paso <span id="num-step">1</span>/3</p>
+							</div>
+							<div class="row center">
+								<a id="enviar" href="documentos.html" class="btn btn-primary center" style="padding:20px 40px;">Enviar</a>
+							</div>
+						</div>
+
 					</div>
+
 				</div>
 
 			</div>
@@ -242,103 +412,34 @@
 
 
 
-			<div id="loader-ofertas-credito" class="row hidden">
-		    <div class="sk-folding-cube">
-		      <div class="sk-cube1 sk-cube"></div>
-		      <div class="sk-cube2 sk-cube"></div>
-		      <div class="sk-cube4 sk-cube"></div>
-		      <div class="sk-cube3 sk-cube"></div>
 
-		    </div>
-		    <div class="center">
-		      <span>Generando opciones de crédito</span>
-		    </div>
-		  </div>
 
-		  <div id="ofertas-credito" class="hidden">
 
-		    <h2 class="center">Tus opciones de crédito</h2>
 
-		    <div class="row">
-		      <div class="col-xs-12 col-md-4 col-md-offset-4 center">
-		        <div class="panel panel-border section-panel">
-		          <div class="panel-heading">
-		            <h6>La oferta más solicitada
-		              <!-- <div class="pin">
-		                <img src="img/icons/personal_credit_white.png" alt="">
-		              </div> -->
-		            </h6>
-		          </div>
-		          <div class="panel-body">
-		            <div class="col-md-12">
-		              <h3 class="oferta-principal">Préstamo</h3>
-		              <div id="cambia-monto-oferta" class="hidden">
-		                <p>Puedes escribir el monto o mover la barra a la cantidad deseada</p>
-		                <input id="input-monto" type="text" class="form-control">
-		                <span class="input-error"></span>
-		                <div style="padding: 30px;">
-
-		                  <input id="slider-monto" type="text" />
-		                </div>
-		              </div>
-		              <p id="monto-opcion-credito" class="item-oferta-principal" class="first-column">$30,000</p>
-		              <h3 class="oferta-principal">Período</h3>
-		              <div id="cambia-periodo-oferta" class="hidden">
-		                <div class="form-group col-xs-12 padding-dekstop-col">
-		                  <select class="form-control" id="periodo" placeholder="">
-		                  <option value="22">22 meses</option>
-		                  <option value="20">20 meses</option>
-		                  <option value="18">18 meses</option>
-		                  <option value="16">16 meses</option>
-		                  <option value="14">14 meses</option>
-		                  <option value="12">12 meses</option>
-		                </select>
-		                </div>
-		              </div>
-		              <p id="periodo-opcion-credito" class="item-oferta-principal">22 meses</p>
-		              <h3 class="oferta-principal">Descuento</h3>
-		              <p id="monto-quincena" class="item-quincena">$177.14</p>
-		              <button class="btn btn-form choose-credit">Elegir</button>
-		            </div>
-		          </div>
-
-		          <div><button id="btn-mas-ofertas" class="btn-link">Modificar oferta</button></div>
-		        </div>
-		      </div>
-
-		    </div>
-		  </div>
-
-		  <div class="row">
-		    <div class="col-xs-12 col-md-11 col-md-offset-1">
-		      <div id="form-cotizador"></div>
-		      <div id="propuestas-cotizador"></div>
-		    </div>
-		  </div>
 		</section>
 
 		<section id="cel-credit">
-		  <div class="container">
-		    <div class="col-xs-12">
+			<div class="container">
+				<div class="col-xs-12">
 					<div class="cuadro-amarillo"> </div>
-  				<div class="cuadro-gris"></div>
-				  <div class="continua-credito">
-							<div class="row">
-								<div class="col-xs-12">
-									<h2 class="continua-titulo">Si ya solicitaste el crédito</h2>
-									<span> Puedes consultar el estatus ingresando tu celular</span>
-								</div>
-								<div class="col-xs-12 col-md-4 col-md-offset-4">
-									<input type="text" class="continua-cel-input" id="celular-check" placeholder="55 1234 5678">
-								</div>
-								<div class="col-xs-12 derecha">
-									<button type="submit" class="btn btn-consulta-credit">Consultar</button>
-								</div>
-								<div id="celular-valido" class="col-xs-12 hidden">
-									<p>Ingresa un número de celular válido</p>
-								</div>
-
+					<div class="cuadro-gris"></div>
+					<div class="continua-credito">
+						<div class="row">
+							<div class="col-xs-12">
+								<h2 class="continua-titulo">Si ya solicitaste el crédito</h2>
+								<span> Puedes consultar el estatus ingresando tu celular</span>
 							</div>
+							<div class="col-xs-12 col-md-4 col-md-offset-4">
+								<input type="text" class="continua-cel-input" id="celular-check" placeholder="55 1234 5678">
+							</div>
+							<div class="col-xs-12 derecha">
+								<button type="submit" class="btn btn-consulta-credit">Consultar</button>
+							</div>
+							<div id="celular-valido" class="col-xs-12 hidden">
+								<p>Ingresa un número de celular válido</p>
+							</div>
+
+						</div>
 
 					</div>
 				</div>
@@ -347,13 +448,13 @@
 		</section>
 
 		<section id="pasos-credito">
-		  <div class="container">
+			<div class="container">
 
-		    <div class="center steps-header">
-		      <h2>PASOS PARA MÍ CRÉDITO</h2>
-		      <span>Tu solicitud de crédito en minutos, es muy fácil</span>
-		    </div>
-		    <div class="row steps-info center">
+				<div class="center steps-header">
+					<h2>PASOS PARA MÍ CRÉDITO</h2>
+					<span>Tu solicitud de crédito en minutos, es muy fácil</span>
+				</div>
+				<div class="row steps-info center">
 					<div class="col-xs-12 col-md-10 col-md-offset-1">
 
 						<div class="col-xs-12 col-md-4">
@@ -405,83 +506,80 @@
 							</div>
 						</div>
 					</div>
-		    </div>
-		  </div>
+				</div>
+			</div>
 		</section>
 
 		<section class="testimonios" id="testimonios">
-		  <div class="container">
+			<div class="container">
 
-		    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-		          <!-- Wrapper for slides -->
-		          <div class="carousel-inner">
-		            <div class="item active">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner">
+						<div class="item active">
 
-		              <div class="row">
-										<div class="col-xs-12 col-md-10 col-md-offset-1 testimony-container">
-											<div class="col-md-4 col-xs-12" id="pic-testimony">
-											</div>
-											<div class="col-md-8 col-xs-12 testimony-quotes">
-												<div class="col-md-6 col-xs-6 testimony-name active">
-													<h2>Laura López</h2>
-													<span>Directora de Finanzas INAPAM</span>
-												</div>
-												<div class="col-md-6 col-xs-6 testimony-name">
-													<h2>Ximena Estrada</h2>
-													<span>Directora de Economía INAPAM</span>
-												</div>
-												<div class="col-md-12 col-xs-12">
-													<blockquote>Es increible!!! en 5 minutos puedo tramitar un credito, es accesible rapido y sencillo, no tengo que ir mas lejos de mi celular</blockquote>
-												</div>
-											</div>
+							<div class="row">
+								<div class="col-xs-12 col-md-10 col-md-offset-1 testimony-container">
+									<div class="col-md-4 col-xs-12" id="pic-testimony">
+									</div>
+									<div class="col-md-8 col-xs-12 testimony-quotes">
+										<div class="col-md-6 col-xs-6 testimony-name active">
+											<h2>Laura López</h2>
+											<span>Directora de Finanzas INAPAM</span>
 										</div>
+										<div class="col-md-6 col-xs-6 testimony-name">
+											<h2>Ximena Estrada</h2>
+											<span>Directora de Economía INAPAM</span>
+										</div>
+										<div class="col-md-12 col-xs-12">
+											<blockquote>Es increible!!! en 5 minutos puedo tramitar un credito, es accesible rapido y sencillo, no tengo que ir mas lejos de mi celular</blockquote>
+										</div>
+									</div>
+								</div>
 
 
-		              </div>
-		            </div>
+							</div>
+						</div>
 
-		          </div>
-
-
-		        </div>
+					</div>
 
 
-		  </div>
+				</div>
+
+
+			</div>
 		</section>
 
 		<section id="preguntas-frecuentes">
-		  <div class="container">
+			<div class="container">
 
-		    <div class="row center">
-		      <div class="col-xs-12 col-md-9 col-md-offset-2 preguntas-container">
-		        <h2>Preguntas frecuentes</h2>
+				<div class="row center">
+					<div class="col-xs-12 col-md-9 col-md-offset-2 preguntas-container">
+						<h2>Preguntas frecuentes</h2>
 						<div class="col-xs-12 col-md-6 question">
 							<h4>¿Dónde puedo recoger mi crédito?</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-							Ut enim ad minim veniam, quis nostrud exercitation </p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </p>
 						</div>
 						<div class="col-xs-12 col-md-6 question">
 							<h4>¿Cuántas veces puedo solicitar el crédito?</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-							Ut enim ad minim veniam, quis nostrud exercitation </p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </p>
 						</div>
 						<div class="col-xs-12 col-md-6 question">
 							<h4>¿El descuento es vía nómina?</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-							Ut enim ad minim veniam, quis nostrud exercitation </p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </p>
 						</div>
 						<div class="col-xs-12 col-md-6 question">
 							<h4>¿Qué es un buró de crédito?</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-							Ut enim ad minim veniam, quis nostrud exercitation </p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </p>
 						</div>
 
-		      </div>
-		    </div>
-		  </div>
+					</div>
+				</div>
+			</div>
 		</section>
 
-	</div><!-- fin home -->
+	</div>
+	<!-- fin home -->
 
 
 	<footer id="contacto" class="footer">

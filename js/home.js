@@ -1,6 +1,54 @@
+var $steps = $('.step-landing');
+var $stepNum = $('#num-step');
+$('#prev').attr('disabled',true)
+  var currentStep = 0,
+      nextStep;
+  $stepNum.html(currentStep+1); // active first menu
+  $steps.slice(1).hide(); //hide all but first
+  $('#enviar').hide()
+
+  $('#next').on('click', function(e) {
+    e.preventDefault();
+    $('#prev').attr('disabled',false)
+    nextStep = currentStep + 1;
+    $($steps.get(currentStep)).hide();
+    $($steps.get(nextStep)).show();
+    $($steps.get(nextStep)).addClass('bounceInRight')
+    $('#num-step').html(nextStep+1)
+    if (nextStep == 2) {
+      $('#next').hide()
+      $('#enviar').show()
+      //return;
+    }else{
+      $('#next').show()
+    }
+    currentStep = nextStep;
+    window.scrollTo(0, 0);
+  });
+
+  $('#prev').on('click', function(e) {
+    e.preventDefault();
+    $('#next').show();
+    $('#enviar').hide()
+    if(currentStep==0){
+      $('#prev').attr('disabled',true)
+      return
+    }
+    nextStep = currentStep - 1;
+
+    $($steps.get(currentStep)).hide();
+    $($steps.get(nextStep)).show();
+    $('#num-step').html(nextStep+1)
+    if (nextStep == 0) {
+      $('#prev').attr('disabled',true)
+    }else{
+      $('#prev').attr('disabled',false)
+    }
+    currentStep = nextStep;
+  });
+
 $('#estado').change(function() {
   if($(this).val()!=""){
-    console.log($(this).val())
     $('#elige-dependencia').removeClass('hidden')
     dameDependencias($(this).val());
   }
@@ -68,12 +116,12 @@ function dameDependencias(estado) {
 }
 
 function getRandomDependencias() {
-  var randomDependencias = getUnique(dependencias, 4);
+  var randomDependencias = getUnique(dependencias, 2);
   var htmlOpcionesDependencias = '';
   var dependenciasList = document.getElementById('opciones-dependencias')
   htmlOpcionesDependencias = randomDependencias.map((dependencia, i) => {
     return `
-    <div class="col-xs-6 col-md-2">
+    <div class="col-xs-4 col-md-4">
       <input type="radio" value="${dependencia.nombre}" id="${dependencia.nombre}" name="dependencia">
       <label for="${dependencia.nombre}">
         <div class="icon-item">
@@ -84,7 +132,7 @@ function getRandomDependencias() {
     </div>
   `;
   }).join('');
-  dependenciasList.innerHTML = htmlOpcionesDependencias+`<div class="col-xs-6 col-md-2">
+  dependenciasList.innerHTML = htmlOpcionesDependencias+`<div class="col-xs-4 col-md-4">
   <input type="radio" value="otra" id="otra" name="dependencia">
     <label for="otra">
       <div class="icon-item">
@@ -110,6 +158,7 @@ function getRandomDependencias() {
           inputsSolicitud = $('input')
           cargaEventosInputs(inputsSolicitud)
         }
+        $('#periodos').removeClass('hidden')
       })
     })
 }
@@ -132,15 +181,15 @@ function getUnique(dependencias, count) {
 
 
 let regex = /^\(?([0-9]{2})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{4})$/;
-let celularInput = new Cleave('#celular', {
-  phone: true,
-  phoneRegionCode: 'MX'
-});
-
-let celularCheckInput = new Cleave('#celular-check', {
-  phone: true,
-  phoneRegionCode: 'MX'
-});
+// let celularInput = new Cleave('#celular', {
+//   phone: true,
+//   phoneRegionCode: 'MX'
+// });
+//
+// let celularCheckInput = new Cleave('#celular-check', {
+//   phone: true,
+//   phoneRegionCode: 'MX'
+// });
 
 $('#celular-check').keyup(function() {
   let input = $(this)
