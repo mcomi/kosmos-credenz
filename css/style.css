@@ -78,6 +78,9 @@ h2.continua-titulo::after {
 span.input-success {
   color: #5b56a6; }
 
+#cotizador span.input-success {
+  color: #fff; }
+
 #preguntas-frecuentes h2 {
   color: #D65D98;
   font-weight: 800; }
