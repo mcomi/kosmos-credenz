@@ -749,6 +749,10 @@ input.check-status::-ms-input-placeholder {
   font-weight: lighter;
   letter-spacing: 1px; }
 
+.choose-credit {
+  padding: 4px 45px;
+  font-size: 18px; }
+
 .derecha {
   text-align: right; }
 
