@@ -1,3 +1,14 @@
+function randombg(){
+  var random= Math.floor(Math.random() * 4) + 0;
+  var bigSize = ["url('../img/family.jpg')",
+                 "url('../img/bg1.jpg')",
+                 "url('../img/bg2.jpg')",
+                 "url('../img/bg3.jpg')"];
+  document.getElementById("cotizador").style.backgroundImage=bigSize[random];
+}
+
+randombg();
+
 var $steps = $('.step-landing');
 var $stepNum = $('#num-step');
 $('#prev').attr('disabled',true)
