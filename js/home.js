@@ -572,7 +572,7 @@ function NumeroALetras(num) {
   btnsEligeOferta.each(function(){
     let btn = $(this)
     btn.click(function(){
-      $('#datos-basicos').removeClass('hidden')
+      $('#next').click()
       inputsSolicitud = $('input')
       let cleave = new Cleave('#celular', { // formatear numero celular
         phone: true,
