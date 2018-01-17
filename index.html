@@ -93,6 +93,7 @@
 			<li><a href="analiticas.html"><span class="icon"><img src="img/icons/nomina.svg" alt=""></span><span class="menu-text">Crédito nómina </span></a></li>
 			<li><a href="index.html"><span class="icon"><img src="img/icons/url.svg" alt=""></span><span class="menu-text">Url de acceso </span></a></li>
 			<li><a href="simulador.html"><span class="icon"><img src="img/icons/steps_credit.svg" alt=""></span><span class="menu-text">Pasos para crédito </span></a></li>
+
 			<li><a href="analiticas.html"><span class="icon"><img src="img/icons/testimonies.svg" alt=""></span><span class="menu-text">Testimonios </span></a></li>
 			<li><a href="index.html"><span class="icon"><img src="img/icons/faq.svg"  alt=""></span><span class="menu-text">Preguntas frecuentes </span></a></li>
 		</ul>
@@ -118,6 +119,9 @@
 				<li>
 					<a href="#contacto">Continuar mi solicitud</a>
 				</li>
+				<li><a href="index.html">
+					<img src="img/logo.png" alt="">
+				</a></li>
 				<li>
 					<a href="#pasos-credito">Pasos para crédito</a>
 				</li>
@@ -145,21 +149,21 @@
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2" id="cotizador-container">
 						<div class="step-landing animated bounceInRight">
-							  <!-- encabezado -->
-								<div class="row center">
-									<div class="menu_credit_type col-xs-12 col-md-6 col-md-offset-3">
-										<h4>Bienvenido al cotizador de sitio principal</h4>
+							<!-- encabezado -->
+							<div class="row center">
+								<div class="menu_credit_type col-xs-12 col-md-6 col-md-offset-3">
+									<h4>Bienvenido al cotizador de sitio principal</h4>
 
-										<span class="action">¡Obtén tu dinero en 24 horas!</span>
-									</div>
+									<span class="action">¡Obtén tu dinero en 24 horas!</span>
 								</div>
+							</div>
 
-								<!-- dependencias -->
+							<!-- dependencias -->
 
-								<div class="row center padding-top">
-									<div class="col-xs-12 col-md-6 col-md-offset-3">
-										<label for="estado">¿En qúe estado te encuentras?</label>
-										<select class="form-control validate" id="estado" placeholder="">
+							<div class="row center padding-top">
+								<div class="col-xs-12 col-md-6 col-md-offset-3">
+									<label for="estado">¿En qúe estado te encuentras?</label>
+									<select class="form-control validate" id="estado" placeholder="">
 											<option value="" selected>...</option>
 											<option value="1">Aguascalientes</option>
 											<option value="2">Baja California</option>
@@ -194,72 +198,72 @@
 											<option value="31">Yucatán</option>
 											<option value="32">Zacatecas</option>
 										</select>
-									</div>
-									<div id="elige-dependencia" class="col-xs-12 col-md-10 col-md-offset-1 padding-top">
-										<p class="small">Para iniciar cuentanos tu depencia, el monto que necesitas y algunos datos</p>
-										<div id="opciones-dependencias" class="menu_credit_type col-xs-12 col-md-8 col-md-offset-2">
-											<div id="dependencia1" class="col-xs-4 col-md-4">
-												<input type="radio" value="pemex" id="pemex" name="dependencia">
-												<label for="pemex">
+								</div>
+								<div id="elige-dependencia" class="col-xs-12 col-md-10 col-md-offset-1 padding-top">
+									<p class="small">Para iniciar cuentanos tu depencia, el monto que necesitas y algunos datos</p>
+									<div id="opciones-dependencias" class="menu_credit_type col-xs-12 col-md-8 col-md-offset-2">
+										<div id="dependencia1" class="col-xs-4 col-md-4">
+											<input type="radio" value="pemex" id="pemex" name="dependencia">
+											<label for="pemex">
 													<div class="icon-item">
 														<img src="img/icons/sep.png" alt="">
 													</div>
 												</label>
-												<p class="credit-text">SEP</p>
-											</div>
+											<p class="credit-text">SEP</p>
+										</div>
 
 
-											<div id="dependencia4" class="col-xs-4 col-md-4">
-												<input type="radio" value="gob_quer" id="gob_quer" name="dependencia">
-												<label for="gob_quer">
+										<div id="dependencia4" class="col-xs-4 col-md-4">
+											<input type="radio" value="gob_quer" id="gob_quer" name="dependencia">
+											<label for="gob_quer">
 													<div class="icon-item">
 														<img src="img/icons/imss.svg" alt="">
 													</div>
 												</label>
-												<p class="credit-text">IMSS</p>
-											</div>
-											<div class="col-xs-4 col-md-4">
-												<input type="radio" value="otra" id="otra" name="dependencia">
-												<label for="otra">
+											<p class="credit-text">IMSS</p>
+										</div>
+										<div class="col-xs-4 col-md-4">
+											<input type="radio" value="otra" id="otra" name="dependencia">
+											<label for="otra">
 													<div class="icon-item">
 														<img src="img/icons/otros.png" alt="">
 													</div>
 												</label>
-												<p class="credit-text">OTRO</p>
-											</div>
+											<p class="credit-text">OTRO</p>
 										</div>
-
-
 									</div>
+
+
 								</div>
+							</div>
 
-								<div class="row">
-									<div id="otraDependencia" class="form-group col-xs-12 col-md-6 col-md-offset-3 padding-dekstop-col hidden">
-										<label for="dependencia">Elige tu dependencia</label>
-										<input type="text" class="form-control validate" id="dependencia" placeholder="">
-										<span class="input-success"></span>
-										<span class="input-error"></span>
-									</div>
-									<div id="periodos" class="form-group col-xs-12 col-md-6 col-md-offset-3 padding-dekstop-col hidden">
-										<label for="periodicidad">Elige la periodicidad de tus percepciones</label>
-										<select class="form-control validate" id="periodicidad" placeholder="">
+							<div class="row">
+								<div id="otraDependencia" class="form-group col-xs-12 col-md-6 col-md-offset-3 padding-dekstop-col hidden">
+									<label for="dependencia">Elige tu dependencia</label>
+									<input type="text" class="form-control validate" id="dependencia" placeholder="">
+									<span class="input-success"></span>
+									<span class="input-error"></span>
+								</div>
+								<div id="periodos" class="form-group col-xs-12 col-md-6 col-md-offset-3 padding-dekstop-col hidden">
+									<label for="periodicidad">Elige la periodicidad de tus percepciones</label>
+									<select class="form-control validate" id="periodicidad" placeholder="">
 											<option value="" selected>...</option>
 											<option value="mensual">Mensual</option>
 											<option value="quincenal">Quincenal</option>
 										</select>
-									</div>
-									<div class="form-group col-xs-12 col-md-6 col-md-offset-3 padding-dekstop-col">
-										<label for="percepciones" id="label-percepciones">Percepciones libres
+								</div>
+								<div class="form-group col-xs-12 col-md-6 col-md-offset-3 padding-dekstop-col">
+									<label for="percepciones" id="label-percepciones">Percepciones libres
 											<i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Tooltip on right"></i>
 										</label>
-										<input type="tel" class="form-control validate input-number" id="percepciones" placeholder="">
-										<span class="input-success"></span>
-										<span class="input-error"></span>
-									</div>
-									<!-- <div class="col-xs-12 col-md-5 col-md-offset-3 padding-dekstop-col">
+									<input type="tel" class="form-control validate input-number" id="percepciones" placeholder="">
+									<span class="input-success"></span>
+									<span class="input-error"></span>
+								</div>
+								<!-- <div class="col-xs-12 col-md-5 col-md-offset-3 padding-dekstop-col">
 										<button id="btnSolicitarOfertas" class="btn btn-form">Solicitar</button>
 									</div> -->
-								</div>
+							</div>
 
 						</div>
 						<div class="step-landing animated">
@@ -349,7 +353,7 @@
 											<span class="input-success"></span>
 											<span class="input-error"></span>
 										</div>
-									
+
 
 										<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
 											<label for="correo">Correo electrónico
@@ -360,31 +364,31 @@
 										</div>
 									</div>
 									<div class="row">
-											<div id="loader-phone-message" class="row hidden">
-													<div class="sk-folding-cube">
-															<div class="sk-cube1 sk-cube"></div>
-															<div class="sk-cube2 sk-cube"></div>
-															<div class="sk-cube4 sk-cube"></div>
-															<div class="sk-cube3 sk-cube"></div>
-													</div>
-													<div class="center">
-															<span>Enviando mensaje SMS</span>
-													</div>
+										<div id="loader-phone-message" class="row hidden">
+											<div class="sk-folding-cube">
+												<div class="sk-cube1 sk-cube"></div>
+												<div class="sk-cube2 sk-cube"></div>
+												<div class="sk-cube4 sk-cube"></div>
+												<div class="sk-cube3 sk-cube"></div>
 											</div>
-											<div class="col-xs-12 alert-div">
-													<div id="phone-message-alert" class="alert alert-info alert-dismissible hidden" role="alert">
-															<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-															<i class="fa fa-info-circle"></i> Hemos enviado un código SMS a tu celular, si no lo recibes en 15 segundos, puede que el número ingresado no este correcto
-													</div>
+											<div class="center">
+												<span>Enviando mensaje SMS</span>
 											</div>
-											<div class="col-xs-12 col-md-12 code-submit">
-													<h1 class="title-section">Ingresar código SMS</h1>
-													<input type="tel" class="code-input" maxlength="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
-													<input type="tel" class="code-input" maxlength="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
-													<input type="tel" class="code-input" maxlength="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
-													<input type="tel" class="code-input" maxlength="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
-													<input type="tel" class="code-input" maxlength="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+										</div>
+										<div class="col-xs-12 alert-div">
+											<div id="phone-message-alert" class="alert alert-info alert-dismissible hidden" role="alert">
+												<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+												<i class="fa fa-info-circle"></i> Hemos enviado un código SMS a tu celular, si no lo recibes en 15 segundos, puede que el número ingresado no este correcto
 											</div>
+										</div>
+										<div class="col-xs-12 col-md-12 code-submit">
+											<h1 class="title-section">Ingresar código SMS</h1>
+											<input type="tel" class="code-input" maxlength="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+											<input type="tel" class="code-input" maxlength="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+											<input type="tel" class="code-input" maxlength="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+											<input type="tel" class="code-input" maxlength="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+											<input type="tel" class="code-input" maxlength="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -581,13 +585,110 @@
 	<!-- fin home -->
 
 
-	<footer id="contacto" class="footer">
-		<div class="container">
-			<p class="footer-title"><b>¿Necesitas un asesor?</b> Contáctanos</p>
-			<p><a href="tel:018000300029"> 01800 03 00 029</a></p>
-			<p><a href="mailto:contacto@credenz.com"> contacto@credenz.com</a></p>
+	<footer id="footer">
+		<div class="footer-top">
+			<div class="container">
+				<div class="row sidebar">
+					<aside class="col-xs-12 col-sm-6 col-md-3 widget social">
+						<div id="text-2" class="widget widget_text">
+							<h3 class="title-block">Soluciones</h3>
+							<div class="textwidget"><a href="http://www.credenz.com.mx/blog/"> ‎Blog</a><br>
+								<a href="http://educacionfinanciera.credenz.com.mx/"> ‎Educación Financiera</a><br>
+								<a href="http://www.credenz.com.mx/inclusion-financiera">Inclusión Financiera</a><br>
+								<a href="http://www.credenz.com.mx/preguntas-frecuentes/">Preguntas Frecuentes</a><br>
+								<a href="http://www.credenz.com.mx/despachos-de-cobranza/">Despachos de Cobranza</a><br>
+								<a href="http://www.credenz.com.mx/afilia-a-tu-empresa/">Afilia a tu empresa</a><br>
+								<a href="http://www.credenz.com.mx/aviso-de-privacidad/">Aviso de Privacidad</a><br>
+								<a href="http://www.credenz.com.mx/imagenes/docs/codigoetica_v1-7a-13032013.pdf" target="_blank">Código de Ética</a>
+								<br>
+							</div>
+						</div>
+						<div id="text-5" class="widget widget_text">
+							<div class="textwidget"><a href="http://www.credenz.com.mx/buro-de-entidades-financieras"><img src="http://www.credenz.com.mx/wp-content/uploads/2015/06/buro.png"></a> <a href="http://www.credenz.com.mx/condusef-3"><img src="http://www.credenz.com.mx/wp-content/uploads/2015/06/condusef.png"></a>								<a href="http://www.credenz.com.mx/amden-3"><img src="http://www.credenz.com.mx/wp-content/uploads/2015/12/amden.png"></a> <a href="http://www.credenz.com.mx/despachos-de-cobranza/"><img src="http://www.credenz.com.mx/wp-content/uploads/2015/06/despachocobranza.png"></a>
+								<a href="http://www.credenz.com.mx/leed/"><img src="http://www.credenz.com.mx/wp-content/uploads/2016/04/leed1.png"></a></div>
+						</div>
+					</aside>
+					<aside class="col-xs-12 col-sm-6 col-md-3 widget newsletter">
+						<div id="text-4" class="widget widget_text">
+							<h3 class="title-block">CREDENZ</h3>
+							<div class="textwidget"><a href="http://www.credenz.com.mx/la-empresa/">Nosotros</a><br>
+								<a href="http://www.credenz.com.mx/la-empresa/">Valores</a><br>
+								<a href="http://www.credenz.com.mx/la-empresa/#mision">Visión</a><br>
+								<a href="http://www.credenz.com.mx/la-empresa/#mision">Misión</a><br>
+								<a href="http://www.credenz.com.mx/amden-3/">Empresa de Nómina Sólida</a><br>
+								<a href="http://www.credenz.com.mx/wow/">La Filosofía WOW</a><br>
+								<a href="http://www.credenz.com.mx/leed" target="_blank">Certificación LEED</a><br>
+								<a href="http://www.credenz.com.mx/bolsa-de-trabajo/">Únete a nuestro equipo</a><br><a href="http://www.credenz.com.mx/financieros/">Relación con Inversionistas</a><br>
+								<a href="http://www.poradela.mx/" target="_blank" style="
+    color: #77BD1E;">Por Adela</a><br></div>
+						</div>
+					</aside>
+					<!-- .newsletter -->
+					<aside class="col-xs-12 col-sm-6 col-md-3 widget links">
+						<div id="text-3" class="widget widget_text">
+							<h3 class="title-block">EMPRESA</h3>
+							<div class="textwidget">Fimubac S.A. de C.V., SOFOM, ENR para su constitución y operación, no requiere autorización de la Secretaria de Hacienda y Crédito Público, y no esta sujeta a la Supervisión y Vigilancia de la Comisión Nacional Bancaria y de Valores, únicamente
+								para los efectos del Artículo 56 de la Ley General de Organizaciones y Actividades Auxiliares del Crédito.</div>
+						</div>
+					</aside>
+					<aside class="col-xs-12 col-sm-6 col-md-3 widget links">
+						<div id="social-media-1" class="widget widget_social_media">
 
+							<div class="widget social">
+
+								<h3>Redes Sociales</h3>
+								<a href="https://www.facebook.com/#!/pages/Credenz/166123760066079?sk=wall" class="sbtnf sbtnf-rounded color color-hover icon-facebook"></a> <a href="https://twitter.com/credenz" class="sbtnf sbtnf-rounded color color-hover icon-twitter"></a>								<a href="https://www.linkedin.com/company/credenz-servicios-financieros" class="sbtnf sbtnf-rounded color color-hover icon-linkedin"></a>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div id="text-10" class="widget widget_text">
+							<div class="textwidget"><a href="http://www.credenz.com.mx/sucursales"><img src="http://www.credenz.com.mx/wp-content/uploads/2015/06/cobertura.png"></a></div>
+						</div>
+					</aside>
+				</div>
+			</div>
 		</div>
+		<!-- .footer-top -->
+		<div class="footer-bottom" style="background-color:;border-top-color:;color:;">
+			<div class="container">
+				<div class="row sidebar">
+					<div class="copyright col-xs-12 col-sm-3 col-md-3">
+						<div id="text-1" class="widget widget_text">
+							<div class="text-footer-bottom">© 2015 Derechos Reservados | Fimubac SA de CV SOFOM ENR</div>
+						</div>
+					</div>
+					<div class="phone-cont col-xs-6 col-sm-3 col-md-3">
+						Centro de servicio a clientes ¡Credenz® Wow!: <br>
+						<div id="contact-info-1" class="widget widget_contact_info">
+							<div class="contact-info-widget">
+								<div class="phone">
+									<div class="footer-icon">
+										<svg xml:space="preserve" enable-background="new 0 0 16 16" viewBox="0 0 16 16" height="16px" width="16px" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+							<path d="M11.001,0H5C3.896,0,3,0.896,3,2c0,0.273,0,11.727,0,12c0,1.104,0.896,2,2,2h6c1.104,0,2-0.896,2-2
+								  c0-0.273,0-11.727,0-12C13.001,0.896,12.105,0,11.001,0z M8,15c-0.552,0-1-0.447-1-1s0.448-1,1-1s1,0.447,1,1S8.553,15,8,15z
+								  M11.001,12H5V2h6V12z" fill="#c6c6c6"></path>
+						</svg>
+									</div>
+									01 800 030 0029<br>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-3 col-md-3 adress-block">
+						<div id="text-8" class="widget widget_text">
+							<div class="text-footer-bottom">Contamos con <a href="http://www.credenz.com.mx/sucursales/" style="color:#EC008C;">Cobertura Nacional</a></div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-3 col-md-3">
+						<a href="#" class="up">
+                                <span class="icon-up"></span>
+                            </a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- .footer-bottom -->
 	</footer>
 
 
