@@ -8864,7 +8864,7 @@ blockquote::after {
   #desktop-menu {
     float: left;
     display: block;
-    margin: 0 60px;
+    margin: 0;
     width: 100%; }
   .navbar-brand > img {
     margin: 0 auto !important;
@@ -8891,6 +8891,26 @@ blockquote::after {
     margin-left: 14%; }
   .navbar-nav > li > span > img {
     height: 25px; } }
+
+@media (min-width: 1280px) {
+  #desktop-menu {
+    margin: 0;
+    margin-left: 4%; } }
+
+@media (min-width: 1400px) {
+  #desktop-menu {
+    margin: 0;
+    margin-left: 7%; } }
+
+@media (min-width: 1500px) {
+  #desktop-menu {
+    margin: 0;
+    margin-left: 8%; } }
+
+@media (min-width: 1600px) {
+  #desktop-menu {
+    margin: 0;
+    margin-left: 10%; } }
 
 @media (min-width: 801px) {
   body {
